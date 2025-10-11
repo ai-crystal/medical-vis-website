@@ -8,11 +8,50 @@ import { defineNavbarConfig } from 'vuepress-theme-plume'
 
 export default defineNavbarConfig([
   { text: '首页', link: '/' },
-  { text: '博客', link: '/blog/' },
-  { text: '标签', link: '/blog/tags/' },
-  { text: '归档', link: '/blog/archives/' },
   {
-    text: '笔记',
-    items: [{ text: '示例', link: '/demo/README.md' }]
+    text: 'Crystal Presentations',
+    items: [
+      { text: '3dgs-demo', link: '/demo/README.md' },
+    ]
+  },
+  {
+    text: 'Research Field',
+    items: [
+      { text: 'Realistic Rendering', link: '/demo/README.md' },
+      { text: 'Neural Rendering', link: '/demo/README.md' },
+      { text: 'image Analysis', link: '/demo/README.md' },
+      { text: 'Generative Al', link: '/demo/README.md' },
+      { text: 'Large Scale Data', link: '/demo/README.md' },
+      { text: 'Mixed Reality', link: '/demo/README.md' },
+      { text: 'Games Engine', link: '/demo/README.md' },
+      { text: 'Data Analysis', link: '/demo/README.md' },
+    ]
+  },
+  {
+    text: 'Development Manual',
+    items: [
+      { text: 'Development Manual', link: '/demo/README.md' },
+      { text: 'Software Operation', link: '/demo/README.md' },
+      { text: 'Build Crystal Project', link: '/demo/README.md' },
+      { text: 'Code Structure', link: '/demo/README.md' },
+      { text: 'Datasets', link: '/demo/README.md' },      
+    ]
+  },
+  {
+    text: 'Publications',
+    items: [
+      { text: 'PBDVR', link: '/demo/README.md' },
+      { text: 'RTR-DVR', link: '/demo/README.md' },
+      { text: 'NNFF', link: '/demo/README.md' },
+      { text: 'SWKP', link: '/demo/README.md' },
+      { text: 'SegR3D', link: '/demo/README.md' },      
+    ]
+  },
+  {
+    text: 'Team Profile',
+    items: [
+      { text: 'Chunxiao Xu', link: '/demo/README.md' },
+      { text: 'Di Zhang', link: '/demo/README.md' }, 
+    ]
   },
 ])
