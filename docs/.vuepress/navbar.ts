@@ -11,7 +11,7 @@ export default defineNavbarConfig([
   {
     text: 'Crystal Presentations',
     items: [
-      { text: '3dgs-demo', link: '/demo/README.md' },
+      { text: '3dgs-demo', link: 'http://3dgs.medical-vis.com/' },
     ]
   },
   {
@@ -50,7 +50,7 @@ export default defineNavbarConfig([
   {
     text: 'Team Profile',
     items: [
-      { text: 'Chunxiao Xu', link: '/demo/README.md' },
+      { text: 'Chunxiao Xu', link: 'https://chunxiao.dezeming.top/' },
       { text: 'Di Zhang', link: '/demo/README.md' }, 
     ]
   },

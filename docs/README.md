@@ -4,7 +4,7 @@ externalLinkIcon: false
 config:
   -
     type: banner
-    banner: .vuepress/public/images/cover.png
+    banner: /images/cover.png
     bannerMask:
       light: 0.1
       dark: 0.3
@@ -19,5 +19,5 @@ config:
           theme: brand
         -
           text: Crystal Presentations
-          link: https://github.com/pengzhanbo
+          link: /medical-vis/Crystal_Presentations/Crystal_introduction.md
           theme: alt

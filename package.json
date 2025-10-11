@@ -3,7 +3,7 @@
   "type": "module",
   "version": "1.0.0",
   "description": "medical-vis",
-  "packageManager": "pnpm@10.10.0",
+  "packageManager": "pnpm@10.18.2+sha512.9fb969fa749b3ade6035e0f109f0b8a60b5d08a1a87fdf72e337da90dcc93336e2280ca4e44f2358a649b83c17959e9993e777c2080879f3801e6f0d999ad3dd",
   "pnpm": {
     "onlyBuiltDependencies": [
       "@parcel/watcher",
@@ -24,10 +24,13 @@
   },
   "devDependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.24",
-    "vuepress": "2.0.0-rc.24",
-    "vuepress-theme-plume": "1.0.0-rc.169",
     "http-server": "^14.1.1",
+    "typescript": "^5.9.3",
     "vue": "^3.5.22",
-    "typescript": "^5.9.3"
+    "vuepress": "2.0.0-rc.24",
+    "vuepress-theme-plume": "1.0.0-rc.169"
+  },
+  "dependencies": {
+    "artplayer": "^5.3.0"
   }
 }
