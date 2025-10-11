@@ -9,9 +9,9 @@ config:
       light: 0.1
       dark: 0.3
     hero:
-      name: medical-vis
-      tagline: Front End Developer
-      text: Crystal – A comprehensive, intelligent, and efficient medical 3D visualization engine
+      name: Crystal
+      tagline: medical-vis
+      text: A comprehensive, intelligent, and efficient medical 3D visualization engine
       actions:
         -
           text: 3dgs-demo
