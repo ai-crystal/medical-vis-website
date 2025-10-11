@@ -33,17 +33,13 @@ Crystal features a powerful built-in rendering engine that supports rendering va
 
 <img src="\images\Crystal_introduction\Crystal_introduction_01.png" />
 
-<Card title="项目网站" icon="line-md:text-box-to-text-box-multiple-transition">
-<a href="http://3dgs.medical-vis.com/" title="Demo of 3DGS">
-    Demo of 3DGS
-</a>
-</Card>
+::: info Demo of 3DGS
 
+[Have a Try!](/medical-vis/Crystal_Presentations/3dgs_demo.md)
 
+:::
 
 <img src="\images\Crystal_introduction\Crystal_introduction_02.png" />
-
-
 
 
 ::: flex center

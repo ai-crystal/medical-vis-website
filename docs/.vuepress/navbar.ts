@@ -11,7 +11,7 @@ export default defineNavbarConfig([
   {
     text: 'Crystal Presentations',
     items: [
-      { text: '3dgs-demo', link: 'http://3dgs.medical-vis.com/' },
+      { text: '3dgs-demo', link: '/medical-vis/Crystal_Presentations/3dgs_demo.md' },
     ]
   },
   {

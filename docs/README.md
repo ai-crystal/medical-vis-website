@@ -15,9 +15,9 @@ config:
       actions:
         -
           text: 3dgs-demo
-          link: http://3dgs.medical-vis.com/
+          link: /medical-vis/Crystal_Presentations/3dgs_demo.md
           theme: brand
         -
-          text: Crystal Presentations
+          text: Crystal Introduction
           link: /medical-vis/Crystal_Presentations/Crystal_introduction.md
           theme: alt
