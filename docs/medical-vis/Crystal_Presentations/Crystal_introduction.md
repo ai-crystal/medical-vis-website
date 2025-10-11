@@ -33,9 +33,9 @@ Crystal features a powerful built-in rendering engine that supports rendering va
 
 <img src="\images\Crystal_introduction\Crystal_introduction_01.png" />
 
-::: info Demo of 3DGS
+::: note Demo of 3DGS
 
-[Have a Try!](/medical-vis/Crystal_Presentations/3dgs_demo.md)
+:point_right: [Have a Try!](/medical-vis/Crystal_Presentations/3dgs_demo.md)
 
 :::
 
