@@ -7,7 +7,7 @@
 import { defineNavbarConfig } from 'vuepress-theme-plume'
 
 export default defineNavbarConfig([
-  { text: '首页', link: '/' },
+  { text: 'Home', link: '/' },
   {
     text: 'Crystal Presentations',
     items: [
@@ -40,18 +40,18 @@ export default defineNavbarConfig([
   {
     text: 'Publications',
     items: [
-      { text: 'PBDVR', link: '/demo/README.md' },
-      { text: 'RTR-DVR', link: '/demo/README.md' },
-      { text: 'NNFF', link: '/demo/README.md' },
-      { text: 'SWKP', link: '/demo/README.md' },
-      { text: 'SegR3D', link: '/demo/README.md' },      
+      { text: 'PBDVR', link: '/medical-vis/Publications/PBDVR.md' },
+      { text: 'RTR-DVR', link: '/medical-vis/Publications/RTR-DVR.md' },
+      { text: 'NNFF', link: '/medical-vis/Publications/NNFF.md' },
+      { text: 'SWKP', link: '/medical-vis/Publications/SWKP.md' },
+      { text: 'SegR3D', link: '/medical-vis/Publications/SegR3D.md' },      
     ]
   },
   {
     text: 'Team Profile',
     items: [
       { text: 'Chunxiao Xu', link: 'https://chunxiao.dezeming.top/' },
-      { text: 'Di Zhang', link: '/demo/README.md' }, 
+      { text: 'Di Zhang', link: '/medical-vis/Team _Profile/Di_Zhang.md' }, 
     ]
   },
 ])

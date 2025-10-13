@@ -2,10 +2,10 @@
 title: Crystal – A comprehensive, intelligent and efficient medical 3D visualization engine
 tags:
     - medical 3D visualization engine
-PageLayout: 'custom'  # 使用自定义布局
-navbar: true  # 显示导航栏
-aside: false # 显示侧边栏
-outline: [2,4]  # 显示大纲，范围从2到4级标题
+PageLayout: 'custom'
+navbar: true
+aside: false
+outline: [2,4]
 ---
 
 ::: tip News
