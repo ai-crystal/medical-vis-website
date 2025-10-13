@@ -17,24 +17,23 @@ export default defineNavbarConfig([
   {  
     text: 'Research Field',  
     items: [  
-      { text: 'Realistic Rendering', link: '/medical-vis/research_field/Realistic_Rendering.md' },  
-      { text: 'Neural Rendering', link: '/medical-vis/research_field/Neural_Rendering.md' },  
-      { text: 'Image Analysis', link: '/medical-vis/research_field/Image_Analysis.md' },  
-      { text: 'Generative AI', link: '/medical-vis/research_field/Generative_AI.md' },  
-      { text: 'Large Scale Data', link: '/medical-vis/research_field/Large_Scale_Data.md' },  
-      { text: 'Mixed Reality', link: '/medical-vis/research_field/Mixed_Reality.md' },  
-      { text: 'Games Engine', link: '/medical-vis/research_field/Games_Engine.md' },  
-      { text: 'Data Analysis', link: '/medical-vis/research_field/Data_Analysis.md' },  
+      { text: 'Realistic Rendering', link: '/medical-vis/Research_Field/Realistic_Rendering.md' },  
+      { text: 'Neural Rendering', link: '/medical-vis/Research_Field/Neural_Rendering.md' },  
+      { text: 'Image Analysis', link: '/medical-vis/Research_Field/Image_Analysis.md' },  
+      { text: 'Generative AI', link: '/medical-vis/Research_Field/Generative_AI.md' },  
+      { text: 'Large Scale Data', link: '/medical-vis/Research_Field/Large_Scale_Data.md' },  
+      { text: 'Mixed Reality', link: '/medical-vis/Research_Field/Mixed_Reality.md' },  
+      { text: 'Games Engine', link: '/medical-vis/Research_Field/Games_Engine.md' },  
+      { text: 'Data Analysis', link: '/medical-vis/Research_Field/Data_Analysis.md' },  
     ]  
   },  
   {  
     text: 'Development Manual',  
-    items: [  
-      { text: 'Development Manual', link: '/medical-vis/development_manual/README.md' },  
-      { text: 'Software Operation', link: '/medical-vis/development_manual/Software_Operation.md' },  
-      { text: 'Build Crystal Project', link: '/medical-vis/development_manual/Build_Crystal_Project.md' },  
-      { text: 'Code Structure', link: '/medical-vis/development_manual/Code_Structure.md' },  
-      { text: 'Datasets', link: '/medical-vis/development_manual/Datasets.md' },       
+    items: [
+      { text: 'Software Operation', link: '/medical-vis/Development_Manual/Software_Operation.md' },  
+      { text: 'Build Crystal Project', link: '/medical-vis/Development_Manual/Build_Crystal_Project.md' },  
+      { text: 'Code Structure', link: '/medical-vis/Development_Manual/Code_Structure.md' },  
+      { text: 'Datasets', link: '/medical-vis/Development_Manual/Datasets.md' },       
     ]  
   },  
   {  
