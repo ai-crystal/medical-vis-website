@@ -20,11 +20,12 @@ export default defineNavbarConfig([
       { text: 'Realistic Rendering', link: '/medical-vis/Research_Field/Realistic_Rendering.md' },  
       { text: 'Neural Rendering', link: '/medical-vis/Research_Field/Neural_Rendering.md' },  
       { text: 'Image Analysis', link: '/medical-vis/Research_Field/Image_Analysis.md' },  
-      { text: 'Generative AI', link: '/medical-vis/Research_Field/Generative_AI.md' },  
-      { text: 'Large Scale Data', link: '/medical-vis/Research_Field/Large_Scale_Data.md' },  
-      { text: 'Mixed Reality', link: '/medical-vis/Research_Field/Mixed_Reality.md' },  
-      { text: 'Games Engine', link: '/medical-vis/Research_Field/Games_Engine.md' },  
-      { text: 'Data Analysis', link: '/medical-vis/Research_Field/Data_Analysis.md' },  
+      { text: 'Geometry_Process', link: '/medical-vis/Research_Field/Geometry_Process.md' },
+    //  { text: 'Generative AI', link: '/medical-vis/Research_Field/Generative_AI.md' },    
+    //  { text: 'Large Scale Data', link: '/medical-vis/Research_Field/Large_Scale_Data.md' },  
+    //  { text: 'Mixed Reality', link: '/medical-vis/Research_Field/Mixed_Reality.md' },  
+    //  { text: 'Games Engine', link: '/medical-vis/Research_Field/Games_Engine.md' },  
+    //  { text: 'Data Analysis', link: '/medical-vis/Research_Field/Data_Analysis.md' },  
     ]  
   },  
   {  
@@ -50,7 +51,7 @@ export default defineNavbarConfig([
     text: 'Team Profile',
     items: [
       { text: 'Chunxiao Xu', link: 'https://chunxiao.dezeming.top/' },
-      { text: 'Di Zhang', link: '/medical-vis/Team _Profile/Di_Zhang.md' }, 
+      { text: 'Di Zhang', link: '/medical-vis/Team_Profile/Di_Zhang.md' }, 
     ]
   },
 ])
