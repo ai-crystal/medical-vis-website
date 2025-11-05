@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as a}from"./app-qAZDVKNQ.js";const n={};function s(r,o){return a(),e("div")}const l=t(n,[["render",s]]),i=JSON.parse('{"path":"/blog/tags/","title":"Tags","lang":"en-US","frontmatter":{"lang":"en-US","title":"Tags","draft":true},"git":{},"filePathRelative":null,"headers":[],"type":"posts-tags"}');export{l as comp,i as data};

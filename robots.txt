@@ -1,0 +1,3 @@
+Sitemap: https://www.medical-vis.com/sitemap.xml
+User-agent:*
+Disallow:
