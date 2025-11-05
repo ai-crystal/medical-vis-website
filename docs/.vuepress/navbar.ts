@@ -48,7 +48,7 @@ export default defineNavbarConfig([
       { text: 'MR-DVR', link: '/medical-vis/Publications/MR-DVR.md' },
       { text: 'MR-Relighting', link: '/medical-vis/Publications/MR-Relighting.md' },
       { text: 'Illumin-Estim', link: '/medical-vis/Publications/Illumin-Estim.md' },
-      { text: 'ST-WSKP', link: '/medical-vis/Publications/BDFM.md' },     
+      { text: 'BDFM', link: '/medical-vis/Publications/BDFM.md' },     
     ]  
   },
     {
