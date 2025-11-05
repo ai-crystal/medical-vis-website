@@ -44,7 +44,11 @@ export default defineNavbarConfig([
       { text: 'RTR-DVR', link: '/medical-vis/Publications/RTR-DVR.md' },  
       { text: 'NNFF', link: '/medical-vis/Publications/NNFF.md' },  
       { text: 'SWKP', link: '/medical-vis/Publications/SWKP.md' },  
-      { text: 'SegR3D', link: '/medical-vis/Publications/SegR3D.md' },       
+      { text: 'SegR3D', link: '/medical-vis/Publications/SegR3D.md' }, 
+      { text: 'MR-DVR', link: '/medical-vis/Publications/PBDVR.md' },
+      { text: 'MR-Relighting', link: '/medical-vis/Publications/PBDVR.md' },
+      { text: 'Illumin-Estim', link: '/medical-vis/Publications/PBDVR.md' },
+      { text: 'ST-WSKP', link: '/medical-vis/Publications/PBDVR.md' },     
     ]  
   },
     {
