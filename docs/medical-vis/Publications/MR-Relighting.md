@@ -1,5 +1,5 @@
 ---
-title: A Multi-Material Radiative Transfer Model for Realistic Direct Volume Rendering
+title: Realistic Volume Rendering with Environment-Synced Illumination in Mixed Reality
 tags:
   - 
 PageLayout: 'custom' 
@@ -9,17 +9,16 @@ outline: [2,4]
 ---
 
 ::: note ::ci:book-open::
-**Xu, Chunxiao**, Xinran Xu, Jiatian Zhang, Yiheng Cao, and Lingxiao Zhao. 2025. **"Efficient Multi-Material Volume Rendering for Realistic Visualization with Complex Transfer Functions"** Journal of Imaging 11, no. 6: 193. https://doi.org/10.3390/jimaging11060193
+Cheng, H., **Xu, C.(co-first)**, Chen, X., Chen, Z., Wang, J., & Zhao, L. (2023, October). Realistic Volume Rendering with Environment-Synced Illumination in Mixed Reality. In 2023 IEEE International Symposium on Mixed and Augmented Reality Adjunct (ISMAR-Adjunct) (pp. 423-428). IEEE.
 :::
 
-<img src="/images/publications/PBDVR_01.png" />
+<img src="/images/publications/MR-Relighting_01.png" />
 
-Physically-based realistic direct volume rendering (DVR) is a critical area of research in scientific data visualization. The prevailing realistic DVR methods are primarily rooted in outdated theories of participating media rendering and often lack comprehensive analyses of their applicability to realistic DVR scenarios. As a result, the fidelity of material representation in the rendered output is frequently limited. 
+Interactive volumetric data visualization using a mixed reality (MR) system is increasingly popular in the research and development field of computer graphics. To the best of our knowledge, there is no MR approach that visualizes volumetric data regarding the environment illumination that varies dynamically. Due to sophisticated requirements of user interaction and vision when using MR head-mounted display (HMD) devices, the conflict between the realisticness and efficiency of direct volume rendering (DVR) is yet to be resolved. 
 
-To address these challenges, we present a novel multi-material radiative transfer model (MM-RTM) designed for realistic DVR, grounded in recent advancements in light transport theories. Additionally, we standardize various transfer function techniques and propose five distinct forms of transfer functions along with proxy volumes. This comprehensive approach enables our DVR framework to accommodate a wide range of complex transfer function techniques, which we illustrate through several visualizations. Furthermore, to enhance sampling efficiency, we develop a new multi-hierarchical volumetric acceleration method that supports multi-level searches and volume traversal. Our volumetric accelerator also facilitates real-time structural updates when applying complex transfer functions in DVR. 
+In this paper, a novel MR visualization framework that supports interactive realistic volume rendering is proposed. A new algorithm is first used to compute accurate environment illumination with high dynamic range (HDR) using space calibration of low dynamic range (LDR) panoramic images. The DVR algorithm using Monte Carlo simulation is then applied to perform an interactive realistic volume rendering that can promptly respond to the dynamically varying environment illumination. A new spatio-temporal denoising algorithm is designed to optimize the image quality of DVR results. Based on a reprojection strategy, it makes full use of temporal coherence between adjacent frames and spatial coherence between the two screens of an HMD to optimize MR rendering quality. Several MR development modules are also designed for related devices in our MR system to help the volumetric data be efficiently and stably displayed in an MR HMD. 
 
-Our MM-RTM, the unified representation of complex transfer functions, and the acceleration structure for real-time updates are complementary components that collectively establish a comprehensive framework for realistic multi-material DVR. Evaluation from a user study indicates that the rendering results produced by our method demonstrate the most realistic effects among various publicly available state-of-the-art techniques.
+Experimental results demonstrate that our MR visualization framework is capable of producing high-quality blending and shading effects of volumetric data synchronously reflecting surrounding real-world illumination in real-time. Our framework can better support intuitive user perception during MR viewing than most existing MR solutions.
 
-<img src="/images/publications/PBDVR_02.png" />
+<img src="/images/publications/MR-Relighting_02.png" />
 
-<img src="/images/publications/PBDVR_03.png" />

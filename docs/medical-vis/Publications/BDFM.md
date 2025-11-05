@@ -1,5 +1,5 @@
 ---
-title: A Multi-Material Radiative Transfer Model for Realistic Direct Volume Rendering
+title: BDFM
 tags:
   - 
 PageLayout: 'custom' 

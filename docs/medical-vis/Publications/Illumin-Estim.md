@@ -1,5 +1,5 @@
 ---
-title: A Multi-Material Radiative Transfer Model for Realistic Direct Volume Rendering
+title: Fast and accurate illumination estimation using LDR panoramic images for realistic rendering
 tags:
   - 
 PageLayout: 'custom' 
@@ -9,16 +9,14 @@ outline: [2,4]
 ---
 
 ::: note ::ci:book-open::
-**Xu, Chunxiao**, Xinran Xu, Jiatian Zhang, Yiheng Cao, and Lingxiao Zhao. 2025. **"Efficient Multi-Material Volume Rendering for Realistic Visualization with Complex Transfer Functions"** Journal of Imaging 11, no. 6: 193. https://doi.org/10.3390/jimaging11060193
+Cheng, H., **Xu, C.**, Wang, J., Chen, Z., & Zhao, L. (2022). **Fast and accurate illumination estimation using LDR panoramic images for realistic rendering.** IEEE Transactions on Visualization and Computer Graphics, 29(12), 5235-5249.
 :::
 
 <img src="/images/publications/PBDVR_01.png" />
 
-Physically-based realistic direct volume rendering (DVR) is a critical area of research in scientific data visualization. The prevailing realistic DVR methods are primarily rooted in outdated theories of participating media rendering and often lack comprehensive analyses of their applicability to realistic DVR scenarios. As a result, the fidelity of material representation in the rendered output is frequently limited. 
+Interactive volume data visualization using a mixed reality (MR) system is increasingly popular in the research and development field of computer graphics. Due to sophisticated requirements of user interaction and vision when using head-mounted display (HMD) devices, the conflict between the realisticness and efficiency of direct volume rendering (DVR) is yet to be resolved for MR applications. 
 
-To address these challenges, we present a novel multi-material radiative transfer model (MM-RTM) designed for realistic DVR, grounded in recent advancements in light transport theories. Additionally, we standardize various transfer function techniques and propose five distinct forms of transfer functions along with proxy volumes. This comprehensive approach enables our DVR framework to accommodate a wide range of complex transfer function techniques, which we illustrate through several visualizations. Furthermore, to enhance sampling efficiency, we develop a new multi-hierarchical volumetric acceleration method that supports multi-level searches and volume traversal. Our volumetric accelerator also facilitates real-time structural updates when applying complex transfer functions in DVR. 
-
-Our MM-RTM, the unified representation of complex transfer functions, and the acceleration structure for real-time updates are complementary components that collectively establish a comprehensive framework for realistic multi-material DVR. Evaluation from a user study indicates that the rendering results produced by our method demonstrate the most realistic effects among various publicly available state-of-the-art techniques.
+We develop an MR visualization framework that can support inter-active realistic volume rendering and integrated it into a prototyping MR system. This MR system can display high-quality volume ren-dering effects that synchronously reflect dyanamic illumination of surrounding environment in real time. The comparative analysis shows that our MR visualization framework helps provide users intu-itive perception of displayed volumetric structures as they naturally exist in the real-world environment.
 
 <img src="/images/publications/PBDVR_02.png" />
 

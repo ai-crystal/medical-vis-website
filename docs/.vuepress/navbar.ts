@@ -45,10 +45,10 @@ export default defineNavbarConfig([
       { text: 'NNFF', link: '/medical-vis/Publications/NNFF.md' },  
       { text: 'SWKP', link: '/medical-vis/Publications/SWKP.md' },  
       { text: 'SegR3D', link: '/medical-vis/Publications/SegR3D.md' }, 
-      { text: 'MR-DVR', link: '/medical-vis/Publications/PBDVR.md' },
-      { text: 'MR-Relighting', link: '/medical-vis/Publications/PBDVR.md' },
-      { text: 'Illumin-Estim', link: '/medical-vis/Publications/PBDVR.md' },
-      { text: 'ST-WSKP', link: '/medical-vis/Publications/PBDVR.md' },     
+      { text: 'MR-DVR', link: '/medical-vis/Publications/MR-DVR.md' },
+      { text: 'MR-Relighting', link: '/medical-vis/Publications/MR-Relighting.md' },
+      { text: 'Illumin-Estim', link: '/medical-vis/Publications/Illumin-Estim.md' },
+      { text: 'ST-WSKP', link: '/medical-vis/Publications/BDFM.md' },     
     ]  
   },
     {
