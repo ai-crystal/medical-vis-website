@@ -47,6 +47,13 @@ export default defineNavbarConfig([
       { text: 'SegR3D', link: '/medical-vis/Publications/SegR3D.md' },       
     ]  
   },
+    {
+    text: 'Technology Demo',
+    items: [
+      { text: '2D Image to 2.5D', link: '/medical-vis/Technology_Demo/2D-to-3D.md' },
+      { text: 'Naked Eye 3D pipeline', link: '/medical-vis/Technology_Demo/NakeEye3D.md' }, 
+    ]
+  },
   {
     text: 'Team Profile',
     items: [
