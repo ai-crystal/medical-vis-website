@@ -15,7 +15,7 @@ Please note that this is a research and development achievement from my work, pr
 :::
 
 ::: card title="" icon=""
-Crystal - Redefining the New Era of Hyper-Realistic Medical Image Rendering.
+Demo 1.
 :::
 
 <CardGrid cols="3">
@@ -27,7 +27,7 @@ Crystal - Redefining the New Era of Hyper-Realistic Medical Image Rendering.
 ::: flex center
 
 ::: card title="" icon=""
-Crystal - Redefining the New Era of Hyper-Realistic Medical Image Rendering.
+Demo 2.
 :::
 
 <CardGrid cols="3">
