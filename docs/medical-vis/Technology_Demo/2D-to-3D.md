@@ -14,6 +14,8 @@ Please note that this is a research and development achievement from my work, pr
 注意，此为本人工作中的研发成果，仅作为本人技术展示。该页面全部知识产权归[https://www.jupiter-semi.com/]所有，如想进一步了解或有需要请直接联系公司。本人不提供任何相关技术与算法介绍，不以任何形式作为中间联系人。
 :::
 
+Simply input a single 2D image to generate a 2.5D browsing effect video.
+
 ::: card title="" icon=""
 Demo 1.
 :::
