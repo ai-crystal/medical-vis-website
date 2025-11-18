@@ -42,7 +42,8 @@ export default defineNavbarConfig([
     items: [  
       { text: 'PBDVR', link: '/medical-vis/Publications/PBDVR.md' },  
       { text: 'RTR-DVR', link: '/medical-vis/Publications/RTR-DVR.md' },  
-      { text: 'NNFF', link: '/medical-vis/Publications/NNFF.md' },  
+      { text: 'NNFF', link: '/medical-vis/Publications/NNFF.md' }, 
+      { text: 'FEF-Stitching', link: '/medical-vis/Publications/FEF-Stitching.md' }, 
       { text: 'SWKP', link: '/medical-vis/Publications/SWKP.md' },  
       { text: 'SegR3D', link: '/medical-vis/Publications/SegR3D.md' }, 
       { text: 'MR-DVR', link: '/medical-vis/Publications/MR-DVR.md' },
