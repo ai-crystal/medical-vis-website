@@ -1,5 +1,5 @@
 ---
-title: BDFM
+title: BDFM - Brain Diseases Foundation Model for Segmentation and Classification Tasks
 tags:
   - 
 PageLayout: 'custom' 
@@ -9,17 +9,23 @@ outline: [2,4]
 ---
 
 ::: note ::ci:book-open::
-**Xu, Chunxiao**, Xinran Xu, Jiatian Zhang, Yiheng Cao, and Lingxiao Zhao. 2025. **"Efficient Multi-Material Volume Rendering for Realistic Visualization with Complex Transfer Functions"** Journal of Imaging 11, no. 6: 193. https://doi.org/10.3390/jimaging11060193
+Jiatian Zhang, Chunxiao Xu, Han Zhong, Yiheng Cao, and Lingxiao Zhao. 2025. **"BDFM: Brain Diseases Foundation Model for Segmentation and Classification Tasks"**,  Early access.
 :::
 
-<img src="/images/publications/PBDVR_01.png" />
+<img src="/images/publications/BDFM_01.png" />
 
-Physically-based realistic direct volume rendering (DVR) is a critical area of research in scientific data visualization. The prevailing realistic DVR methods are primarily rooted in outdated theories of participating media rendering and often lack comprehensive analyses of their applicability to realistic DVR scenarios. As a result, the fidelity of material representation in the rendered output is frequently limited. 
+The lack of high-quality annotated images and the limited transferability of task-specific models delay the development of AI-assisted diagnosis for brain diseases. Developing self-supervised foundation models has attracted the attention of more and more researchers as a promising solution to address this problem. 
 
-To address these challenges, we present a novel multi-material radiative transfer model (MM-RTM) designed for realistic DVR, grounded in recent advancements in light transport theories. Additionally, we standardize various transfer function techniques and propose five distinct forms of transfer functions along with proxy volumes. This comprehensive approach enables our DVR framework to accommodate a wide range of complex transfer function techniques, which we illustrate through several visualizations. Furthermore, to enhance sampling efficiency, we develop a new multi-hierarchical volumetric acceleration method that supports multi-level searches and volume traversal. Our volumetric accelerator also facilitates real-time structural updates when applying complex transfer functions in DVR. 
+This paper proposes a masked image modeling (MIM)-based foundation model of brain disease named BDFM. First, we create a database named BD-15k of more than ten brain diseases for pre-training. Second, to enhance the model’s ability to extract key features in lesion regions, we propose a spatial-frequency dualdomain decoder, which allows the decoding perspective of BDFM to focus on both spatial and frequency domains. In addition, our method employs a spatial mean masking strategy to replace the traditional masking methods. BDFM outperforms the baseline method in reconstructing lesion details. 
 
-Our MM-RTM, the unified representation of complex transfer functions, and the acceleration structure for real-time updates are complementary components that collectively establish a comprehensive framework for realistic multi-material DVR. Evaluation from a user study indicates that the rendering results produced by our method demonstrate the most realistic effects among various publicly available state-of-the-art techniques.
+<img src="/images/publications/BDFM_02.png" />
 
-<img src="/images/publications/PBDVR_02.png" />
+Extensive qualitative and quantitative experiments on two public datasets demonstrate that BDFM adapts well to segmentation and classification tasks based on small annotated datasets. Its performance outperforms task-specific models and does not require additional complex task-specific design, which has significant clinical value for AI-assisted diagnosis of brain diseases. The source code is available at https://github.com/zzzjjj98/BDFM.
 
-<img src="/images/publications/PBDVR_03.png" />
+<img src="/images/publications/BDFM_03.png" />
+
+
+
+
+
+
