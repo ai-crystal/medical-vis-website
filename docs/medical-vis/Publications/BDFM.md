@@ -9,7 +9,8 @@ outline: [2,4]
 ---
 
 ::: note ::ci:book-open::
-Jiatian Zhang, Chunxiao Xu, Han Zhong, Yiheng Cao, and Lingxiao Zhao. 2025. **"BDFM: Brain Diseases Foundation Model for Segmentation and Classification Tasks"**,  Early access.
+Jiatian Zhang, Chunxiao Xu, Han Zhong, Yiheng Cao, and Lingxiao Zhao. 2025. **"BDFM: Brain Diseases Foundation Model for Segmentation and Classification Tasks"**, IEEE Transactions on Biomedical Engineering (TBME), doi: 10.1109/TBME.2025.3637146
+
 :::
 
 <img src="/images/publications/BDFM_01.png" />
