@@ -34,17 +34,17 @@ The near plane in NDC is $-1$, and the far plane in NDC is $+1$. The range of $z
 In glm::perspective function, given the aspect, distance of near and far plane ($f > n > 0$), the martix is:
 
 ```besh
-[ 2*n/(r-l)   0          (r+l)/(r-l)   0         ]
-[ 0           2*n/(t-b)  (t+b)/(t-b)   0         ]
+[ 2*n/(r-l)   0          (r+l)/(r-l)      0         ]
+[ 0           2*n/(t-b)  (t+b)/(t-b)      0         ]
 [ 0           0          -(f+n)/(f-n)  -2*f*n/(f-n) ]
-[ 0           0          -1            0         ]
+[ 0           0          -1               0         ]
 ```
 when $l = -r$ and $b = -t$：
 ```besh
-[ n/r   0     0            0         ]
-[ 0     n/t   0            0         ]
+[ n/r   0     0             0           ]
+[ 0     n/t   0             0           ]
 [ 0     0    -(f+n)/(f-n)  -2*f*n/(f-n) ]
-[ 0     0    -1            0         ]
+[ 0     0    -1             0           ]
 ```
 or using the FOV version, set $thf = \tan(0.5\cdot \text{fov}_y)$, aspect=w/h (set as ap):
 ```besh
@@ -59,7 +59,7 @@ In Crystal, the Perspective function is ($f > n > 0$):
 ```besh
 [ 1/(ap*thf)   0       0            0           ]
 [ 0          1/thf     0            0           ]
-[ 0            0     (f+n)/(f-n)  -2*f*n/(f-n) ]
+[ 0            0     (f+n)/(f-n)  -2*f*n/(f-n)  ]
 [ 0            0       1            0           ]
 ```
 
