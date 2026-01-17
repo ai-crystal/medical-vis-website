@@ -29,7 +29,9 @@ Vertical coordinate, Transforms the range $[-1, 1]$ to $[h,0]$, where $−1$ map
 
 The near plane in NDC is $-1$, and the far plane in NDC is $+1$. The range of $z$ is also $[-1,+1]$ in Raster plane.
 
-## Some concept in OpenGL
+## Some concept in Crystal
+
+Now, the coordinate system of Crystal is the same as OpenGL.
 
 In glm::perspective function, given the aspect, distance of near and far plane ($f > n > 0$), the martix is:
 
@@ -54,14 +56,6 @@ or using the FOV version, set $thf = \tan(0.5\cdot \text{fov}_y)$, aspect=w/h (s
 [ 0            0      -1            0           ]
 ```
 The last line has a negative sign, which means in camera coordinate system, $[-n,-f]$ is map to $[-1, 1]$. Within the visible range (perspective projection cone), $(x,y>0)$ means they still greater than $0$ in NDC. 
-
-In Crystal, the Perspective function is ($f > n > 0$):
-```besh
-[ 1/(ap*thf)   0       0            0           ]
-[ 0          1/thf     0            0           ]
-[ 0            0     (f+n)/(f-n)  -2*f*n/(f-n)  ]
-[ 0            0       1            0           ]
-```
 
 
 
