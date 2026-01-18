@@ -21,7 +21,7 @@ Demo 1.
 :::
 
 <CardGrid cols="3">
-<ArtPlayer src="/videos/Technology_Demo/2D-to-3D_01.mp4" fullscreen height="200px" />
+<ArtPlayer src="/videos/Technology_Demo/2D-to-3D_01.mp4" fullscreen height="200px" /> 
 <ArtPlayer src="/videos/Technology_Demo/2D-to-3D_02.mp4" fullscreen height="200px" />
 <ArtPlayer src="/videos/Technology_Demo/2D-to-3D_03.mp4" fullscreen height="200px" />
 </CardGrid>

@@ -33,8 +33,8 @@ Semantic segmentation techniques are used to extract features of lesions or regi
 ## Visualization without segmentation & Visualization with segmentation
 
 <CardGrid cols="2">
-    <ArtPlayer src="https://drive.threekd.com/?file=medical-vis-website/videos/Image_Analysis/Image_Analysis_01.mp4" fullscreen height="400px" />
-    <ArtPlayer src="https://drive.threekd.com/?file=medical-vis-website/videos/Image_Analysis/Image_Analysis_02.mp4" fullscreen height="400px" />
+    <ArtPlayer src="videos/Research_Field/Image_Analysis/Image_Analysis_01.mp4" fullscreen height="400px" />
+    <ArtPlayer src="videos/Research_Field/Image_Analysis/Image_Analysis_02.mp4" fullscreen height="400px" />
 </CardGrid>
 
 ## Image Denoising and Enhancement

@@ -10,10 +10,11 @@ aside: false
 ## Photorealistic Rendering
 
 <CardGrid cols="3">
-<ArtPlayer src="https://drive.threekd.com/?file=chunxiao_CV/videos/dvr_renderings_01.mp4" fullscreen height="200px" />
-<ArtPlayer src="https://drive.threekd.com/?file=chunxiao_CV/videos/dvr_renderings_05.mp4" fullscreen height="200px" />
-<ArtPlayer src="https://drive.threekd.com/?file=chunxiao_CV/videos/dvr_renderings_06.mp4" fullscreen height="200px" />
+<ArtPlayer src="/videos/Research_Field/Realistic_Rendering/RR-Fossil-1.mp4" fullscreen height="200px" />
+<ArtPlayer src="/videos/Research_Field/Realistic_Rendering/RR-Manix-1.mp4" fullscreen height="200px" />
+<ArtPlayer src="/videos/Research_Field/Realistic_Rendering/RR-Dog-1.mp4" fullscreen height="200px" />
 </CardGrid>
+
 
 ## Special Effects of Volume
 
@@ -23,7 +24,7 @@ aside: false
     '/images/Research_Field/Realistic_Rendering_03.png', 
     '/images/Research_Field/Realistic_Rendering_04.png', 
     ]" />
-<ArtPlayer src="https://drive.threekd.com/?file=medical-vis-website/videos/Realistic_Rendering/Realistic_Rendering_01.mp4" fullscreen />
+<ArtPlayer src="/videos/Research_Field/Realistic_Rendering/Special-1.mp4" fullscreen />
 
 ## Supporting hyper-realistic rendering of medical imaging scan data
 
@@ -72,4 +73,16 @@ Crystal supports a variety of physically-based and custom materials, providing f
     '/images/Research_Field/volume-surface_hybrid_rendering/Image-06.png',
     ]" />
 
-<ArtPlayer src="https://drive.threekd.com/?file=medical-vis-website/videos/Realistic_Rendering/Realistic_Rendering_02.mp4" fullscreen />
+<CardGrid cols="3">
+<ArtPlayer src="/videos/Research_Field/Realistic_Rendering/Photorealistic-1.mp4" fullscreen height="200px" />
+<ArtPlayer src="/videos/Research_Field/Realistic_Rendering/Photorealistic-2.mp4" fullscreen height="200px" />
+<ArtPlayer src="/videos/Research_Field/Realistic_Rendering/Photorealistic-3.mp4" fullscreen height="200px" />
+</CardGrid>
+
+<CardGrid cols="3">
+<ArtPlayer src="/videos/Research_Field/Realistic_Rendering/RR-Bone-1.mp4" fullscreen height="200px" />
+<ArtPlayer src="/videos/Research_Field/Realistic_Rendering/RR-Macco-1.mp4" fullscreen height="200px" />
+<ArtPlayer src="/videos/Research_Field/Realistic_Rendering/Photorealistic-3.mp4" fullscreen height="200px" />
+</CardGrid>
+
+

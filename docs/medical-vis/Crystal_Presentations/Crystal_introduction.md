@@ -17,9 +17,9 @@ Crystal - Redefining the New Era of Hyper-Realistic Medical Image Rendering.
 :::
 
 <CardGrid cols="3">
-<ArtPlayer src="https://drive.threekd.com/?file=chunxiao_CV/videos/dvr_renderings_01.mp4" fullscreen height="200px" />
-<ArtPlayer src="https://drive.threekd.com/?file=chunxiao_CV/videos/dvr_renderings_05.mp4" fullscreen height="200px" />
-<ArtPlayer src="https://drive.threekd.com/?file=chunxiao_CV/videos/dvr_renderings_06.mp4" fullscreen height="200px" />
+<ArtPlayer src="/videos/Research_Field/Realistic_Rendering/Photorealistic-1.mp4" fullscreen height="200px" />
+<ArtPlayer src="/videos/Research_Field/Realistic_Rendering/Photorealistic-2.mp4" fullscreen height="200px" />
+<ArtPlayer src="/videos/Research_Field/Realistic_Rendering/Photorealistic-3.mp4" fullscreen height="200px" />
 </CardGrid>
 
 ::: flex center
