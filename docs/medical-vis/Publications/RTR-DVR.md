@@ -27,4 +27,4 @@ Download Link: [Realistic VolumeRender-EXE.zip](https://pan.baidu.com/s/1QXC-8YM
 
 Operating environment: Windows 7 and above, supporting Nvidia CUDA GPU, minimum graphics memory requirement: 8GB
 :::
-<ArtPlayer src="https://drive.threekd.com/?file=medical-vis-website/videos/publications/RTR-DVR_01.mp4" fullscreen />
+<ArtPlayer src="/videos/Publications/RTR-DVR/RTR-DVR-1.mp4" fullscreen />

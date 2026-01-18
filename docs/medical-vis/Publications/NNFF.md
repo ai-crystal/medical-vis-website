@@ -18,7 +18,7 @@ This paper introduces a novel neural denoising approach that utilizes a new feat
 
 <img src="/images/publications/NNFF_01.png" />
 
-<ArtPlayer src="https://drive.threekd.com/?file=medical-vis-website/videos/publications/NNFF_01.mp4" fullscreen />
+<ArtPlayer src="/videos/Publications/NNFF/NNFF-1.mp4" fullscreen />
 
 <img src="/images/publications/NNFF_02.png" />
 

@@ -32,7 +32,7 @@ Modifying the importance transfer function enables the selection of displaying o
 
 **Changing observation angle/adjusting importance transfer function/using real-time denoising**
 
-<ArtPlayer src="https://drive.threekd.com/?file=medical-vis-website/videos/publications/SegR3D_01.mp4" fullscreen />
+<ArtPlayer src="/videos/Publications/SegR3D/SegR3D-1.mp4" fullscreen />
 
 **High-precision semi-supervised segmentation**
 
