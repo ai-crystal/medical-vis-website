@@ -9,8 +9,11 @@ aside: true
 
 ## Coordinate System World and Camera Coordinate System
 
-- The world coordinate system follows a **right-handed** convention.
-- The camera coordinate system in Crystal is the same as Mitsuba. In the camera coordinate system, the camera is oriented along the **positive z-axis**, with the up vector aligned with the **positive y-axis** and the right direction corresponding to the **negative x-axis**.
+The world coordinate system follows a **right-handed** convention.
+
+The camera coordinate system in Crystal is the same as OpenGL. Initially, the coordinate system followed PBRT and Mitsuba. For the convenience of 3D reconstruction, we change the coordinate system. The point cloud output will still be converted to the Colmap coordinate system.
+
+In the camera coordinate system, the camera is oriented along the **negative z-axis**, with the up vector aligned with the **positive y-axis** and the right direction corresponding to the **positive x-axis**.
 
 <img src="/images/Development_Manual/Code_Structure_01.png" />
 
@@ -41,7 +44,9 @@ In glm::perspective function, given the aspect, distance of near and far plane (
 [ 0           0          -(f+n)/(f-n)  -2*f*n/(f-n) ]
 [ 0           0          -1               0         ]
 ```
-when $l = -r$ and $b = -t$：
+where $l$ and $r$ represent the left and right boundaries of the near plane, respectively. $t$ and $b$ represent the up and bottom of the near plane, respectively.
+
+When $l = -r$ and $b = -t$：
 ```besh
 [ n/r   0     0             0           ]
 [ 0     n/t   0             0           ]
