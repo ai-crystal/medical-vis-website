@@ -7,11 +7,17 @@ navbar: true
 aside: true
 ---
 
+# Coordinate System
+
 ## Coordinate System World and Camera Coordinate System
 
 The world coordinate system follows a **right-handed** convention.
 
-The camera coordinate system in Crystal is the same as OpenGL. Initially, the coordinate system followed PBRT and Mitsuba. For the convenience of 3D reconstruction, we change the coordinate system. The point cloud output will still be converted to the Colmap coordinate system.
+Initially, the coordinate system followed PBRT, and then Mitsuba. For the convenience of 3D reconstruction, we change the coordinate system. Now The camera coordinate system in Crystal is the same as OpenGL.
+
+The point cloud output will still be converted to the Colmap coordinate system.
+
+### Raster space and Screen space
 
 In the camera coordinate system, the camera is oriented along the **negative z-axis**, with the up vector aligned with the **positive y-axis** and the right direction corresponding to the **positive x-axis**.
 
@@ -26,13 +32,14 @@ In the camera coordinate system, the camera is oriented along the **negative z-a
 In the image space, the vertical coordinate has lower values at the top and higher values at the bottom, which is the opposite of the camera's observation. Similarly, the horizontal coordinate is also reversed.
 Therefore, the Screen2Raster transformation performs coordinate flipping in both the vertical and horizontal directions.
 
-Screen2Raster transformation: 
-Horizontal coordinate, Transforms the range $[w/h,−w/h]$ to $[0, w]$, where $w/h$ maps to $0$, and $-w/h$ maps to $w$.
-Vertical coordinate, Transforms the range $[-1, 1]$ to $[h,0]$, where $−1$ maps to $h$ and $1$ maps to $0$.
+The screen in Crystal is the normal NDC space and the same as OpenGL. Namely, $x$, $y$ and $z$ are all in range $[-1,1]$. 
+For Screen2Raster transformation: 
+- Horizontal coordinate, Transforms the range $[w/h,−w/h]$ to $[0, w]$, where $w/h$ maps to $0$, and $-w/h$ maps to $w$.
+- Vertical coordinate, Transforms the range $[-1, 1]$ to $[h,0]$, where $−1$ maps to $h$ and $1$ maps to $0$.
 
 The near plane in NDC is $-1$, and the far plane in NDC is $+1$. The range of $z$ is also $[-1,+1]$ in Raster plane.
 
-## Some concept in Crystal
+### Some concept in Crystal
 
 Now, the coordinate system of Crystal is the same as OpenGL.
 
@@ -92,16 +99,16 @@ In the visualization space, the panoramic environment light is typically rotated
 
 <img src="/images/Development_Manual/Code_Structure_06.png" />
 
-**GLM .vs. Crystal**
-
-
 **Mitsuba .vs. Crystal**
 
 The camera coordinate system in Mitsuba differs from that used in Crystal. Specifically, they are both the right-handed, but the orientations of the x-axis and z-axis in Mitsuba are reversed compared to Crystal.
 
+**PBRT .vs. Crystal**
+
+In PBRT, the camera follows left-handed coordinate system. The screen space in PBRT keeps aspect of the output image. Namely, if w > h, the width range of screen space in PBRT is $[-w/h,w/h]$, the height range remain $[-1,1]$; if h > w, the width range is $[-1,1]$, while the height range becomes $[-h/w, h/w]$.
 
 
-
+# Transfer-Function
 
 
 
