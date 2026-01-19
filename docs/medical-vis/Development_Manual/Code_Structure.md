@@ -7,6 +7,12 @@ navbar: true
 aside: true
 ---
 
+# Preset and Scene
+
+The rendering system is composed of two main classes: one belonging to the Preset layer and the other to the Scene layer. A Preset class object (with the 'Preset' suffix) can be initialized from a preset file (XML or JSON). These initialized Preset objects are then used to instantiate the corresponding Scene objects.
+
+
+
 # Coordinate System
 
 ## Coordinate System World and Camera Coordinate System
@@ -106,6 +112,47 @@ The camera coordinate system in Mitsuba differs from that used in Crystal. Speci
 **PBRT .vs. Crystal**
 
 In PBRT, the camera follows left-handed coordinate system. The screen space in PBRT keeps aspect of the output image. Namely, if w > h, the width range of screen space in PBRT is $[-w/h,w/h]$, the height range remain $[-1,1]$; if h > w, the width range is $[-1,1]$, while the height range becomes $[-h/w, h/w]$.
+
+# Volume
+
+## Conventional Volume Data
+
+The rotate way of the volume is as follows: first, rotate along $x$ axis, and then rotate along $y$ axis. 
+
+
+## Volume Flip and Permute
+
+The volumetric data may undergo flipping along the $x$, $y$, and $z$ axes, respectively. 
+
+Additionally, it may be permuted across the $x$-$z$, $y$-$z$, or $x$-$y$ planes, which is analogous to a specific form of rotation. For example, a volume with the original resolution [A, B, C], when permuted along the $x$-$y$ plane, will have its resolution transformed to [B, A, C].
+
+
+## Volume-Loader
+
+In Crystal, each scene preset file includes a default volume file. Users can also drag new volume files or load data from buffers. The processing logic is as follows:
+
+- If the newly loaded volume contains only Mask1, the resolution of Mask1 must match that of the original Intensity.
+- If the newly loaded volume contains both Intensity and Mask1, their resolutions must be identical.
+- If the newly loaded volume contains only Intensity and its resolution differs from that of the original volume, the memory resources will be reallocated. If the resolution remains unchanged, the existing memory resources will be reused.
+
+The default scene preset is used to initialize the [VolumeFile-Class] in the [MedicalVolumeDataPreset-Class]. And the check function [isValid-Func] in [MedicalVolumeDataPreset-Class] will initialize the [VolumeInfoPreset-Class] object using the [VolumeFile-Class] object. The volume data is initialized using [VolumeInfoPreset-Class]. 
+
+When we load new volume file during rendering, the [.info] or [.dcm] will be used to update the [VolumeFile-Class] object. Then the [VolumeFile-Class] object is used to update the [VolumeInfoPreset-Class] object.
+
+But the original volume may be fliped or permuted. The resolution of new volume must be compared after applying the same flip/permutation as the original volume.
+
+In the [MedicalVolumeDataPreset-Class] (Preset), two sets of variables are maintained:
+- resolution_load and voxelSpacing_load: store the original values before any permutation.
+- resolution_current and voxelSpacing_current: store the permuted values after transformation.
+
+In the [VolumeInfo-Class] (Scene), only the permuted state is retained:
+- resolution: the permuted resolution.
+- voxelSpacing: the permuted voxel spacing.
+
+When a new volume is loaded, its resolution is first permuted. This permuted value is then compared directly with the resolution_current (the old permuted value) to determine subsequent processing steps.
+
+
+
 
 
 # Transfer-Function
