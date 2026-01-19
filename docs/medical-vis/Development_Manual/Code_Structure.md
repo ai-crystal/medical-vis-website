@@ -7,6 +7,8 @@ navbar: true
 aside: true
 ---
 
+Writen by Chunxiao Xu, PhD
+
 # Preset and Scene
 
 The rendering system is composed of two main classes: one belonging to the Preset layer and the other to the Scene layer. A Preset class object (with the 'Preset' suffix) can be initialized from a preset file (XML or JSON). These initialized Preset objects are then used to instantiate the corresponding Scene objects.

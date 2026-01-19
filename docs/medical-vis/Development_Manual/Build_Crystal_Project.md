@@ -7,6 +7,8 @@ navbar: true
 aside: false
 ---
 
+Writen by Chunxiao Xu, PhD
+
 Install Visual Studio, 2017 or above versions. [Visual Studio - 2019、2017、2015](https://visualstudio.microsoft.com/zh-hans/vs/older-downloads/)
 
 Install CUDA，both version 11 and 12 are ok.[CUDA Toolkit Archive | NVIDIA Developer](https://developer.nvidia.com/cuda-toolkit-archive)

@@ -7,6 +7,8 @@ navbar: true
 aside: false
 ---
 
+Writen by Chunxiao Xu, PhD
+
 ## launch the program
 
 Upon launching crystal.exe, the following interface will be displayed:
