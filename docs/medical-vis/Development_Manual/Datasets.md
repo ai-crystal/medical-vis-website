@@ -55,6 +55,21 @@ BugNIST: <https://qim.dk/bugnist/>
   
 Vera: <https://zenodo.org/records/12784447>  
   
+ACDC: <https://acdc.vision.ee.ethz.ch/download>
+
+ACDC MRI4D: <https://www.creatis.insa-lyon.fr/Challenge/acdc/databasesTraining.html>
+
+Dataset with segmentations: <https://zenodo.org/records/10047292>
+
+
+
+
+
+
+
+
+
+
 ## HDR Panorama Environment Map  
 Laval: [laval-indoor-hdr-dataset](https://paperswithcode.com/dataset/laval-indoor-hdr-dataset)
 

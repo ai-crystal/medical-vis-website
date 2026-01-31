@@ -64,6 +64,9 @@ export default defineNavbarConfig([
     items: [
       { text: 'Chunxiao Xu', link: 'https://chunxiao.dezeming.top/' },
       { text: 'Di Zhang', link: '/medical-vis/Team_Profile/Di_Zhang.md' }, 
+      { text: 'Wei Hu', link: '/medical-vis/Team_Profile/Wei_Hu.md' }, 
+      { text: 'Yiheng Cao', link: '/medical-vis/Team_Profile/Yiheng_Cao.md' }, 
+      { text: 'Jiatian Zhang', link: '/medical-vis/Team_Profile/Jiatian_Zhang.md' }, 
     ]
   },
 ])

@@ -19,7 +19,7 @@ Install Python development environment (Anaconda management is recommended).[Dow
 
 ## How to build Crystal with Python support
 
-Choose Python bindings and fill the path of the python interpreter: 
+Choose Python bindings and fill the path of the python interpreter. You would better fill the path when you choose Python bindings (before configuration), or the compiler may generate the wrong version of PYD file. 
 
 <img src="/images/Development_Manual/Build_Crystal_Project_01.png" />
 
