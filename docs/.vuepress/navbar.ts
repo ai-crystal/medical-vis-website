@@ -62,7 +62,7 @@ export default defineNavbarConfig([
   {
     text: 'Team Profile',
     items: [
-      { text: 'Chunxiao Xu (PhD)', link: 'https://chunxiao.dezeming.top/' },
+      { text: 'Chunxiao Xu (PhD)', link: '/medical-vis/Team_Profile/Chunxiao_Xu.md' },
       { text: 'Wei Hu (MD)', link: '/medical-vis/Team_Profile/Wei_Hu.md' }, 
       { text: 'Di Zhang', link: '/medical-vis/Team_Profile/Di_Zhang.md' }, 
       { text: 'Yiheng Cao (PhD)', link: '/medical-vis/Team_Profile/Yiheng_Cao.md' }, 
