@@ -1,5 +1,5 @@
 ---
-title: 许春晓
+title: Chunxiao Xu
 tagline: 计算机图形学与三维可视化研究者
 description: 计算机图形学与三维可视化研究者，专注于真实感渲染、人工智能、神经渲染、逆渲染和三维可视化等领域
 keywords: 计算机图形学, 三维可视化, 真实感渲染, 人工智能, 神经渲染, 逆渲染, 医学可视化, 科技创新, 技术分享
@@ -7,10 +7,10 @@ author: 许春晓
 date: 2024-06-01
 lastUpdated: 2024-06-01
 tags:
-  - 真实感渲染
-  - 人工智能
-  - 神经渲染、逆渲染
-  - 三维可视化
+  - span realistic rendering
+  - artificial intelligence
+  - neural rendering and inverse rendering
+  - 3D visualization
 
 PageLayout: 'custom'  # 使用自定义布局
 navbar: true  # 显示导航栏
@@ -20,11 +20,8 @@ outline: [2,4]  # 显示大纲，范围从2到4级标题
 ---
 
 
-<p><strong>春晓博士是Crystal医学可视化平台的发起者与核心算法贡献者，长期致力于将前沿医学影像可视化技术应用于临床实践，并推动其产生具有实际意义的科研价值。与此同时，他也追求以更具艺术性的方式呈现医学可视化效果，期望借此拉近医生与患者之间的距离，增进理解与信任。</strong></p>
+<p><strong>Dr. Xu is the founder and core algorithm contributor of the Crystal medical visualization platform. He has long been dedicated to applying cutting-edge medical imaging visualization technologies in clinical practice and advancing their meaningful impact in scientific research. At the same time, he strives to present medical visualization in a more artistic way, hoping to bridge the gap between doctors and patients and foster greater understanding and trust.</strong></p>
 
-<p>  
-简历： <a href="https://medical-vis.com/medical-vis/Team_Profile/Chunxiao_Xu_English.md" target="_blank">英文版</a>
-</p>  
 
 <CardGrid>
 <ImageCard
@@ -32,19 +29,19 @@ outline: [2,4]  # 显示大纲，范围从2到4级标题
   title=" "
   description=" "
   href="/"
-  author="许春晓"
+  author="Chunxiao Xu"
   date="2024/08/16"
 />
 
-<Card title="个人简介" icon="line-md:account">  
+<Card title="Short Bio" icon="line-md:account">  
 <p>  
-我于2019年在山东大学(SDU)获得工学学士学位，并同年保送至中国科学技术大学(USTC)，专注于计算机图形学与三维可视化方向。2021年转为硕博连读，继续在计算机图形学方向开展科研。  
+In 2019, I obtained a Bachelor’s degree in Engineering from Shandong University (SDU) and was subsequently admitted to the University of Science and Technology of China (USTC) to pursue a major in Electronic Information the same year. In 2021, I transitioned to a combined master’s and doctoral program, focusing on computer graphics and 3D visualization.
 </p>  
 <p>  
-我的研究兴趣涵盖真实感渲染、人工智能、神经渲染、逆渲染和三维可视化等领域。个人项目 <a href="https://medical-vis.com/" target="_blank">Crystal</a> 汇集了我在技术领域的精华，旨在打造先进且时尚的医学可视化引擎。目前已初具规模，开源敬请期待！  
+My research interests span realistic rendering, artificial intelligence, neural rendering and inverse rendering, and 3D visualization. My personal project,  <a href="https://medical-vis.com/" target="_blank">Crystal</a> , represents the culmination of my work in the field, aiming to create a cutting-edge and stylish medical visualization engine. The project is now taking shape, so stay tuned!  
 </p>  
 <p>  
-除了科研，我也重视技术体系建设与知识分享。在个人技术博客 <a href="https://dezeming.top" target="_blank">dezeming.top</a> 上，已发表数百篇关于原理与算法实现的文章，受到广泛好评。  
+In addition to focusing on personal research, I also emphasize the knowledge sharing. On my personal tech sharing website <a href="https://dezeming.top" target="_blank">dezeming.top</a> , I have written hundreds of articles on principles and algorithm implementations, building a comprehensive learning system for realistic rendering research. This work has received widespread acclaim and support from learners.
 </p>  
 </Card>
 </CardGrid>
@@ -52,13 +49,13 @@ outline: [2,4]  # 显示大纲，范围从2到4级标题
 <br>
 
 <CardGrid>
-  <Card title="项目网站" icon="line-md:text-box-to-text-box-multiple-transition">
+  <Card title="Project Website" icon="line-md:text-box-to-text-box-multiple-transition">
     <a href="https://medical-vis.com/" title="Dezeming-Medical Visualization">
       Dezeming-Medical Visualization
     </a>
   </Card>
 
-  <Card title="技术分享" icon="line-md:text-box-to-text-box-multiple-transition">
+  <Card title="Technology Sharing Website" icon="line-md:text-box-to-text-box-multiple-transition">
     <a href="https://dezeming.top/" title="Dezeming Family">
       Dezeming Family-Everything is worth researching
     </a>
@@ -68,7 +65,7 @@ outline: [2,4]  # 显示大纲，范围从2到4级标题
 <br>
 
 ::: center
-### 演示视频
+### Demo Video
 :::
 
 ---
@@ -87,7 +84,7 @@ outline: [2,4]  # 显示大纲，范围从2到4级标题
 
 
 ::: center
-### 发表论文
+### Publications
 :::
 
 ---
@@ -259,20 +256,20 @@ LSNFS：高鉴别力和强鲁棒性的局部特征描述算法
 ---
 <br>
 
-<card title="学术工作" icon="mingcute:paper-line">
-<p>担任Computer & Graphics期刊委员会委员，完成多篇论文的审稿工作.</p>
-<p>担任MICCAI审稿人，已完成三篇论文的审稿工作</p>
-<p>担任TVCG期刊审稿人，已完成两篇论文的审稿工作</p>
-<p>担任ISMAR审稿人，完成两篇论文的审稿工作</p>
+<card title="Academic work" icon="mingcute:paper-line">
+<P>Member of the Editorial Board of the C&G Journal, and has completed the peer review of multiple manuscripts.</P>
+<P>Reviewer for the TVCG journal, completing a peer review for one paper.</P>
+<P>Reviewer for the MICCAI 2023 conference, completing peer reviews for three papers.</P>
+<P>Reviewer for the ISMAR 2025 conference, completing a peer review for one paper.</P>
 </card>
 
-<card title="专利" icon="mingcute:bling-line">
+<card title="Patent" icon="mingcute:bling-line">
 <p>【1】相机设备参数无关的快速多目鱼眼图像及视频拼接方法。程浩杰、赵凌霄、陈振鑫、许春晓、张洪远、王佳俊、陈奕博，发明专利，2022107139471。</p>
 <p>【2】一种全动态光照的实时医学影像三维体渲染方法和计算机程序产品。赵凌霄、许春晓，发明专利。202510145466。</p>
 <p>【3】消化道早癌病灶检测模型构建方法及系统、设备、介质。党世杰、许春晓、赵凌霄，发明专利，2025092200364930 </p>
 </card>
 
-<Card title="个人荣誉" icon="mingcute:candy-2-line">
+<Card title="Personal Honors" icon="mingcute:candy-2-line">
 <p>2017 山东大学年度科技创新先进个人</p>
 <p>2018 山东大学年度科技创新先进个人</p>
 <p>2021 （国家级）华为杯中国研究生数学建模竞赛二等奖</p>
@@ -283,8 +280,8 @@ LSNFS：高鉴别力和强鲁棒性的局部特征描述算法
 <p>2017 （国家级）中国大学生生物医学工程创新设计竞赛一等奖</p>
 </Card>
 
-<card title="兴趣爱好" icon="mingcute:bike-line">
-<p>弹钢琴：钢琴十级，每天都会练琴，多次参加演出活动</p>
+<card title="Hobbies" icon="mingcute:bike-line">
+<p>钢琴：曾考取过钢琴十级证书，多次参加演出活动</p>
 <p>阅读：有详细的读书执行计划，喜欢国内/国外的文学著作或历史著作</p>
 <p>运动：长跑与骑行爱好者，多次参加半马和百公里骑行活动</p>
 </card>
