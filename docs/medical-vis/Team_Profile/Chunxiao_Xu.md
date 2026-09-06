@@ -265,6 +265,7 @@ LSNFS：高鉴别力和强鲁棒性的局部特征描述算法
 
 <card title="学术工作" icon="mingcute:paper-line">
 <p>担任Computer & Graphics期刊委员会委员，完成多篇论文的审稿工作.</p>
+<p>担任IRBM期刊委员会委员，完成多篇论文的审稿工作.</p>
 <p>担任MICCAI审稿人，已完成三篇论文的审稿工作</p>
 <p>担任TVCG期刊审稿人，已完成两篇论文的审稿工作</p>
 <p>担任ISMAR审稿人，完成两篇论文的审稿工作</p>
