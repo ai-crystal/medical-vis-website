@@ -66,6 +66,16 @@ Jiatian Zhang, Chunxiao Xu, Han Zhong, Yiheng Cao, and Lingxiao Zhao. 2025. "BDF
 
 <br>
 <CardGrid>
+<img src="/images/Team_Profile/JIATIAN_ZHANG/Paper/cover_meningiomas.png" />
+
+<Card title="" icon="material-symbols:bookmark-outline">
+Zhang J, Zhao Y, Lu Y, et al. Meningioma consistency assessment based on the fusion of deep learning features and radiomics features[J]. European Journal of Radiology, 2024, 170: 111250.
+</Card>
+</CardGrid>
+<br>
+
+<br>
+<CardGrid>
 <img src="/images/Team_Profile/CHUNXIAO_XU/Paper/cover_SegR3D A Multi Target 3D Visualization System for Realistic Volume Rendering of Meningiomas.png" />
 
 <Card title="" icon="material-symbols:bookmark-outline">
@@ -95,6 +105,28 @@ C. Xu, X. Xu, J. Zhang, Y. Cao, and L. Zhao. 2025. "Efficient Multi-Material Vol
 </Card>
 </CardGrid>
 <br>
+
+<br>
+<CardGrid>
+<img src="/images/Team_Profile/JIATIAN_ZHANG/Paper/cover_MedSAM.png" />
+
+<Card title="" icon="material-symbols:bookmark-outline">
+Zhong H, Zhang J, Zhao L. MedSAM/MedSAM2 Feature Fusion: Enhancing nnUNet for 2D TOF-MRA Brain Vessel Segmentation[J]. Journal of imaging, 2025, 11(6): 202.
+</Card>
+</CardGrid>
+<br>
+
+
+<br>
+<CardGrid>
+<img src="/images/Team_Profile/JIATIAN_ZHANG/Paper/cover_zhongwenhexin1.png" />
+
+<Card title="" icon="material-symbols:bookmark-outline">
+张家天,陆逸平,赵亚婧,等.基于深度学习和影像组学的脑膜瘤质地术前评估[J].中国医学计算机成像杂志,2023,29(4):340-345.DOI:10.19627/j.cnki.cn31-1700/th.2023.04.011.
+</Card>
+</CardGrid>
+<br>
+
 
 
 
