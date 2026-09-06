@@ -49,7 +49,6 @@ outline: [2,4]  # 显示大纲，范围从2到4级标题
 ### 发表论文
 :::
 
----
 
 
 <br>
@@ -94,9 +93,6 @@ C. Xu, X. Xu, J. Zhang, Y. Cao, and L. Zhao. 2025. "Efficient Multi-Material Vol
 </CardGrid>
 <br>
 
-
-
----
 
 
 
