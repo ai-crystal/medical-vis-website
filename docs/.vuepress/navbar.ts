@@ -55,7 +55,7 @@ export default defineNavbarConfig([
     {
     text: 'Technology Demo',
     items: [
-      //{ text: '2D Image to 2.5D', link: '/medical-vis/Technology_Demo/2D-to-3D.md' },
+      { text: '2D Image to 2.5D', link: '/medical-vis/Technology_Demo/2D-to-3D.md' },
       //{ text: 'Naked Eye 3D pipeline', link: '/medical-vis/Technology_Demo/NakeEye3D.md' }, 
     ]
   },

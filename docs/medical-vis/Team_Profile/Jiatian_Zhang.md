@@ -45,3 +45,61 @@ outline: [2,4]  # 显示大纲，范围从2到4级标题
 </CardGrid>
 
 
+
+
+::: center
+### 发表论文
+:::
+
+---
+
+
+<br>
+<CardGrid>
+<img src="/images/Team_Profile/CHUNXIAO_XU/Paper/cover_Major revision.png" />
+
+<Card title="" icon="material-symbols:bookmark-outline">
+Jiatian Zhang, Chunxiao Xu, Han Zhong, Yiheng Cao, and Lingxiao Zhao. 2025. "BDFM: Brain Diseases Foundation Model for Segmentation and Classification Tasks", IEEE Transactions on Biomedical Engineering (TBME), doi: 10.1109/TBME.2025.3637146
+</Card>
+</CardGrid>
+<br>
+
+<br>
+<CardGrid>
+<img src="/images/Team_Profile/CHUNXIAO_XU/Paper/cover_SegR3D A Multi Target 3D Visualization System for Realistic Volume Rendering of Meningiomas.png" />
+
+<Card title="" icon="material-symbols:bookmark-outline">
+Zhang, J., Xu, C.(co-first), Xu, X., Zhao, Y., & Zhao, L. (2025). SegR3D: A Multi-Target 3D Visualization System for Realistic Volume Rendering of Meningiomas. Journal of Imaging, 11(7), 216.
+</Card>
+</CardGrid>
+<br>
+
+
+<br>
+<CardGrid>
+<img src="/images/Team_Profile/CHUNXIAO_XU/Paper/cover_Real-time Neural Denoising for Volume Rendering Using Dual-Input Feature Fusion Network.png" />
+
+<Card title="" icon="material-symbols:bookmark-outline">
+Xu, C., Xu, X., Zhang, J., Liu, Y., Cao, Y. and Zhao, L. (2025), Real-time Neural Denoising for Volume Rendering Using Dual-Input Feature Fusion Network. Computer Graphics Forum e70276. https://doi.org/10.1111/cgf.70276
+</Card>
+</CardGrid>
+<br>
+
+
+<br>
+<CardGrid>
+<img src="/images/Team_Profile/CHUNXIAO_XU/Paper/cover_Efficient Multi-Material Volume Rendering for Realistic Visualization with Complex Transfer Functions.png" />
+
+<Card title="" icon="material-symbols:bookmark-outline">
+C. Xu, X. Xu, J. Zhang, Y. Cao, and L. Zhao. 2025. "Efficient Multi-Material Volume Rendering for Realistic Visualization with Complex Transfer Functions" Journal of Imaging 11, no. 6: 193. https://doi.org/10.3390/jimaging11060193
+</Card>
+</CardGrid>
+<br>
+
+
+
+---
+
+
+
+
