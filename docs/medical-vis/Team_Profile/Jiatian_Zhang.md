@@ -45,16 +45,12 @@ outline: [2,4]  # 显示大纲，范围从2到4级标题
 </CardGrid>
 
 
-<br>
-
-
 ::: center
 ### 发表论文
 :::
 
 ---
 
-<br>
 
 <br>
 <CardGrid>
