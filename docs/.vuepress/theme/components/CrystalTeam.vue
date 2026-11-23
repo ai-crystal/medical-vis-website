@@ -10,14 +10,14 @@ const roster = Object.entries(members) as [MemberId, typeof members[MemberId]][]
     <header class="crystal-page-intro">
       <p class="crystal-kicker">Crystal</p>
       <h1>Project team</h1>
-      <p class="crystal-lede" lang="zh-CN">项目成员及其中英文简历。</p>
+      <p class="crystal-lede" lang="zh-CN">项目成员</p>
     </header>
     <div class="crystal-team-grid">
       <article v-for="[id, member] in roster" :key="id" class="crystal-person">
-        <img v-if="member.photo" :src="withBase(member.photo)" alt="" width="112" height="112" loading="lazy" />
+        <img v-if="member.photo" :class="{ 'crystal-portrait-di': id === 'Di_Zhang' }" :src="withBase(member.photo)" alt="" width="112" height="112" loading="lazy" />
         <div v-else class="crystal-initials" aria-hidden="true">DZ</div>
         <div class="crystal-person-copy">
-          <h2>{{ member.en }} <span lang="zh-CN">{{ member.zh }}</span></h2>
+          <h2>{{ member.en }}<template v-if="member.degree">, {{ member.degree }}</template> <span lang="zh-CN">{{ member.zh }}</span></h2>
           <p>{{ member.role }}</p>
           <p lang="zh-CN">{{ member.roleZh }}</p>
           <div class="crystal-cv-links" :aria-label="member.en + ' CV languages'">

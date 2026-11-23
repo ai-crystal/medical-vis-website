@@ -7,20 +7,19 @@ aside: false
 
 <ProfileHeader member="Di_Zhang" language="zh" />
 
-张磾负责 Crystal 网站的设计、前后端开发及服务器管理。他专注于响应式网站设计、云服务器架构和性能优化，参与 Crystal 在线应用的整体技术架构设计。
+张磾参与 Crystal 网站的设计、全栈开发和服务器运维。他具有三年以上实验室数字化经验，主要从事 AI 智能体应用、数据自动化和业务流程数字化。
 
-## 教育
+## 教育与经历
 
-- 山东理工大学，物理学本科。
+- **山东理工大学**，物理学本科。
+- **实验室数字化专员｜快消行业**（2022–2025）。开发实验室数据处理和可视化工具，推动样品登记、报告生成和库存管理等流程自动化。
+
+## 代表项目
+
+- **Litnebula 文学影响图谱**。独立开发全栈应用，从电子书中提取作者、作品及提及关系，经人工审核后发布为交互式 3D 图谱。
+- **实验室质量与预警**。自动整理样品和原料质量数据，通过仪表盘集中展示分析结果与预警信息。
+- **实验室数据管理**。搭建采购和库存管理流程，支持申请、审批与库存跟踪，并自动规范化学品名称。
 
 ## 技术方向
 
-- Web 与运维、Linux、Nginx、SQL、HTML/CSS 和 Vue 3。
-- Python、Pandas、Requests、FastAPI 和 PyQt6。
-- Microsoft Power Platform、Power Query、Power BI、Power Automate 和 Power Apps。
-- 业务流程自动化与低代码应用开发。
-- 英语可作为工作语言。
-
-## 联系方式
-
-[threekd42@gmail.com](mailto:threekd42@gmail.com)
+AI 智能体、结构化输出与 RAG，Python、SQL 和 Web 开发，以及 Power Platform 和低代码自动化。

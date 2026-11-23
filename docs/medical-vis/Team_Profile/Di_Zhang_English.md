@@ -7,20 +7,19 @@ aside: false
 
 <ProfileHeader member="Di_Zhang" language="en" />
 
-Di Zhang designs and develops the Crystal website and manages its servers. His work covers responsive interfaces, full-stack development, cloud infrastructure and performance optimization. He helped design the technical architecture for Crystal's online tools.
+Di Zhang contributes to the Crystal website’s design, full-stack development, and server operations. He has more than three years of experience digitizing laboratory workflows, with a focus on AI agents, data automation, and business process applications.
 
-## Education
+## Education and experience
 
-- Bachelor’s degree in physics, Shandong University of Technology.
+- **Shandong University of Technology**, bachelor’s degree in physics.
+- **Lab Digital Specialist, consumer goods** (2022–2025). Built data processing and visualization tools for laboratories and automated workflows for sample registration, reporting, and inventory management.
 
-## Technical skills
+## Selected projects
 
-- Web development and operations, including Linux, Nginx, SQL, HTML/CSS and Vue 3.
-- Python, Pandas, Requests, FastAPI and PyQt6.
-- Microsoft Power Platform, Power Query, Power BI, Power Automate and Power Apps.
-- Workflow automation and low-code application development.
-- English as a working language.
+- **Litnebula literary influence graph.** Independently built a full-stack application that extracts authors, works, and mentions from e-books and publishes reviewed records as an interactive 3D graph.
+- **Laboratory quality monitoring.** Automated the collection of sample and material quality data and brought analysis and alerts together in dashboards.
+- **Laboratory data management.** Built procurement and inventory workflows for requests, approvals, and stock tracking, with automated chemical name standardization.
 
-## Contact
+## Technical focus
 
-[threekd42@gmail.com](mailto:threekd42@gmail.com)
+AI agents, structured outputs, and retrieval-augmented generation. Python, SQL, web development, Power Platform, and low-code automation.

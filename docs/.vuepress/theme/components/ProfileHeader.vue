@@ -9,7 +9,7 @@ const person = computed(() => members[props.member])
 
 <template>
   <header class="crystal-site crystal-profile" :lang="language === 'zh' ? 'zh-CN' : 'en'">
-    <img v-if="person.photo" :src="withBase(person.photo)" alt="" width="112" height="112" />
+    <img v-if="person.photo" :class="{ 'crystal-portrait-di': member === 'Di_Zhang' }" :src="withBase(person.photo)" alt="" width="112" height="112" />
     <div>
       <a class="crystal-profile-return" :href="withBase(pages.team)">{{ language === 'zh' ? '← 项目团队' : '← Project team' }}</a>
       <p class="crystal-profile-role">{{ language === 'zh' ? person.roleZh : person.role }}</p>

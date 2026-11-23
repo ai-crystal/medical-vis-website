@@ -13,6 +13,7 @@ export const pages = {
 export const members = {
   Chunxiao_Xu: {
     en: 'Chunxiao Xu',
+    degree: 'PhD',
     zh: '许春晓',
     role: 'Founder & rendering research',
     roleZh: '项目发起与渲染算法',
@@ -20,13 +21,15 @@ export const members = {
   },
   Di_Zhang: {
     en: 'Di Zhang',
+    degree: null,
     zh: '张磾',
     role: 'Web development & infrastructure',
     roleZh: '网站开发与服务器运维',
-    photo: '',
+    photo: '/images/Team_Profile/DI_ZHANG/di-zhang.jpg',
   },
   Jiatian_Zhang: {
     en: 'Jiatian Zhang',
+    degree: 'PhD',
     zh: '张家天',
     role: 'Medical image analysis',
     roleZh: '医学影像分析',
@@ -34,6 +37,7 @@ export const members = {
   },
   Wei_Hu: {
     en: 'Wei Hu',
+    degree: 'MD',
     zh: '胡薇',
     role: 'Clinical research & medical evaluation',
     roleZh: '临床研究与医学评估',
