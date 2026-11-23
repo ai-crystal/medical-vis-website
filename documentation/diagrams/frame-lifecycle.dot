@@ -1,0 +1,20 @@
+digraph FrameLifecycle {
+  graph [label="Render state and frame lifecycle", labelloc=t]
+  { rank=same
+    scene [label="Scene configuration\nAssets, camera and lights"]
+    edits [label="Mapping or volume edits\nPrepare and validate candidate"]
+  }
+  host [label="Host-owned resources\nVolumes, textures and material tables", fillcolor="#dcecff"]
+  state [label="Publish at a render-safe point\nBorrow runtime views; invalidate stale state"]
+  render [label="Registry + Visualizer\nSample and integrate"]
+  film [label="Film\nProgressive accumulation", fillcolor="#cfe5ff"]
+  { rank=same
+    display [label="Desktop viewport"]
+    output [label="CLI or Python output"]
+  }
+  scene -> host
+  edits -> host
+  host -> state -> render -> film
+  film -> display
+  film -> output
+}

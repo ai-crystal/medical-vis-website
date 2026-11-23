@@ -1,0 +1,21 @@
+digraph PluginLifecycle {
+  graph [label="One instance per render job", labelloc=t]
+  { rank=same
+    request [label="Render request\nScene + plugin path"]
+    load [label="Load module\nValidate C ABI"]
+    request -> load
+  }
+  { rank=same
+    render [label="Render progressively\nCheck cancel and progress", fillcolor="#cfe5ff"]
+    open [label="Create instance\nOpen scene"]
+    open -> render
+  }
+  { rank=same
+    copy [label="Copy RGBA8\ninto host memory"]
+    clean [label="Destroy instance\nThen release DLL reference"]
+    copy -> clean
+  }
+  load -> open
+  render -> copy
+  render -> clean [label="cancel or error", style=dashed]
+}

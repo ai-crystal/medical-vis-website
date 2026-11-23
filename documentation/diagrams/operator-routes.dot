@@ -1,0 +1,17 @@
+digraph OperatorRoutes {
+  graph [label="Where to start", labelloc=t]
+  { rank=same
+    scene [label="Saved scene or\nbundled demo"]
+    data [label="Volume asset or\nNumPy array"]
+    model [label="Gaussian model or\nwebsite sample"]
+  }
+  { rank=same
+    desktop [label="Crystal desktop\nInteractive volume rendering", fillcolor="#dcecff"]
+    api [label="CLI / Python\nRepeatable jobs", fillcolor="#dcecff"]
+    viewers [label="Desktop / Web viewer\nInspect a Gaussian model", fillcolor="#dcecff"]
+  }
+  scene -> desktop
+  data -> desktop
+  data -> api
+  model -> viewers
+}

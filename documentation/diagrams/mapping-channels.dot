@@ -1,0 +1,16 @@
+digraph MappingChannels {
+  graph [label="Continuous intensity and discrete labels", labelloc=t]
+  { rank=same
+    intensity [label="Normalized intensity\nContinuous domain"]
+    mask [label="Mask label 0, 1, 2, ...\nExact integer domain"]
+  }
+  { rank=same
+    cltf [label="CLTF\nInterpolate control points"]
+    dptf [label="DPTF\nLook up label material"]
+  }
+  combine [label="Channel combination\nChoose, overlay or gate contributions", fillcolor="#dcecff"]
+  material [label="Optical properties\nOpacity, color and scattering", fillcolor="#cfe5ff"]
+  intensity -> cltf -> combine
+  mask -> dptf -> combine
+  combine -> material
+}

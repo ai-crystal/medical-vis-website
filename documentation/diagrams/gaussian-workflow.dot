@@ -1,0 +1,19 @@
+digraph GaussianWorkflow {
+  graph [label="CrystalGS production and viewing", labelloc=t]
+  scene [label="Crystal volume scene\nCamera, material mapping and light"]
+  export [label="Export observations\nMotion.txt + images + initial PLY", fillcolor="#dcecff"]
+  { rank=same
+    fit [label="Local CUDA fit\nStandard reconstruction or fine-tuning"]
+    view [label="Desktop 3DGS viewer\nInspect an existing Gaussian model"]
+  }
+  { rank=same
+    model [label="Trained PLY", fillcolor="#cfe5ff"]
+    compact [label="Optional pruning / merging\nSeparate compact PLY + report"]
+    model -> compact
+  }
+  scene -> export
+  export -> fit -> model
+  export -> view [label="direct PLY"]
+  model -> view [constraint=false]
+  compact -> view [constraint=false]
+}

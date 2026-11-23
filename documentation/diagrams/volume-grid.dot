@@ -1,0 +1,19 @@
+digraph VolumeGrid {
+  graph [label="From source data to the active voxel grid", labelloc=t]
+  { rank=same
+    inputs [label="Intensity + optional masks\nINFORAW or legacy sources"]
+    settings [label="Scene DataDim\nSource spacing and orientation"]
+  }
+  source [label="Shared SourceGrid\nValidate XYZ extent per channel", fillcolor="#dcecff"]
+  { rank=same
+    resize [label="1. Resize"]
+    permute [label="2. Permute axes"]
+    flip [label="3. Flip axes"]
+    resize -> permute -> flip
+  }
+  processed [label="ProcessedGrid\nActive spacing and sample layout", fillcolor="#cfe5ff"]
+  inputs -> source
+  settings -> source
+  source -> resize
+  flip -> processed
+}

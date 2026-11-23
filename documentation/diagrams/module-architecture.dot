@@ -1,0 +1,30 @@
+digraph CrystalArchitecture {
+  graph [label="Crystal module architecture", labelloc=t]
+  { rank=same
+    gui [label="Qt desktop\nCrystalGUI"]
+    cmd [label="CLI\nCrystalCmd"]
+    python [label="Python\nPystalBinding"]
+  }
+  { rank=same
+    codec [label="Application services\nSceneCodec / Renderer"]
+    jobs [label="Plugin jobs\nRenderJob / CrystalPlugins"]
+  }
+  engine [label="Shared C++ / CUDA engine\nScene + Visualizer", fillcolor="#cfe5ff"]
+  { rank=same
+    volume [label="Volume\nGrids, sampling, acceleration"]
+    mapper [label="DataMapper\nOptical properties"]
+    foundation [label="Utility\nMath, sampling, memory"]
+  }
+  gui -> engine [label="interactive", minlen=2]
+  gui -> codec
+  cmd -> codec
+  python -> codec
+  cmd -> jobs
+  python -> jobs
+  gui -> jobs [style=dashed, constraint=false]
+  codec -> engine
+  jobs -> engine [label="plugin adapter"]
+  engine -> volume
+  engine -> mapper
+  engine -> foundation
+}
