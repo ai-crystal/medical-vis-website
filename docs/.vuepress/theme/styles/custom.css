@@ -1,29 +1,49 @@
-/* Crystal pages and shared profile/media treatment. */
+/* Crystal's blue palette for site pages and the VuePress theme. */
 :root {
-  --cr-ink: #122728;
-  --cr-muted: #4c6162;
-  --cr-line: #dae4e1;
-  --cr-surface: #f2f7f5;
+  --cr-ink: #10264c;
+  --cr-muted: #445d80;
+  --cr-line: #cdddf3;
+  --cr-surface: #eaf3ff;
   --cr-card: #fff;
-  --cr-accent: #06665a;
-  --cr-accent-soft: #e0f1eb;
+  --cr-accent: #1b52ac;
+  --cr-accent-soft: #dceaff;
   --cr-action-text: #fff;
-  --vp-c-brand-1: #096a60;
-  --vp-c-brand-2: #087368;
-  --vp-c-brand-3: #0b776a;
+  --cr-action-fill: linear-gradient(110deg, #173976, #2262c4);
+  --cr-surface-fill: linear-gradient(120deg, #e2eeff, #f4f9ff);
+  --vp-c-brand-1: #1b52ac;
+  --vp-c-brand-2: #245db9;
+  --vp-c-brand-3: #2a65c0;
+  --vp-c-brand-soft: #dceaff;
+  --vp-c-bg: #f8fbff;
+  --vp-c-bg-alt: #edf5ff;
+  --vp-c-bg-elv: #fff;
+  --vp-c-bg-soft: #eaf3ff;
+  --vp-c-text-1: #10264c;
+  --vp-c-text-2: #445d80;
+  --vp-c-divider: #cdddf3;
 }
 html.dark {
-  --cr-ink: #edf6f3;
-  --cr-muted: #a8c0b9;
-  --cr-line: #304a44;
-  --cr-surface: #182822;
-  --cr-card: #202f2a;
-  --cr-accent: #7be0c5;
-  --cr-accent-soft: #263e35;
-  --cr-action-text: #102720;
-  --vp-c-brand-1: #7be0c5;
-  --vp-c-brand-2: #74d1ba;
-  --vp-c-brand-3: #66c3ac;
+  --cr-ink: #eaf2ff;
+  --cr-muted: #aac1e1;
+  --cr-line: #2d4773;
+  --cr-surface: #122748;
+  --cr-card: #101f3a;
+  --cr-accent: #9cc8ff;
+  --cr-accent-soft: #203c68;
+  --cr-action-text: #091a36;
+  --cr-action-fill: linear-gradient(110deg, #77adff, #b6d9ff);
+  --cr-surface-fill: linear-gradient(120deg, #122c53, #101f3a);
+  --vp-c-brand-1: #9cc8ff;
+  --vp-c-brand-2: #8bb9ff;
+  --vp-c-brand-3: #75a9fa;
+  --vp-c-brand-soft: #203c68;
+  --vp-c-bg: #0a152a;
+  --vp-c-bg-alt: #0d1c34;
+  --vp-c-bg-elv: #142849;
+  --vp-c-bg-soft: #122748;
+  --vp-c-text-1: #eaf2ff;
+  --vp-c-text-2: #aac1e1;
+  --vp-c-divider: #2d4773;
 }
 .crystal-site { color: var(--cr-ink); }
 .crystal-shell { width: min(100% - 64px, 1180px); margin-inline: auto; }
@@ -52,12 +72,12 @@ html.dark {
   min-height: 44px; padding: 9px 16px; border: 1px solid transparent; border-radius: 8px;
   font: inherit; font-size: .93rem; font-weight: 680; line-height: 1.2; cursor: pointer;
 }
-.crystal-button.primary { background: var(--cr-accent); color: var(--cr-action-text); }
+.crystal-button.primary { background: var(--cr-action-fill); color: var(--cr-action-text); }
 .crystal-button.secondary { color: var(--cr-ink); border-color: var(--cr-line); background: var(--cr-card); }
 .crystal-site .crystal-button:hover { filter: brightness(.92); }
 .crystal-library-strip {
   display: grid; grid-template-columns: 1fr auto auto; gap: clamp(16px, 3vw, 40px); align-items: center;
-  padding: clamp(18px, 3.5vw, 35px); background: var(--cr-surface); border: 1px solid var(--cr-line); border-radius: 14px;
+  padding: clamp(18px, 3.5vw, 35px); background: var(--cr-surface-fill); border: 1px solid var(--cr-line); border-radius: 14px;
 }
 .crystal-library-strip h2, .crystal-section-head h2 { font-size: clamp(1.55rem, 3vw, 2.5rem); line-height: 1.16; }
 .crystal-library-strip h2 { font-size: clamp(1.35rem, 2.4vw, 1.9rem); }
@@ -136,16 +156,43 @@ html.dark {
 .crystal-pagination { display: flex; flex-wrap: wrap; gap: 12px; justify-content: flex-end; align-items: center; margin-top: 13px; font-size: .86rem; }
 .crystal-pagination button { font: inherit; padding: 6px 10px; color: var(--cr-ink); border: 1px solid var(--cr-line); border-radius: 6px; background: var(--cr-card); cursor: pointer; }
 .crystal-pagination button:disabled { opacity: .52; cursor: default; }
-.crystal-resource-guide { width: min(100% - 64px, 1180px); margin: 0 auto 56px; }
-.crystal-resource-guide summary { color: var(--cr-accent); font-weight: 700; cursor: pointer; }
+.crystal-resource-guide, #all-volume-title { scroll-margin-top: 90px; }
+.crystal-resource-guide .crystal-section-head p { margin-top: 6px; color: var(--cr-muted); font-size: .9rem; }
+.crystal-resource-groups { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.crystal-resource-group {
+  padding: clamp(16px, 3vw, 25px);
+  background: var(--cr-surface-fill);
+  border: 1px solid var(--cr-line);
+  border-radius: 12px;
+}
+.crystal-resource-group:first-child { grid-column: 1 / -1; }
+.crystal-resource-group h3 { font-size: 1.16rem; }
+.crystal-site .crystal-resource-group ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  gap: 6px 18px;
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 0;
+}
+.crystal-site .crystal-resource-group ul li { min-width: 0; margin: 0; }
+.crystal-site .crystal-resource-group a {
+  display: inline-block;
+  padding: 3px 0;
+  color: var(--cr-accent);
+  font-size: .9rem;
+  overflow-wrap: anywhere;
+}
+.crystal-site .crystal-resource-group a:hover { text-decoration: underline; }
+.crystal-resource-group a span { white-space: nowrap; }
 @media (max-width: 900px) {
   .crystal-library-strip { grid-template-columns: 1fr 1fr; }
   .crystal-library-strip .crystal-text-link { grid-column: 1 / -1; }
   .crystal-specimens { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 680px) {
-  .crystal-shell, .crystal-resource-guide { width: calc(100% - 32px); }
-  .crystal-hero, .crystal-library-strip, .crystal-work-grid, .crystal-team-grid { grid-template-columns: minmax(0, 1fr); }
+  .crystal-shell { width: calc(100% - 32px); }
+  .crystal-hero, .crystal-library-strip, .crystal-work-grid, .crystal-team-grid, .crystal-resource-groups { grid-template-columns: minmax(0, 1fr); }
   .crystal-hero h1 { letter-spacing: -.055em; }
   .crystal-hero { gap: 22px; }
 }

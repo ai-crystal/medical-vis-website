@@ -4,6 +4,7 @@ import {
   GSPLAT_RENDERER_AUTO, GSPLAT_RENDERER_RASTER_GPU_SORT, Vec3,
 } from 'playcanvas'
 import type { GSplatResourceBase } from 'playcanvas'
+import { OrbitCamera } from './camera-controls'
 
 const maxFileBytes = 128 * 1024 * 1024
 const maxSplatCount = 2_000_000
@@ -86,7 +87,7 @@ export async function createGaussianRenderer(
   app.autoRender = false
   app.scene.gsplat.renderer = GSPLAT_RENDERER_AUTO
   const camera = new Entity('Model camera')
-  camera.addComponent('camera', { fov: fieldOfView, clearColor: new Color(0.036, 0.063, 0.074, 1) })
+  camera.addComponent('camera', { fov: fieldOfView, clearColor: new Color(0.027, 0.051, 0.094, 1) })
   app.root.addChild(camera)
 
   const model = new Entity('Gaussian model')
@@ -94,11 +95,7 @@ export async function createGaussianRenderer(
   model.enabled = false
   app.root.addChild(model)
 
-  const origin = new Vec3()
-  let yaw = 0
-  let pitch = 0
-  let radius = 1
-  let distance = 3
+  const controls = new OrbitCamera()
   let aspect = 1
   let installed: { resource: GSplatResourceBase, release: () => void } | undefined
 
@@ -107,22 +104,11 @@ export async function createGaussianRenderer(
   }
 
   function updateCamera() {
-    const horizontal = Math.cos(pitch) * distance
-    camera.setPosition(origin.x + Math.sin(yaw) * horizontal,
-      origin.y - Math.sin(pitch) * distance, origin.z - Math.cos(yaw) * horizontal)
-    // The source viewer faces +Z with +Y pointing down in the image.
-    camera.lookAt(origin, Vec3.DOWN)
-    camera.camera!.nearClip = Math.max(radius / 10_000, distance / 10_000)
-    camera.camera!.farClip = distance + radius * 10
+    camera.setPosition(controls.position)
+    camera.setRotation(controls.rotation)
+    camera.camera!.nearClip = Math.max(controls.radius / 10_000, controls.distance / 10_000)
+    camera.camera!.farClip = controls.distance + controls.radius * 10
     requestFrame()
-  }
-
-  function reset() {
-    yaw = 0
-    pitch = 0
-    const vertical = Math.tan(fieldOfView * Math.PI / 360)
-    distance = radius * (1 + 0.86 / (vertical * Math.min(1, aspect)))
-    updateCamera()
   }
 
   function resize() {
@@ -188,9 +174,9 @@ export async function createGaussianRenderer(
     model.enabled = true
     installed?.release()
     installed = { resource, release }
-    origin.copy(bounds.center)
-    radius = Number.isFinite(bounds.radius) && bounds.radius > 0 ? bounds.radius : 1
-    reset()
+    const radius = Number.isFinite(bounds.radius) && bounds.radius > 0 ? bounds.radius : 1
+    controls.frame(bounds.center, radius, aspect, fieldOfView)
+    updateCamera()
     return resource.numSplats
   }
 
@@ -202,19 +188,31 @@ export async function createGaussianRenderer(
   const observer = new ResizeObserver(resize)
   observer.observe(canvas)
   resize()
+  controls.reset()
   updateCamera()
   app.start()
   reportBackend()
 
   return {
-    load, reset,
-    orbit(dx: number, dy: number) {
-      yaw += dx * 0.009
-      pitch = Math.max(-1.53, Math.min(1.53, pitch + dy * 0.009))
+    load,
+    reset() {
+      controls.reset()
       updateCamera()
     },
-    zoom(delta: number) {
-      distance = Math.max(radius * 0.15, Math.min(radius * 60, distance * Math.exp(delta * 0.0015)))
+    orbit(dx: number, dy: number, touch: boolean) {
+      controls.orbit(dx / Math.max(1, canvas.clientWidth), dy / Math.max(1, canvas.clientHeight), touch)
+      updateCamera()
+    },
+    pan(horizontal: number, vertical: number) {
+      controls.pan(horizontal, vertical)
+      updateCamera()
+    },
+    zoom(pixels: number) {
+      controls.zoom(pixels)
+      updateCamera()
+    },
+    pinch(ratio: number) {
+      controls.pinch(ratio)
       updateCamera()
     },
     destroy() {

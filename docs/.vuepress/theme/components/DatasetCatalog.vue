@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
 import catalog from '../data/volume-catalog.json'
+import DatasetResources from './DatasetResources.vue'
 
 const categories: Record<string, string> = {
   insects: 'Insects',
@@ -62,7 +63,13 @@ function size(bytes: number) {
         <div><dt>Compressed collection</dt><dd>{{ collectionGB }} <small>GB</small></dd></div>
         <div><dt>Catalog snapshot</dt><dd class="crystal-stat-date"><time :datetime="catalog.snapshot">{{ catalog.snapshot }}</time></dd></div>
       </dl>
+      <nav class="crystal-actions" aria-label="Dataset sections">
+        <a href="#public-resources" class="crystal-button primary">Public datasets and resources</a>
+        <a href="#all-volume-title" class="crystal-button secondary">Browse Crystal volumes</a>
+      </nav>
     </header>
+
+    <DatasetResources />
 
     <section class="crystal-section" aria-labelledby="featured-volume-title">
       <header class="crystal-section-head"><h2 id="featured-volume-title">Featured specimens</h2></header>

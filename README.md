@@ -24,3 +24,10 @@ from Medi-3DGS, with its license preserved. Add a .splat file and a .jpg preview
 there and register the sample under docs/.vuepress/theme/gaussian/examples.ts.
 Files selected on the device are decoded locally by the viewer. It accepts
 Medi-3DGS .splat files and binary Gaussian .ply files.
+
+All 16 Medi-3DGS examples are included. Manix CT 2 loads first, and each
+other model loads only when selected. Dragging orbits around the specimen,
+including overhead and underside views. Scroll or pinch to change distance.
+With the viewport focused, the horizontal arrows move the camera sideways,
+the vertical arrows move it forward or back, and Shift with the vertical
+arrows raises or lowers it.

@@ -2,10 +2,10 @@
   scroll-margin-top: 80px;
   min-width: 0;
   overflow: hidden;
-  border: 1px solid #335251;
+  border: 1px solid #325687;
   border-radius: 16px;
-  background: #142a30;
-  color: #ebf5f3;
+  background: #142c51;
+  color: #eaf2ff;
 }
 .gaussian-stage {
   position: relative;
@@ -13,10 +13,10 @@
   place-items: center;
   overflow: hidden;
   aspect-ratio: 1.65;
-  background: #091014;
+  background: #070d18;
 }
 .gaussian-compact .gaussian-stage { aspect-ratio: 1.14; }
-.gaussian-stage.gaussian-drop { outline: 2px solid #86e3cb; outline-offset: -3px; }
+.gaussian-stage.gaussian-drop { outline: 2px solid #9cc8ff; outline-offset: -3px; }
 .gaussian-stage canvas, .gaussian-poster {
   position: absolute;
   inset: 0;
@@ -24,10 +24,10 @@
   width: 100%;
   height: 100%;
 }
-.gaussian-stage canvas { opacity: 0; touch-action: none; cursor: grab; }
-.gaussian-stage canvas.gaussian-active { opacity: 1; }
+.gaussian-stage canvas { opacity: 0; cursor: grab; }
+.gaussian-stage canvas.gaussian-active { opacity: 1; touch-action: none; }
 .gaussian-stage canvas:active { cursor: grabbing; }
-.gaussian-stage canvas:focus-visible { outline: 2px solid #86e3cb; outline-offset: -3px; }
+.gaussian-stage canvas:focus-visible { outline: 2px solid #9cc8ff; outline-offset: -3px; }
 .gaussian-stage .gaussian-poster {
   object-fit: contain;
   padding: 16px;
@@ -39,20 +39,17 @@
   inset: 11px 11px auto auto;
   padding: 3px 8px;
   border-radius: 5px;
-  background: #163033e8;
-  color: #c6efdf;
+  background: #172f52ed;
+  color: #c8dfff;
   font-size: .72rem;
   pointer-events: none;
 }
 .gaussian-hint {
   position: absolute;
   inset: auto auto 11px 11px;
-  color: #b4ceca;
+  color: #b9cfee;
   font-size: .72rem;
   pointer-events: none;
-}
-@media (pointer: coarse) {
-  .gaussian-stage canvas { touch-action: pan-y pinch-zoom; }
 }
 .gaussian-toolbar { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 9px 14px; padding: 12px; }
 .gaussian-model { display: grid; gap: 4px; font-size: .77rem; font-weight: 670; }
@@ -60,21 +57,21 @@
 .gaussian-toolbar select, .gaussian-toolbar button, .gaussian-choose {
   min-height: 34px;
   padding: 5px 8px;
-  border: 1px solid #51716e;
+  border: 1px solid #5576a8;
   border-radius: 6px;
-  background: #213c41;
+  background: #21416e;
   color: inherit;
   font: inherit;
   font-size: .76rem;
 }
 .gaussian-toolbar button, .gaussian-choose { cursor: pointer; }
 .gaussian-controls button[aria-label^="Zoom"] { min-width: 34px; }
-.gaussian-toolbar button:hover:not(:disabled), .gaussian-choose:hover { background: #335459; }
+.gaussian-toolbar button:hover:not(:disabled), .gaussian-choose:hover { background: #2d5284; }
 .gaussian-toolbar button:disabled { opacity: .5; cursor: default; }
-.gaussian-toolbar :focus-visible, .gaussian-choose:focus-within { outline: 2px solid #86e3cb; outline-offset: 2px; }
+.gaussian-toolbar :focus-visible, .gaussian-choose:focus-within { outline: 2px solid #9cc8ff; outline-offset: 2px; }
 .gaussian-choose { position: relative; display: inline-flex; align-items: center; }
 .gaussian-choose input { position: absolute; inset: 0; width: 100%; opacity: 0; cursor: pointer; }
-.gaussian-status { width: 100%; color: #b4ceca; overflow-wrap: anywhere; font-size: .75rem; }
+.gaussian-status { width: 100%; color: #b9cfee; overflow-wrap: anywhere; font-size: .75rem; }
 .gaussian-error { color: #ffc8ad; }
 .crystal-gaussian-page { margin-block: 50px; }
 .crystal-gaussian-page .gaussian-viewer { margin-top: 20px; }

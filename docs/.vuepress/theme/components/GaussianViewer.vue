@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, ref, useId } from 'vue'
 import { withBase } from 'vuepress/client'
-import { examples, modelBase, type Example } from '../gaussian/examples'
+import { exampleGroups, examples, modelBase, type Example } from '../gaussian/examples'
 import type { GaussianRenderer } from '../gaussian/renderer'
 import '../gaussian/viewer.css'
 
@@ -23,7 +23,7 @@ let pendingLoad: AbortController | undefined
 let renderer: GaussianRenderer | undefined
 let startup: Promise<GaussianRenderer> | undefined
 let retry: (() => Promise<void>) | undefined
-let drag: { id: number, x: number, y: number } | undefined
+const pointers = new Map<number, { x: number, y: number, zoomOnly: boolean, touch: boolean }>()
 
 function getRenderer() {
   if (!startup) {
@@ -111,38 +111,63 @@ function drop(event: DragEvent) {
   openFile(event.dataTransfer?.files[0])
 }
 
+function exampleChanged(event: Event) {
+  const id = (event.target as HTMLSelectElement).value
+  const example = examples.find(item => item.id === id)
+  if (example) showExample(example)
+}
+
 function pointerDown(event: PointerEvent) {
-  if (!ready.value || drag || event.button !== 0) return
+  if (!ready.value || pointers.size === 2 || (event.button !== 0 && event.button !== 2)) return
+  const touch = event.pointerType === 'touch'
+  if (pointers.size && (!touch || !pointers.values().next().value?.touch)) return
   const target = event.currentTarget as HTMLCanvasElement
   target.focus({ preventScroll: true })
   target.setPointerCapture(event.pointerId)
-  drag = { id: event.pointerId, x: event.clientX, y: event.clientY }
+  pointers.set(event.pointerId, {
+    x: event.clientX, y: event.clientY, touch,
+    zoomOnly: !touch && (event.button === 2 || event.ctrlKey || event.metaKey),
+  })
 }
 
 function pointerMove(event: PointerEvent) {
-  if (drag?.id !== event.pointerId) return
-  renderer?.orbit(event.clientX - drag.x, event.clientY - drag.y)
-  drag.x = event.clientX
-  drag.y = event.clientY
+  const point = pointers.get(event.pointerId)
+  if (!point) return
+  const { clientX, clientY } = event
+  if (pointers.size === 2) {
+    const [first, second] = pointers.values()
+    const other = point === first ? second : first
+    const before = Math.hypot(point.x - other.x, point.y - other.y)
+    const after = Math.hypot(clientX - other.x, clientY - other.y)
+    if (before > 0 && after > 0) renderer?.pinch(before / after)
+  } else if (point.zoomOnly) {
+    renderer?.zoom((clientX - point.x) * 25)
+  } else {
+    renderer?.orbit(clientX - point.x, clientY - point.y, point.touch)
+  }
+  point.x = clientX
+  point.y = clientY
 }
 
 function stopDrag(event: PointerEvent) {
-  if (drag?.id === event.pointerId) drag = undefined
+  pointers.delete(event.pointerId)
 }
 
 function wheel(event: WheelEvent) {
-  if (!ready.value || document.activeElement !== canvas.value) return
+  if (!ready.value) return
   event.preventDefault()
-  renderer?.zoom(event.deltaY * (event.deltaMode ? 16 : 1))
+  const scale = event.deltaMode === WheelEvent.DOM_DELTA_LINE ? 10
+    : event.deltaMode === WheelEvent.DOM_DELTA_PAGE ? canvas.value!.clientHeight : 1
+  renderer?.zoom(event.deltaY * scale)
 }
 
 function key(event: KeyboardEvent) {
   if (!ready.value) return
   switch (event.key) {
-    case 'ArrowLeft': renderer?.orbit(-12, 0); break
-    case 'ArrowRight': renderer?.orbit(12, 0); break
-    case 'ArrowUp': renderer?.orbit(0, -12); break
-    case 'ArrowDown': renderer?.orbit(0, 12); break
+    case 'ArrowLeft': renderer?.pan(-1, 0); break
+    case 'ArrowRight': renderer?.pan(1, 0); break
+    case 'ArrowUp': if (event.shiftKey) renderer?.pan(0, 1); else renderer?.zoom(-120); break
+    case 'ArrowDown': if (event.shiftKey) renderer?.pan(0, -1); else renderer?.zoom(120); break
     case '+': case '=': renderer?.zoom(-120); break
     case '-': renderer?.zoom(120); break
     case 'Home': renderer?.reset(); break
@@ -178,19 +203,21 @@ onBeforeUnmount(() => {
     >
       <canvas
         :id="canvasId" ref="canvas" :class="{ 'gaussian-active': ready }" :tabindex="ready ? 0 : -1"
-        aria-label="3D Gaussian model. Drag or use arrow keys to rotate. Use plus and minus to zoom."
+        aria-label="3D Gaussian model. Drag to rotate. Scroll or pinch to zoom. Left and right move sideways. Up and down move forward or backward."
         @pointerdown="pointerDown" @pointermove="pointerMove" @lostpointercapture="stopDrag"
-        @pointercancel="stopDrag" @wheel="wheel" @keydown="key"
+        @pointerup="stopDrag" @pointercancel="stopDrag" @contextmenu.prevent @wheel="wheel" @keydown="key"
       />
       <img v-if="!ready" class="gaussian-poster" :src="poster" alt="" width="250" height="250" decoding="async" />
       <span v-if="backend" class="gaussian-backend">{{ backend }}</span>
-      <span v-if="ready" class="gaussian-hint">Drag to rotate</span>
+      <span v-if="ready" class="gaussian-hint">Drag to rotate · Scroll or pinch to zoom</span>
     </div>
     <div class="gaussian-toolbar">
       <label class="gaussian-model">
         <span>3D Gaussian splatting</span>
-        <select aria-label="Example model" :value="selected.id" @change="showExample(examples.find(item => item.id === ($event.target as HTMLSelectElement).value)!)">
-          <option v-for="example in examples" :key="example.id" :value="example.id">{{ example.label }}</option>
+        <select aria-label="Example model" :value="selected.id" @change="exampleChanged">
+          <optgroup v-for="group in exampleGroups" :key="group.label" :label="group.label">
+            <option v-for="example in group.models" :key="example.id" :value="example.id">{{ example.label }}</option>
+          </optgroup>
         </select>
       </label>
       <div class="gaussian-controls">
