@@ -35,3 +35,8 @@ aside: false
 - **Litnebula 文学影响图谱**。独立开发全栈应用，从电子书中提取作者、作品及提及关系，经人工审核后发布为交互式 3D 图谱。
 - **实验室质量与预警**。自动整理样品和原料质量数据，通过仪表盘集中展示分析结果与预警信息。
 - **实验室数据管理**。搭建采购和库存管理流程，支持申请、审批与库存跟踪，并自动规范化学品名称。
+
+## 个人发表论文
+
+- Fei Jiao 等（张磾合著）. [The Layer-Inserting Growth of Antiferromagnetic Topological Insulator MnBi₂Te₄ Based on Symmetry and Its X-ray Photoelectron Spectroscopy](https://doi.org/10.1007/s10948-021-05821-1). *Journal of Superconductivity and Novel Magnetism*, 34, 1485–1493 (2021).
+- Jingfeng Wang 等（张磾合著）. [Investigate the Nb doping position and its relationship with bulk topological superconductivity in NbₓBi₂Se₃ by X-ray photoelectron spectra](https://doi.org/10.1016/j.jpcs.2019.109208). *Journal of Physics and Chemistry of Solids*, 137, 109208 (2020).

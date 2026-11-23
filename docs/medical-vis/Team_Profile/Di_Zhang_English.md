@@ -35,3 +35,8 @@ Di Zhang contributes to the Crystal website’s design, full-stack development, 
 - **Litnebula literary influence graph.** Independently built a full-stack application that extracts authors, works, and mentions from e-books and publishes reviewed records as an interactive 3D graph.
 - **Laboratory quality monitoring.** Automated the collection of sample and material quality data and brought analysis and alerts together in dashboards.
 - **Laboratory data management.** Built procurement and inventory workflows for requests, approvals, and stock tracking, with automated chemical name standardization.
+
+## Personal publications
+
+- Fei Jiao et al. (Di Zhang, co-author). [The Layer-Inserting Growth of Antiferromagnetic Topological Insulator MnBi₂Te₄ Based on Symmetry and Its X-ray Photoelectron Spectroscopy](https://doi.org/10.1007/s10948-021-05821-1). *Journal of Superconductivity and Novel Magnetism*, 34, 1485–1493 (2021).
+- Jingfeng Wang et al. (Di Zhang, co-author). [Investigate the Nb doping position and its relationship with bulk topological superconductivity in NbₓBi₂Se₃ by X-ray photoelectron spectra](https://doi.org/10.1016/j.jpcs.2019.109208). *Journal of Physics and Chemistry of Solids*, 137, 109208 (2020).
