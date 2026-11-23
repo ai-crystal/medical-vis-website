@@ -108,6 +108,7 @@ html[data-theme="dark"] {
 .crystal-person { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 18px; align-items: start; padding: clamp(13px, 2.7vw, 27px); border: 1px solid var(--cr-line); border-radius: 12px; background: var(--cr-card); }
 .crystal-person img, .crystal-profile img, .crystal-initials { width: 96px; height: 96px; border-radius: 10px; object-fit: cover; object-position: center 38%; background: var(--cr-accent-soft); }
 .crystal-person img.crystal-portrait-di, .crystal-profile img.crystal-portrait-di { object-position: center 14%; object-view-box: inset(12% 27% 51% 34%); }
+.crystal-person img[src$="/yiheng-cao.jpg"], .crystal-profile img[src$="/yiheng-cao.jpg"] { object-position: center 22%; }
 .crystal-initials { display: grid; place-items: center; color: var(--cr-accent); font-size: 1.35rem; font-weight: 720; }
 .crystal-site .crystal-person h2 { font-size: 1.35rem; margin-block: 0 8px; padding-block: 0; }
 .crystal-person h2 span { display: block; font-size: .86em; margin-top: 3px; }

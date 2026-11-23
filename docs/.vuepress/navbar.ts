@@ -68,6 +68,7 @@ export default defineNavbarConfig([
       { text: 'Di Zhang', link: '/medical-vis/Team_Profile/Di_Zhang.html' },
       { text: 'Jiatian Zhang (PhD)', link: '/medical-vis/Team_Profile/Jiatian_Zhang.md' },
       { text: 'Wei Hu (MD)', link: '/medical-vis/Team_Profile/Wei_Hu.md' },
+      { text: 'Yiheng Cao (PhD)', link: '/medical-vis/Team_Profile/Yiheng_Cao.md' },
     ]
   },
 ])

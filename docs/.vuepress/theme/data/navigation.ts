@@ -43,6 +43,14 @@ export const members = {
     roleZh: '临床研究与医学评估',
     photo: '/images/Team_Profile/WEI_HU/wei_hu.png',
   },
+  Yiheng_Cao: {
+    en: 'Yiheng Cao',
+    degree: 'PhD',
+    zh: '曹毅恒',
+    role: 'Medical imaging & generative AI',
+    roleZh: '医学影像与生成式 AI',
+    photo: '/images/Team_Profile/YIHENG_CAO/yiheng-cao.jpg',
+  },
 }
 
 export type MemberId = keyof typeof members
