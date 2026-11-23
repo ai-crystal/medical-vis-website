@@ -9,64 +9,65 @@ import { defineNavbarConfig } from 'vuepress-theme-plume'
 export default defineNavbarConfig([
   { text: 'Home', link: '/' },
   {
-    text: 'Crystal Presentations',
+    text: 'Crystal',
     items: [
-      { text: '3dgs-demo', link: '/medical-vis/Crystal_Presentations/3dgs_demo.md' },
-    ]
-  },
-  {  
-    text: 'Research Field',  
-    items: [  
-      { text: 'Realistic Rendering', link: '/medical-vis/Research_Field/Realistic_Rendering.md' },  
-      { text: 'Neural Rendering', link: '/medical-vis/Research_Field/Neural_Rendering.md' },  
-      { text: 'Image Analysis', link: '/medical-vis/Research_Field/Image_Analysis.md' },  
-      { text: 'Geometry_Process', link: '/medical-vis/Research_Field/Geometry_Process.md' },
-    //  { text: 'Generative AI', link: '/medical-vis/Research_Field/Generative_AI.md' },    
-    //  { text: 'Large Scale Data', link: '/medical-vis/Research_Field/Large_Scale_Data.md' },  
-    //  { text: 'Mixed Reality', link: '/medical-vis/Research_Field/Mixed_Reality.md' },  
-    //  { text: 'Games Engine', link: '/medical-vis/Research_Field/Games_Engine.md' },  
-    //  { text: 'Data Analysis', link: '/medical-vis/Research_Field/Data_Analysis.md' },  
-    ]  
-  },  
-  {  
-    text: 'Development Manual',  
-    items: [
-      { text: 'Software Operation', link: '/medical-vis/Development_Manual/Software_Operation.md' },  
-      { text: 'Build Crystal Project', link: '/medical-vis/Development_Manual/Build_Crystal_Project.md' },  
-      { text: 'Code Structure', link: '/medical-vis/Development_Manual/Code_Structure.md' },  
-      { text: 'Datasets', link: '/medical-vis/Development_Manual/Datasets.md' },       
-    ]  
-  },  
-  {  
-    text: 'Publications',  
-    items: [  
-      { text: 'PBDVR', link: '/medical-vis/Publications/PBDVR.md' },  
-      { text: 'RTR-DVR', link: '/medical-vis/Publications/RTR-DVR.md' },  
-      { text: 'NNFF', link: '/medical-vis/Publications/NNFF.md' }, 
-      { text: 'FEF-Stitching', link: '/medical-vis/Publications/FEF-Stitching.md' }, 
-      { text: 'SWKP', link: '/medical-vis/Publications/SWKP.md' },  
-      { text: 'SegR3D', link: '/medical-vis/Publications/SegR3D.md' }, 
-      { text: 'MR-DVR', link: '/medical-vis/Publications/MR-DVR.md' },
-      { text: 'MR-Relighting', link: '/medical-vis/Publications/MR-Relighting.md' },
-      { text: 'Illumin-Estim', link: '/medical-vis/Publications/Illumin-Estim.md' },
-      { text: 'BDFM', link: '/medical-vis/Publications/BDFM.md' },     
-    ]  
-  },
-    {
-    text: 'Technology Demo',
-    items: [
-      { text: '2D Image to 2.5D', link: '/medical-vis/Technology_Demo/2D-to-3D.md' },
-      //{ text: 'Naked Eye 3D pipeline', link: '/medical-vis/Technology_Demo/NakeEye3D.md' }, 
+      { text: 'Project overview', link: '/medical-vis/Crystal_Presentations/Crystal_introduction.md' },
+      { text: '3D Gaussian splatting demo', link: '/#gaussian-viewer' },
     ]
   },
   {
-    text: 'Team Profile',
+    text: 'Research',
     items: [
+      { text: 'Realistic Rendering', link: '/medical-vis/Research_Field/Realistic_Rendering.md' },
+      { text: 'Neural Rendering', link: '/medical-vis/Research_Field/Neural_Rendering.md' },
+      { text: 'Image Analysis', link: '/medical-vis/Research_Field/Image_Analysis.md' },
+      { text: 'Geometry processing', link: '/medical-vis/Research_Field/Geometry_Process.md' },
+    //  { text: 'Generative AI', link: '/medical-vis/Research_Field/Generative_AI.md' },
+    //  { text: 'Large Scale Data', link: '/medical-vis/Research_Field/Large_Scale_Data.md' },
+    //  { text: 'Mixed Reality', link: '/medical-vis/Research_Field/Mixed_Reality.md' },
+    //  { text: 'Games Engine', link: '/medical-vis/Research_Field/Games_Engine.md' },
+    //  { text: 'Data Analysis', link: '/medical-vis/Research_Field/Data_Analysis.md' },
+    ]
+  },
+  { text: 'Datasets', link: '/medical-vis/Development_Manual/Datasets.md' },
+  {
+    text: 'Documentation',
+    items: [
+      { text: 'Software Operation', link: '/medical-vis/Development_Manual/Software_Operation.md' },
+      { text: 'Build Crystal Project', link: '/medical-vis/Development_Manual/Build_Crystal_Project.md' },
+      { text: 'Code Structure', link: '/medical-vis/Development_Manual/Code_Structure.md' },
+    ]
+  },
+  {
+    text: 'Publications',
+    items: [
+      { text: 'PBDVR', link: '/medical-vis/Publications/PBDVR.md' },
+      { text: 'RTR-DVR', link: '/medical-vis/Publications/RTR-DVR.md' },
+      { text: 'NNFF', link: '/medical-vis/Publications/NNFF.md' },
+      { text: 'FEF-Stitching', link: '/medical-vis/Publications/FEF-Stitching.md' },
+      { text: 'SWKP', link: '/medical-vis/Publications/SWKP.md' },
+      { text: 'SegR3D', link: '/medical-vis/Publications/SegR3D.md' },
+      { text: 'MR-DVR', link: '/medical-vis/Publications/MR-DVR.md' },
+      { text: 'MR-Relighting', link: '/medical-vis/Publications/MR-Relighting.md' },
+      { text: 'Illumin-Estim', link: '/medical-vis/Publications/Illumin-Estim.md' },
+      { text: 'BDFM', link: '/medical-vis/Publications/BDFM.md' },
+    ]
+  },
+    {
+    text: 'Demos',
+    items: [
+      { text: '2D Image to 2.5D', link: '/medical-vis/Technology_Demo/2D-to-3D.md' },
+      //{ text: 'Naked Eye 3D pipeline', link: '/medical-vis/Technology_Demo/NakeEye3D.md' },
+    ]
+  },
+  {
+    text: 'Team',
+    items: [
+      { text: 'All members · 项目团队', link: '/medical-vis/Team_Profile/README.md' },
       { text: 'Chunxiao Xu (PhD)', link: '/medical-vis/Team_Profile/Chunxiao_Xu.md' },
-      { text: 'Wei Hu (MD)', link: '/medical-vis/Team_Profile/Wei_Hu.md' }, 
-      { text: 'Di Zhang', link: '/medical-vis/Team_Profile/Di_Zhang.md' }, 
-      { text: 'Yiheng Cao (PhD)', link: '/medical-vis/Team_Profile/Yiheng_Cao.md' }, 
-      { text: 'Jiatian Zhang (PhD)', link: '/medical-vis/Team_Profile/Jiatian_Zhang.md' }, 
+      { text: 'Di Zhang', link: '/medical-vis/Team_Profile/Di_Zhang.html' },
+      { text: 'Jiatian Zhang (PhD)', link: '/medical-vis/Team_Profile/Jiatian_Zhang.md' },
+      { text: 'Wei Hu (MD)', link: '/medical-vis/Team_Profile/Wei_Hu.md' },
     ]
   },
 ])

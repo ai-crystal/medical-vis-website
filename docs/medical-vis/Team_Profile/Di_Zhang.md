@@ -1,35 +1,26 @@
 ---
-title: Resume - 张磾
-createTime: 2025/10/23 18:45:28
-permalink: /medical-vis/Team_Profile/Di_Zhang
-navbar: true
+title: 张磾
+lang: zh-CN
+pageClass: crystal-cv
 aside: false
 ---
 
+<ProfileHeader member="Di_Zhang" language="zh" />
 
-<p><strong>张磾是Crystal网站的设计者和服务器管理员，他是资深的前端/后端开发技术人员，擅长响应式Web设计、云服务器架构与性能优化。他是所有Crystal相关Web在线应用的构建者，主导了平台的整体技术架构设计，确保系统的高可用性与安全性，并致力于通过创新的交互设计与稳定的后端服务，为用户提供流畅、可靠的在线体验。</strong></p>
+张磾负责 Crystal 网站的设计、前后端开发及服务器管理。他专注于响应式网站设计、云服务器架构和性能优化，参与 Crystal 在线应用的整体技术架构设计。
 
-::: card title="基本信息" icon="mdi-account-circle-outline"
-- 性别: 男 | 年龄: 29岁 
-- 学校: 山东理工大学 | 专业: 物理学 | 学历: 本科
-- 邮箱: threekd42@gmail.com
-:::
+## 教育
 
+- 山东理工大学，物理学本科。
 
-::: card title="技能清单" icon="mdi-star-outline"
+## 技术方向
 
-::logos:microsoft-icon:: Microsoft Power Platform:
-    Power Query、Power BI、Power Automate、Power Apps
+- Web 与运维、Linux、Nginx、SQL、HTML/CSS 和 Vue 3。
+- Python、Pandas、Requests、FastAPI 和 PyQt6。
+- Microsoft Power Platform、Power Query、Power BI、Power Automate 和 Power Apps。
+- 业务流程自动化与低代码应用开发。
+- 英语可作为工作语言。
 
-::material-icon-theme:python:: Python:
-    Pandas，Requests，FastAPI，PyQt6
+## 联系方式
 
-::cryptocurrency-color:auto:: 自动化与低代码开发:
-    具备从0到1搭建业务流程应用的能力
-
-::ant-design:code-outlined:: 其他技能:
-    Linux、SQL、Nginx、HTML/CSS、Vue3
-
-::icon-park:english::英语可作为工作语言。
-:::
-
+[threekd42@gmail.com](mailto:threekd42@gmail.com)

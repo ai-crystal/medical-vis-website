@@ -1,45 +1,20 @@
 ---
 title: 胡薇
-tagline: 计算机图形学与三维可视化研究者
-description: 组织透明化三维成像，光遗传学，神经影像与可视化，中西医结合机制研究，GnRH神经元网络，电针/针灸调控
-keywords: 组织透明化三维成像，光遗传学，神经影像与可视化，中西医结合机制研究，GnRH神经元网络，电针/针灸调控
-author: 胡薇
-date: 2024-06-01
-lastUpdated: 2024-06-01
-tags:
-  - 组织透明化三维成像
-  - 近红外二区活体成像
-  - 神经影像与可视化
-  - GLMY应用拓扑
-  - 中西医结合机制研究
-  - 针刺 
- 
-
-PageLayout: 'custom'  # 使用自定义布局
-navbar: true  # 显示导航栏
-aside: false # 显示侧边栏
-outline: [2,4]  # 显示大纲，范围从2到4级标题
+lang: zh-CN
+pageClass: crystal-cv
+aside: false
 ---
+
+<ProfileHeader member="Wei_Hu" language="zh" />
 
 <p><strong>胡薇博士是Crystal医学可视化平台的首席医学专家，负责可视化技术的医学鉴定与评估、医学研究战略规划。她有着深厚的临床医学与科研背景，确保平台所有可视化内容在解剖精度、病理机制和临床逻辑上的准确性，并将前沿医学研究成果转化为高效、直观的视觉表达工具，助力医疗教育、临床辅助决策与科研传播。</strong></p>
 
-<CardGrid>
-<ImageCard
-  image="/images/Team_Profile/WEI_HU/wei_hu.png"
-  title=" "
-  description=" "
-  href="/"
-  author="胡薇"
-  date="2024/08/16"
-/>
+## 个人简介
 
-<Card title="个人简介" icon="line-md:account">  
 <p> <strong>教育经历</strong></p>
 <p> 2015年考取复旦大学临床医学八年制，期间入斯坦福大学光遗传和透明化技术发明者karl deissorth实验室，后又前往生殖内分泌终身教授薛人望实验室学习，于2023年按期取得内科学博士学位；2024年2月入站，同时获得复旦超级博后的资助。 </p>   
 <p> <strong>研究领域</strong></p>
 <p> 研究兴趣主要聚焦于多模态成像及交叉学科应用解析针刺机制，围绕肥胖、多囊卵巢综合征、卵巢早衰等疾病的神经内分泌机制与针刺个性化治疗展开。参与搭建组织透明化三维成像平台和近红外二区活体成像平台，熟练应用光遗传学、单细胞测序、双光子成像等前沿技术，在时间和空间两个维度推动可视化分辨率达单细胞级别，实现针刺效应可视化及定量化。 </p>
-</Card>
-</CardGrid>
 
 <br>
 
@@ -55,10 +30,7 @@ outline: [2,4]  # 显示大纲，范围从2到4级标题
 <card title="奖项" icon="mingcute:candy-2-line">
 <p>全国大学生基础医学创新研究暨实验设计论坛三等奖</p>
 <p>上海市医学院校大学生创新实践论坛壁报展示特色作品奖</p>
-<p>全国大学生基础医学创新研究暨实验设计论坛三等奖</p>
 </card>
 
 
 <br>
-
-::: center

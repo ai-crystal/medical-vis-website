@@ -1,42 +1,16 @@
 ---
 title: 许春晓
-tagline: 计算机图形学与三维可视化研究者
-description: 计算机图形学与三维可视化研究者，专注于真实感渲染、人工智能、神经渲染、逆渲染和三维可视化等领域
-keywords: 计算机图形学, 三维可视化, 真实感渲染, 人工智能, 神经渲染, 逆渲染, 医学可视化, 科技创新, 技术分享
-author: 许春晓
-date: 2024-06-01
-lastUpdated: 2024-06-01
-tags:
-  - 真实感渲染
-  - 人工智能
-  - 神经渲染、逆渲染
-  - 三维可视化
-
-PageLayout: 'custom'  # 使用自定义布局
-navbar: true  # 显示导航栏
-aside: false # 显示侧边栏
-outline: [2,4]  # 显示大纲，范围从2到4级标题
-
+lang: zh-CN
+pageClass: crystal-cv
+aside: false
 ---
 
+<ProfileHeader member="Chunxiao_Xu" language="zh" />
 
 <p><strong>许春晓博士是Crystal医学可视化平台的发起者与核心算法贡献者，长期致力于将前沿医学影像可视化技术应用于临床实践，并推动其产生具有实际意义的科研价值。与此同时，他也追求以更具艺术性的方式呈现医学可视化效果，期望借此拉近医生与患者之间的距离，增进理解与信任。</strong></p>
 
-<p>  
-简历： <a href="https://medical-vis.com/medical-vis/Team_Profile/Chunxiao_Xu_English.md" target="_blank">英文版</a>
-</p>  
+## 个人简介
 
-<CardGrid>
-<ImageCard
-  image="/images/Team_Profile/CHUNXIAO_XU/xuchunxiao.png"
-  title=" "
-  description=" "
-  href="/"
-  author="许春晓"
-  date="2024/08/16"
-/>
-
-<Card title="个人简介" icon="line-md:account">  
 <p>  
 许春晓于2019年在山东大学(SDU)获得工学学士学位，并同年保送至中国科学技术大学(USTC)，专注于计算机图形学与三维可视化方向。2021年转为硕博连读，继续在计算机图形学方向开展科研。  
 </p>  
@@ -45,9 +19,7 @@ outline: [2,4]  # 显示大纲，范围从2到4级标题
 </p>  
 <p>  
 除了科研，他也重视技术体系建设与知识分享。在其个人技术博客 <a href="https://dezeming.top" target="_blank">dezeming.top</a> 上，已发表数百篇关于原理与算法实现的文章，受到广泛好评。  
-</p>  
-</Card>
-</CardGrid>
+</p>
 
 <br>
 
@@ -74,14 +46,12 @@ outline: [2,4]  # 显示大纲，范围从2到4级标题
 ---
 <br>
 
-<CardGrid cols="3">
-<ArtPlayer src="/videos/Team_Profile/CHUNXIAO_XU/Photorealistic-1.mp4" fullscreen height="200px" />
-<ArtPlayer src="/videos/Team_Profile/CHUNXIAO_XU/Photorealistic-2.mp4" fullscreen height="200px" />
-<ArtPlayer src="/videos/Team_Profile/CHUNXIAO_XU/Photorealistic-3.mp4" fullscreen height="200px" />
-<ArtPlayer src="/videos/Team_Profile/CHUNXIAO_XU/3DGS-1b.mp4" fullscreen height="200px" />
-<ArtPlayer src="/videos/Team_Profile/CHUNXIAO_XU/3DGS-1c.mp4" fullscreen height="200px" />
-<ArtPlayer src="/videos/Team_Profile/CHUNXIAO_XU/3DGS-1d.mp4" fullscreen height="200px" />
-</CardGrid>
+- [真实感体绘制 1](/videos/Team_Profile/CHUNXIAO_XU/Photorealistic-1.mp4)
+- [真实感体绘制 2](/videos/Team_Profile/CHUNXIAO_XU/Photorealistic-2.mp4)
+- [真实感体绘制 3](/videos/Team_Profile/CHUNXIAO_XU/Photorealistic-3.mp4)
+- [三维高斯泼溅 1](/videos/Team_Profile/CHUNXIAO_XU/3DGS-1b.mp4)
+- [三维高斯泼溅 2](/videos/Team_Profile/CHUNXIAO_XU/3DGS-1c.mp4)
+- [三维高斯泼溅 3](/videos/Team_Profile/CHUNXIAO_XU/3DGS-1d.mp4)
 
 <br>
 
@@ -95,9 +65,7 @@ outline: [2,4]  # 显示大纲，范围从2到4级标题
 <br>
 
 <CardGrid>
-<img 
-  src="/images/Team_Profile/CHUNXIAO_XU/Paper/cover_Real-time Realistic Volume Rendering of Consistently High Quality with Dynamic Illumination.png" 
-/>
+<img loading="lazy" decoding="async" src="/images/Team_Profile/CHUNXIAO_XU/Paper/cover_Real-time Realistic Volume Rendering of Consistently High Quality with Dynamic Illumination.png" />
 
 <Card title="" icon="material-symbols:bookmark-outline">
 C. Xu, H. Cheng, Z. Chen, J. Wang, Y. Chen and L. Zhao, "Real-time Realistic Volume Rendering of Consistently High Quality with Dynamic Illumination," in IEEE Transactions on Visualization and Computer Graphics, doi: 10.1109/TVCG.2024.3445339.
@@ -108,7 +76,7 @@ C. Xu, H. Cheng, Z. Chen, J. Wang, Y. Chen and L. Zhao, "Real-time Realistic Vol
 ---
 <br>
 <CardGrid>
-<img src="/images/Team_Profile/CHUNXIAO_XU/Paper/cover_Efficient Multi-Material Volume Rendering for Realistic Visualization with Complex Transfer Functions.png" />
+<img loading="lazy" decoding="async" src="/images/Team_Profile/CHUNXIAO_XU/Paper/cover_Efficient Multi-Material Volume Rendering for Realistic Visualization with Complex Transfer Functions.png" />
 
 <Card title="" icon="material-symbols:bookmark-outline">
 C. Xu, X. Xu, J. Zhang, Y. Cao, and L. Zhao. 2025. "Efficient Multi-Material Volume Rendering for Realistic Visualization with Complex Transfer Functions" Journal of Imaging 11, no. 6: 193. https://doi.org/10.3390/jimaging11060193
@@ -119,7 +87,7 @@ C. Xu, X. Xu, J. Zhang, Y. Cao, and L. Zhao. 2025. "Efficient Multi-Material Vol
 ---
 <br>
 <CardGrid>
-<img src="/images/Team_Profile/CHUNXIAO_XU/Paper/cover_Real-Time Volume-Rendering Image Denoising Based on Spatiotemporal Weighted Kernel Prediction.png" />
+<img loading="lazy" decoding="async" src="/images/Team_Profile/CHUNXIAO_XU/Paper/cover_Real-Time Volume-Rendering Image Denoising Based on Spatiotemporal Weighted Kernel Prediction.png" />
 
 <Card title="" icon="material-symbols:bookmark-outline">
 Xu, X., Xu, C., & Zhao, L. (2025). Real-Time Volume-Rendering Image Denoising Based on Spatiotemporal Weighted Kernel Prediction. Journal of Imaging, 11(4), 126.
@@ -130,7 +98,7 @@ Xu, X., Xu, C., & Zhao, L. (2025). Real-Time Volume-Rendering Image Denoising Ba
 ---
 <br>
 <CardGrid>
-<img src="/images/Team_Profile/CHUNXIAO_XU/Paper/cover_Real-time Neural Denoising for Volume Rendering Using Dual-Input Feature Fusion Network.png" />
+<img loading="lazy" decoding="async" src="/images/Team_Profile/CHUNXIAO_XU/Paper/cover_Real-time Neural Denoising for Volume Rendering Using Dual-Input Feature Fusion Network.png" />
 
 <Card title="" icon="material-symbols:bookmark-outline">
 Xu, C., Xu, X., Zhang, J., Liu, Y., Cao, Y. and Zhao, L. (2025), Real-time Neural Denoising for Volume Rendering Using Dual-Input Feature Fusion Network. Computer Graphics Forum e70276. https://doi.org/10.1111/cgf.70276
@@ -141,7 +109,7 @@ Xu, C., Xu, X., Zhang, J., Liu, Y., Cao, Y. and Zhao, L. (2025), Real-time Neura
 ---
 <br>
 <CardGrid>
-<img src="/images/Team_Profile/CHUNXIAO_XU/Paper/cover_Fast and accurate illumination estimation using LDR panoramic images for realistic rendering.png" />
+<img loading="lazy" decoding="async" src="/images/Team_Profile/CHUNXIAO_XU/Paper/cover_Fast and accurate illumination estimation using LDR panoramic images for realistic rendering.png" />
 
 <Card title="" icon="material-symbols:bookmark-outline">
 Cheng, H., Xu, C., Wang, J., Chen, Z., & Zhao, L. (2022). Fast and accurate illumination estimation using LDR panoramic images for realistic rendering. IEEE Transactions on Visualization and Computer Graphics, 29(12), 5235-5249.
@@ -152,7 +120,7 @@ Cheng, H., Xu, C., Wang, J., Chen, Z., & Zhao, L. (2022). Fast and accurate illu
 ---
 <br>
 <CardGrid>
-<img src="/images/Team_Profile/CHUNXIAO_XU/Paper/cover_Major revision.png" />
+<img loading="lazy" decoding="async" src="/images/Team_Profile/CHUNXIAO_XU/Paper/cover_Major revision.png" />
 
 <Card title="" icon="material-symbols:bookmark-outline">
 Jiatian Zhang, Chunxiao Xu, Han Zhong, Yiheng Cao, and Lingxiao Zhao. 2025. "BDFM: Brain Diseases Foundation Model for Segmentation and Classification Tasks", IEEE Transactions on Biomedical Engineering (TBME), doi: 10.1109/TBME.2025.3637146
@@ -163,7 +131,7 @@ Jiatian Zhang, Chunxiao Xu, Han Zhong, Yiheng Cao, and Lingxiao Zhao. 2025. "BDF
 ---
 <br>
 <CardGrid>
-<img src="/images/Team_Profile/CHUNXIAO_XU/Paper/cover_SegR3D A Multi Target 3D Visualization System for Realistic Volume Rendering of Meningiomas.png" />
+<img loading="lazy" decoding="async" src="/images/Team_Profile/CHUNXIAO_XU/Paper/cover_SegR3D A Multi Target 3D Visualization System for Realistic Volume Rendering of Meningiomas.png" />
 
 <Card title="" icon="material-symbols:bookmark-outline">
 Zhang, J., Xu, C.(co-first), Xu, X., Zhao, Y., & Zhao, L. (2025). SegR3D: A Multi-Target 3D Visualization System for Realistic Volume Rendering of Meningiomas. Journal of Imaging, 11(7), 216.
@@ -174,7 +142,7 @@ Zhang, J., Xu, C.(co-first), Xu, X., Zhao, Y., & Zhao, L. (2025). SegR3D: A Mult
 ---
 <br>
 <CardGrid>
-<img src="/images/Team_Profile/CHUNXIAO_XU/Paper/cover_A Mixed Reality Framework for Interactive Realistic Volume Rendering with Dynamic Environment Illumination.png" />
+<img loading="lazy" decoding="async" src="/images/Team_Profile/CHUNXIAO_XU/Paper/cover_A Mixed Reality Framework for Interactive Realistic Volume Rendering with Dynamic Environment Illumination.png" />
 
 <Card title="" icon="material-symbols:bookmark-outline">
 Cheng, H., Xu, C.(co-first), Chen, Z., Wang, J., Chen, Y., & Zhao, L. (2023, March). A Mixed Reality Framework for Interactive Realistic Volume Rendering with Dynamic Environment Illumination. In 2023 IEEE Conference on Virtual Reality and 3D User Interfaces Abstracts and Workshops (VRW) (pp. 741-742). IEEE.
@@ -185,7 +153,7 @@ Cheng, H., Xu, C.(co-first), Chen, Z., Wang, J., Chen, Y., & Zhao, L. (2023, Mar
 ---
 <br>
 <CardGrid>
-<img src="/images/Team_Profile/CHUNXIAO_XU/Paper/cover_Quad‐fisheye Image Stitching for Monoscopic Panorama Reconstruction.png" />
+<img loading="lazy" decoding="async" src="/images/Team_Profile/CHUNXIAO_XU/Paper/cover_Quad‐fisheye Image Stitching for Monoscopic Panorama Reconstruction.png" />
 
 <Card title="" icon="material-symbols:bookmark-outline">
 Cheng, H., Xu, C., Wang, J., & Zhao, L. (2022, September). Quad‐fisheye Image Stitching for Monoscopic Panorama Reconstruction. In Computer graphics forum (Vol. 41, No. 6, pp. 94-109).
@@ -196,7 +164,7 @@ Cheng, H., Xu, C., Wang, J., & Zhao, L. (2022, September). Quad‐fisheye Image 
 ---
 <br>
 <CardGrid>
-<img src="/images/Team_Profile/CHUNXIAO_XU/Paper/cover_Realistic Volume Rendering with Environment-Synced Illumination in Mixed Reality.jpg" />
+<img loading="lazy" decoding="async" src="/images/Team_Profile/CHUNXIAO_XU/Paper/cover_Realistic Volume Rendering with Environment-Synced Illumination in Mixed Reality.jpg" />
 
 <Card title="" icon="material-symbols:bookmark-outline">
 Cheng, H., Xu, C.(co-first), Chen, X., Chen, Z., Wang, J., & Zhao, L. (2023, October). Realistic Volume Rendering with Environment-Synced Illumination in Mixed Reality. In 2023 IEEE International Symposium on Mixed and Augmented Reality Adjunct (ISMAR-Adjunct) (pp. 423-428). IEEE.
@@ -207,7 +175,7 @@ Cheng, H., Xu, C.(co-first), Chen, X., Chen, Z., Wang, J., & Zhao, L. (2023, Oct
 ---
 <br>
 <CardGrid>
-<img src="/images/Team_Profile/CHUNXIAO_XU/Paper/cover_高鉴别力和强鲁棒性的局部特征描述算法.png" />
+<img loading="lazy" decoding="async" src="/images/Team_Profile/CHUNXIAO_XU/Paper/cover_高鉴别力和强鲁棒性的局部特征描述算法.png" />
 
 <Card title="" icon="material-symbols:bookmark-outline">
 LSNFS：高鉴别力和强鲁棒性的局部特征描述算法
@@ -220,7 +188,7 @@ LSNFS：高鉴别力和强鲁棒性的局部特征描述算法
 ---
 <br>
 <CardGrid>
-<img src="/images/Team_Profile/CHUNXIAO_XU/Paper/cover_基于结构光立体视觉的头部外科增强现实导航系统.png" />
+<img loading="lazy" decoding="async" src="/images/Team_Profile/CHUNXIAO_XU/Paper/cover_基于结构光立体视觉的头部外科增强现实导航系统.png" />
 
 <Card title="" icon="material-symbols:bookmark-outline">
 基于结构光立体视觉的头部外科增强现实导航系统
@@ -233,7 +201,7 @@ LSNFS：高鉴别力和强鲁棒性的局部特征描述算法
 ---
 <br>
 <CardGrid>
-<img src="/images/Team_Profile/CHUNXIAO_XU/Paper/cover_基于Res2Net与注意力机制的头部姿态估计算法.png" />
+<img loading="lazy" decoding="async" src="/images/Team_Profile/CHUNXIAO_XU/Paper/cover_基于Res2Net与注意力机制的头部姿态估计算法.png" />
 
 <Card title="" icon="material-symbols:bookmark-outline">
 基于Res2Net与注意力机制的头部姿态估计算法
@@ -246,7 +214,7 @@ LSNFS：高鉴别力和强鲁棒性的局部特征描述算法
 ---
 <br>
 <CardGrid>
-<img src="/images/Team_Profile/CHUNXIAO_XU/Paper/cover_基于球面高斯和球谐函数特征互补的室内光照估计.png" />
+<img loading="lazy" decoding="async" src="/images/Team_Profile/CHUNXIAO_XU/Paper/cover_基于球面高斯和球谐函数特征互补的室内光照估计.png" />
 
 <Card title="" icon="material-symbols:bookmark-outline">
 基于球面高斯和球谐函数特征互补的室内光照估计
@@ -307,14 +275,3 @@ LSNFS：高鉴别力和强鲁棒性的局部特征描述算法
   author="Chunxiao Xu"
   date=""
 />
-
-
-
-
-
-
-
-
-
-
-

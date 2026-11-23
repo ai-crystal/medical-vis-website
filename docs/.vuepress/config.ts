@@ -16,8 +16,8 @@ import { plumeTheme } from 'vuepress-theme-plume'
 export default defineUserConfig({
   base: '/',
   lang: 'en-US',
-  title: 'medical-vis',
-  description: 'medical-vis',
+  title: 'Crystal',
+  description: 'Medical 3D visualization, volume rendering and research datasets',
 
   head: [
     // 配置站点图标

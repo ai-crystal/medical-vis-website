@@ -1,0 +1,2183 @@
+{
+  "snapshot": "2026-11-23",
+  "entries": [
+    {
+      "file": "Fly.inforaw",
+      "name": "Fly",
+      "category": "insects",
+      "description": "fly; original reconstructed micro-CT volume, no resampling or intensity normalization.",
+      "resolution": [
+        862,
+        756,
+        728
+      ],
+      "spacing": [
+        0.5249,
+        0.5249,
+        0.5249
+      ],
+      "spacingUnit": "mm",
+      "type": "ushort",
+      "bytes": 682218068,
+      "source": "https://zenodo.org/records/10784903",
+      "download": "",
+      "license": "CC BY 4.0; creators Fabian Lutter and Martin Hampe, Bauhaus-Universitaet Weimar, 2024."
+    },
+    {
+      "file": "Walnut.inforaw",
+      "name": "Walnut",
+      "category": "plants",
+      "description": "",
+      "resolution": [
+        898,
+        976,
+        977
+      ],
+      "spacing": [
+        0.17497,
+        0.17497,
+        0.17497
+      ],
+      "spacingUnit": "mm",
+      "type": "ushort",
+      "bytes": 1196034493,
+      "source": "https://zenodo.org/records/10784903",
+      "download": "",
+      "license": ""
+    },
+    {
+      "file": "StagBeetle.inforaw",
+      "name": "StagBeetle",
+      "category": "insects",
+      "description": "Stag beetle",
+      "resolution": [
+        832,
+        832,
+        494
+      ],
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacingUnit": "voxel",
+      "type": "ushort",
+      "bytes": 23414491,
+      "source": "https://www.cg.tuwien.ac.at/research/publications/2005/dataset-stagbeetle/",
+      "download": "",
+      "license": "not explicitly specified by source; preserve attribution."
+    },
+    {
+      "file": "Ant_Acanthognathus.inforaw",
+      "name": "Ant Acanthognathus",
+      "category": "insects",
+      "description": "Acanthognathus cf.ocellatus; worker; CASENT0744647; unstained whole-ant micro-CT; no resampling or intensity normalization.",
+      "resolution": [
+        838,
+        1121,
+        1254
+      ],
+      "spacing": [
+        0.244,
+        0.244,
+        0.244
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 666770408,
+      "source": "https://biomedisa.info/antscan/specimen/774/",
+      "download": "",
+      "license": "CC BY 4.0; Antscan contributor Rodrigo M. Feitosa; collected by J.L.M. Diniz; collection located at OIST."
+    },
+    {
+      "file": "HermitCrab_Diogenes.inforaw",
+      "name": "HermitCrab Diogenes",
+      "category": "crustaceans",
+      "description": "",
+      "resolution": [
+        2168,
+        1534,
+        1133
+      ],
+      "spacing": [
+        0.00600002,
+        0.00600002,
+        0.00600002
+      ],
+      "spacingUnit": "mm",
+      "type": "ushort",
+      "bytes": 1774461937,
+      "source": "https://gigadb.org/dataset/100364",
+      "download": "",
+      "license": ""
+    },
+    {
+      "file": "OkinawaCrab.inforaw",
+      "name": "OkinawaCrab",
+      "category": "crustaceans",
+      "description": "Okinawa crab thorax with some legs attached; micro-CT, nominal 3 micrometre voxel spacing.",
+      "resolution": [
+        992,
+        1014,
+        995
+      ],
+      "spacing": [
+        0.003002309241099821,
+        0.003002309241099821,
+        0.003002309241099821
+      ],
+      "spacingUnit": "mm",
+      "type": "ushort",
+      "bytes": 1219541622,
+      "source": "https://qim.compute.dtu.dk/pages/crab.html",
+      "download": "",
+      "license": "not explicitly specified; the official dataset manifest has license=null. No open-license claim is made."
+    },
+    {
+      "file": "Amber_Tiger_Beetle.inforaw",
+      "name": "Amber Tiger Beetle",
+      "category": "fossils",
+      "description": "Palaeoiresina cassolai MB.J 1647, whole beetle in Eocene Baltic amber",
+      "resolution": [
+        1000,
+        1023,
+        1806
+      ],
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacingUnit": "voxel",
+      "type": "ushort",
+      "bytes": 2021422757,
+      "source": "https://datadryad.org/dataset/doi:10.6078/D1VH9M",
+      "download": "https://datadryad.org/downloads/file_stream/2391638",
+      "license": "Dryad dataset reuse terms"
+    },
+    {
+      "file": "Arizona_Rhinoceros_Beetle.inforaw",
+      "name": "Arizona Rhinoceros Beetle",
+      "category": "insects",
+      "description": "Dynastinae, Arizona rhinoceros beetle, whole body",
+      "resolution": [
+        1012,
+        1024,
+        883
+      ],
+      "spacing": [
+        0.03792,
+        0.03792,
+        0.03792
+      ],
+      "spacingUnit": "mm",
+      "type": "ushort",
+      "bytes": 1244693152,
+      "source": "https://doi.org/10.18738/T8/JL1SWV",
+      "download": "https://doi.org/10.18738/T8/JL1SWV",
+      "license": "See Texas Data Repository dataset terms"
+    },
+    {
+      "file": "Digger_Wasp_and_Ladybird.inforaw",
+      "name": "Digger Wasp and Ladybird",
+      "category": "insects",
+      "description": "Digger wasp and seven-spotted ladybird in one scan (archive common-name labels)",
+      "resolution": [
+        1856,
+        1856,
+        851
+      ],
+      "spacing": [
+        0.0200000081,
+        0.0200000081,
+        0.0200000081
+      ],
+      "spacingUnit": "mm",
+      "type": "ushort",
+      "bytes": 3742745180,
+      "source": "https://zenodo.org/records/12784447",
+      "download": "https://zenodo.org/api/records/12784447/files/Pot3-%20Gold%20digger%20wasp(1)+%20Ladybug(1).zip/content",
+      "license": "CC BY 4.0"
+    },
+    {
+      "file": "Dobsonfly_Corydalus.inforaw",
+      "name": "Dobsonfly Corydalus",
+      "category": "insects",
+      "description": "Corydalus cornutus, full 945-slice stack",
+      "resolution": [
+        1024,
+        1024,
+        945
+      ],
+      "spacing": [
+        0.0293,
+        0.0293,
+        0.082
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 439318839,
+      "source": "https://www2.geo.utexas.edu/specimens/Corydalus_cornutus/head/",
+      "download": "https://utexas.box.com/shared/static/o7k6i003hify51zzrl21bf5z6kzgko2q.zip",
+      "license": "CC BY-NC 4.0"
+    },
+    {
+      "file": "German_Yellowjacket.inforaw",
+      "name": "German Yellowjacket",
+      "category": "insects",
+      "description": "Vespula germanica, secondary specimen",
+      "resolution": [
+        1856,
+        1856,
+        941
+      ],
+      "spacing": [
+        0.0200000142,
+        0.0200000142,
+        0.0200000142
+      ],
+      "spacingUnit": "mm",
+      "type": "ushort",
+      "bytes": 4128347017,
+      "source": "https://zenodo.org/records/12784447",
+      "download": "https://zenodo.org/api/records/12784447/files/Pot2%20-%20Yellow%20jacket%C2%A0wasp(2).zip/content",
+      "license": "CC BY 4.0"
+    },
+    {
+      "file": "Mantis_religiosa.inforaw",
+      "name": "Mantis religiosa",
+      "category": "insects",
+      "description": "Mantis religiosa, female nymph, single specimen",
+      "resolution": [
+        1656,
+        1656,
+        2251
+      ],
+      "spacing": [
+        0.02400000139,
+        0.02400000139,
+        0.02400000139
+      ],
+      "spacingUnit": "mm",
+      "type": "ushort",
+      "bytes": 7030003256,
+      "source": "https://zenodo.org/records/12784447",
+      "download": "https://zenodo.org/api/records/12784447/files/Pot5-%20Mantis%20religiosa(1).zip/content",
+      "license": "CC BY 4.0"
+    },
+    {
+      "file": "Spotted_Bird_Grasshopper.inforaw",
+      "name": "Spotted Bird Grasshopper",
+      "category": "insects",
+      "description": "Schistocerca emarginata, whole body",
+      "resolution": [
+        1024,
+        1024,
+        1035
+      ],
+      "spacing": [
+        0.03906,
+        0.03906,
+        0.085
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 438939522,
+      "source": "https://digimorph.org/specimens/Schistocerca_emarginatum/head/",
+      "download": "https://utexas.box.com/shared/static/r7d1xylkf76wws2ufs457776k02cqzao.zip",
+      "license": "CC BY-NC 4.0"
+    },
+    {
+      "file": "Wasp_Trio.inforaw",
+      "name": "Wasp Trio",
+      "category": "insects",
+      "description": "Three wasps in one scan: mud dauber, ichneumon and yellowjacket (archive common-name labels)",
+      "resolution": [
+        1856,
+        1856,
+        971
+      ],
+      "spacing": [
+        0.01999992855,
+        0.01999992855,
+        0.01999992855
+      ],
+      "spacingUnit": "mm",
+      "type": "ushort",
+      "bytes": 4270237582,
+      "source": "https://zenodo.org/records/12784447",
+      "download": "https://zenodo.org/api/records/12784447/files/Pot1-%20Mud%20dauber%20wasp(1)%20+%20Ichneumon%20wasp(1)+%20Yellow%20jacket%C2%A0wasp(1).zip/content",
+      "license": "CC BY 4.0"
+    },
+    {
+      "file": "Woodlouse_3_002.inforaw",
+      "name": "Woodlouse 3 002",
+      "category": "crustaceans",
+      "description": "Woodlouse (Isopoda), BugNIST original single animal",
+      "resolution": [
+        450,
+        450,
+        900
+      ],
+      "spacing": [
+        0.02662,
+        0.02662,
+        0.02662
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 41491094,
+      "source": "https://abdahl.github.io/bugnist/",
+      "download": "https://archive.compute.dtu.dk/files/public/projects/BugNIST3D/zips/bugnist_900.zip",
+      "license": "Publisher requires dataset citation; no explicit reuse license verified"
+    },
+    {
+      "file": "Woodlouse_4_081.inforaw",
+      "name": "Woodlouse 4 081",
+      "category": "crustaceans",
+      "description": "Woodlouse (Isopoda), BugNIST original single animal",
+      "resolution": [
+        450,
+        450,
+        900
+      ],
+      "spacing": [
+        0.02662,
+        0.02662,
+        0.02662
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 17623233,
+      "source": "https://abdahl.github.io/bugnist/",
+      "download": "https://archive.compute.dtu.dk/files/public/projects/BugNIST3D/zips/bugnist_900.zip",
+      "license": "Dataset citation required by publisher; no explicit reuse license verified"
+    },
+    {
+      "file": "Woodlouse_6_035.inforaw",
+      "name": "Woodlouse 6 035",
+      "category": "crustaceans",
+      "description": "Woodlouse (Isopoda), BugNIST original single animal",
+      "resolution": [
+        450,
+        450,
+        900
+      ],
+      "spacing": [
+        0.02662,
+        0.02662,
+        0.02662
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 17563158,
+      "source": "https://abdahl.github.io/bugnist/",
+      "download": "https://archive.compute.dtu.dk/files/public/projects/BugNIST3D/zips/bugnist_900.zip",
+      "license": "Dataset citation required by publisher; no explicit reuse license verified"
+    },
+    {
+      "file": "Woodlouse_8_006.inforaw",
+      "name": "Woodlouse 8 006",
+      "category": "crustaceans",
+      "description": "Woodlouse (Isopoda), BugNIST original single animal",
+      "resolution": [
+        450,
+        450,
+        900
+      ],
+      "spacing": [
+        0.02662,
+        0.02662,
+        0.02662
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 17333136,
+      "source": "https://abdahl.github.io/bugnist/",
+      "download": "https://archive.compute.dtu.dk/files/public/projects/BugNIST3D/zips/bugnist_900.zip",
+      "license": "Dataset citation required by publisher; no explicit reuse license verified"
+    },
+    {
+      "file": "Goreopagurus_poorei_male_35um.inforaw",
+      "name": "Goreopagurus poorei male 35um",
+      "category": "crustaceans",
+      "description": "Goreopagurus poorei, whole mature male, USNM 1292090",
+      "resolution": [
+        2105,
+        2069,
+        377
+      ],
+      "spacing": [
+        0.03451270988070059,
+        0.03451270988070059,
+        0.03451270988070059
+      ],
+      "spacingUnit": "mm",
+      "type": "ushort",
+      "bytes": 1150527856,
+      "source": "https://doi.org/10.5524/100364",
+      "download": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100364/Goreopagurus_poorei_m/Goreopagarus_poorei_m_tiff.tar.gz",
+      "license": "CC0 (GigaDB dataset)"
+    },
+    {
+      "file": "Pagurus_fraserorum_ovigerous_female_5um.inforaw",
+      "name": "Pagurus fraserorum ovigerous female 5um",
+      "category": "crustaceans",
+      "description": "Pagurus fraserorum, whole ovigerous female paratype",
+      "resolution": [
+        1869,
+        1094,
+        1473
+      ],
+      "spacing": [
+        0.00499995001895435,
+        0.00499995001895435,
+        0.00499995001895435
+      ],
+      "spacingUnit": "mm",
+      "type": "ushort",
+      "bytes": 5462101835,
+      "source": "https://doi.org/10.5524/100364",
+      "download": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100364/Pagurus_fraserorum_f_paratype/Pagarus_fraserorum_f_paratype_tiff.tar.gz",
+      "license": "CC0 (GigaDB dataset)"
+    },
+    {
+      "file": "TC18_Modern_Lobster_reference_low_resolution.inforaw",
+      "name": "TC18 lobster · reference scan",
+      "category": "references",
+      "description": "modern lobster embedded in resin; classic low-resolution whole specimen reference.",
+      "resolution": [
+        301,
+        324,
+        56
+      ],
+      "spacing": [
+        1.0,
+        1.0,
+        1.4
+      ],
+      "spacingUnit": "voxel",
+      "type": "uchar",
+      "bytes": 2105531,
+      "source": "https://tc18.liris.cnrs.fr/3D_images.html",
+      "download": "https://raw.githubusercontent.com/TC-18/tc18.org/master/DataSets/3D_greyscale/lobster.raw.gz",
+      "license": "no explicit data reuse license stated in the catalogue."
+    },
+    {
+      "file": "RIKEN_Alstroemeria.inforaw",
+      "name": "RIKEN Alstroemeria",
+      "category": "plants",
+      "description": "Alstroemeria (paper Fig. 14b)",
+      "resolution": [
+        418,
+        365,
+        350
+      ],
+      "spacing": [
+        0.1891177033492823,
+        0.1891177033492823,
+        0.1891177033492823
+      ],
+      "spacingUnit": "mm",
+      "type": "short",
+      "bytes": 68076975,
+      "source": "https://www2.riken.jp/brict/Ijiri/flowerctlib/index.html",
+      "download": "https://www2.riken.jp/brict/Ijiri/flowerctlib/20131201_mRay_Aristroemeria/volume.zip",
+      "license": ""
+    },
+    {
+      "file": "RIKEN_Eustoma_Blue.inforaw",
+      "name": "RIKEN Eustoma Blue",
+      "category": "plants",
+      "description": "Eustoma blue (paper Fig. 14a)",
+      "resolution": [
+        369,
+        365,
+        398
+      ],
+      "spacing": [
+        0.15963523035230354,
+        0.15963523035230354,
+        0.15963523035230354
+      ],
+      "spacingUnit": "mm",
+      "type": "short",
+      "bytes": 59741688,
+      "source": "https://www2.riken.jp/brict/Ijiri/flowerctlib/index.html",
+      "download": "https://www2.riken.jp/brict/Ijiri/flowerctlib/20131009_mRay_EustomaBlue/volume.zip",
+      "license": ""
+    },
+    {
+      "file": "RIKEN_Eustoma_Purple.inforaw",
+      "name": "RIKEN Eustoma Purple",
+      "category": "plants",
+      "description": "Eustoma purple (paper Fig. 1)",
+      "resolution": [
+        371,
+        393,
+        361
+      ],
+      "spacing": [
+        0.16538167115902966,
+        0.16538167115902966,
+        0.16538167115902966
+      ],
+      "spacingUnit": "mm",
+      "type": "short",
+      "bytes": 71968016,
+      "source": "https://www2.riken.jp/brict/Ijiri/flowerctlib/index.html",
+      "download": "https://www2.riken.jp/brict/Ijiri/flowerctlib/20131201_mRay_EustomaPurple/volume.zip",
+      "license": ""
+    },
+    {
+      "file": "RIKEN_Eustoma_Yxlon.inforaw",
+      "name": "RIKEN Eustoma Yxlon",
+      "category": "plants",
+      "description": "Eustoma (paper Fig. 14e)",
+      "resolution": [
+        211,
+        230,
+        310
+      ],
+      "spacing": [
+        0.27095258,
+        0.27095258,
+        0.27095258
+      ],
+      "spacingUnit": "mm",
+      "type": "short",
+      "bytes": 14514513,
+      "source": "https://www2.riken.jp/brict/Ijiri/flowerctlib/index.html",
+      "download": "https://www2.riken.jp/brict/Ijiri/flowerctlib/20121031_Yxlon_Eustoma/volume.zip",
+      "license": ""
+    },
+    {
+      "file": "RIKEN_Gloriosa_mRay.inforaw",
+      "name": "RIKEN Gloriosa mRay",
+      "category": "plants",
+      "description": "Gloriosa (paper Fig. 14d)",
+      "resolution": [
+        393,
+        378,
+        356
+      ],
+      "spacing": [
+        0.2087496183206107,
+        0.2087496183206107,
+        0.2087496183206107
+      ],
+      "spacingUnit": "mm",
+      "type": "short",
+      "bytes": 65756956,
+      "source": "https://www2.riken.jp/brict/Ijiri/flowerctlib/index.html",
+      "download": "https://www2.riken.jp/brict/Ijiri/flowerctlib/20131201_mRay_Gloriosa/volume.zip",
+      "license": ""
+    },
+    {
+      "file": "RIKEN_Gloriosa_Yxlon.inforaw",
+      "name": "RIKEN Gloriosa Yxlon",
+      "category": "plants",
+      "description": "Gloriosa (paper Fig. 14g)",
+      "resolution": [
+        353,
+        389,
+        414
+      ],
+      "spacing": [
+        0.27095258,
+        0.27095258,
+        0.27095258
+      ],
+      "spacingUnit": "mm",
+      "type": "short",
+      "bytes": 53369534,
+      "source": "https://www2.riken.jp/brict/Ijiri/flowerctlib/index.html",
+      "download": "https://www2.riken.jp/brict/Ijiri/flowerctlib/20121031_Yxlon_Gloriosa/volume.zip",
+      "license": ""
+    },
+    {
+      "file": "RIKEN_Rose.inforaw",
+      "name": "RIKEN Rose",
+      "category": "plants",
+      "description": "rose (paper Fig. 14h)",
+      "resolution": [
+        482,
+        458,
+        243
+      ],
+      "spacing": [
+        0.23188070539419084,
+        0.23188070539419084,
+        0.23188070539419084
+      ],
+      "spacingUnit": "mm",
+      "type": "short",
+      "bytes": 71614602,
+      "source": "https://www2.riken.jp/brict/Ijiri/flowerctlib/index.html",
+      "download": "https://www2.riken.jp/brict/Ijiri/flowerctlib/20131201_mRay_Rosa/volume.zip",
+      "license": ""
+    },
+    {
+      "file": "RIKEN_Tulip.inforaw",
+      "name": "RIKEN Tulip",
+      "category": "plants",
+      "description": "tulip (paper Fig. 14c)",
+      "resolution": [
+        321,
+        337,
+        487
+      ],
+      "spacing": [
+        0.14102990654205608,
+        0.14102990654205608,
+        0.14102990654205608
+      ],
+      "spacingUnit": "mm",
+      "type": "short",
+      "bytes": 73092893,
+      "source": "https://www2.riken.jp/brict/Ijiri/flowerctlib/index.html",
+      "download": "https://www2.riken.jp/brict/Ijiri/flowerctlib/20140110_mRay_Tulip/volume.zip",
+      "license": ""
+    },
+    {
+      "file": "RIKEN_Viola.inforaw",
+      "name": "RIKEN Viola",
+      "category": "plants",
+      "description": "Viola (paper Fig. 14f)",
+      "resolution": [
+        389,
+        386,
+        354
+      ],
+      "spacing": [
+        0.1104694087403599,
+        0.1104694087403599,
+        0.1104694087403599
+      ],
+      "spacingUnit": "mm",
+      "type": "short",
+      "bytes": 59568415,
+      "source": "https://www2.riken.jp/brict/Ijiri/flowerctlib/index.html",
+      "download": "https://www2.riken.jp/brict/Ijiri/flowerctlib/20141010_mRay_Viola/volume.zip",
+      "license": ""
+    },
+    {
+      "file": "UZH_Beechnut_20um.inforaw",
+      "name": "UZH Beechnut 20um",
+      "category": "plants",
+      "description": "dried beechnut",
+      "resolution": [
+        1024,
+        1024,
+        1546
+      ],
+      "spacing": [
+        0.02,
+        0.02,
+        0.02
+      ],
+      "spacingUnit": "mm",
+      "type": "ushort",
+      "bytes": 1475700752,
+      "source": "https://www.ifi.uzh.ch/en/vmml/research/datasets.html",
+      "download": "https://files.ifi.uzh.ch/vmml/uct_datasets/beechnut.zip",
+      "license": "no dataset license stated on download page; retain publisher attribution"
+    },
+    {
+      "file": "UZH_Hazelnuts_with_leaves_148um.inforaw",
+      "name": "UZH Hazelnuts with leaves 148um",
+      "category": "plants",
+      "description": "dried hazelnuts with leaves",
+      "resolution": [
+        512,
+        512,
+        512
+      ],
+      "spacing": [
+        0.148,
+        0.148,
+        0.148
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 42018182,
+      "source": "https://www.ifi.uzh.ch/en/vmml/research/datasets.html",
+      "download": "https://files.ifi.uzh.ch/vmml/uct_datasets/hazelnuts.zip",
+      "license": "no dataset license stated on download page; retain publisher attribution"
+    },
+    {
+      "file": "UZH_Leucadendron_rubrum_60um.inforaw",
+      "name": "UZH Leucadendron rubrum 60um",
+      "category": "plants",
+      "description": "dried Leucadendron rubrum flower",
+      "resolution": [
+        1024,
+        1024,
+        1024
+      ],
+      "spacing": [
+        0.06,
+        0.06,
+        0.06
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 436448940,
+      "source": "https://www.ifi.uzh.ch/en/vmml/research/datasets.html",
+      "download": "https://files.ifi.uzh.ch/vmml/uct_datasets/flower.zip",
+      "license": "no dataset license stated on download page; retain publisher attribution"
+    },
+    {
+      "file": "XPlant_Artichoke.inforaw",
+      "name": "XPlant Artichoke",
+      "category": "plants",
+      "description": "Artichoke",
+      "resolution": [
+        286,
+        286,
+        191
+      ],
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacingUnit": "voxel",
+      "type": "uchar",
+      "bytes": 1020407,
+      "source": "https://www.biw.kuleuven.be/biosyst/mebios/downloads/3d-x-ray-images-of-plant-organs/flowers/Artichoke",
+      "download": "https://www.biw.kuleuven.be/biosyst/mebios/downloads/3d-x-ray-images-of-plant-organs/flowers/Artichoke/3d-tiff",
+      "license": "ODC-BY 1.0 (X-Plant specimen catalogue)"
+    },
+    {
+      "file": "XPlant_Avocado.inforaw",
+      "name": "XPlant Avocado",
+      "category": "plants",
+      "description": "Avocado",
+      "resolution": [
+        96,
+        78,
+        89
+      ],
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 169195,
+      "source": "https://www.biw.kuleuven.be/biosyst/mebios/downloads/3d-x-ray-images-of-plant-organs/fleshy-fruit-1/Avocado",
+      "download": "https://www.biw.kuleuven.be/biosyst/mebios/downloads/3d-x-ray-images-of-plant-organs/fleshy-fruit-1/Avocado/recons_1000um.tif",
+      "license": "ODC-BY 1.0 (X-Plant specimen catalogue)"
+    },
+    {
+      "file": "XPlant_Banana.inforaw",
+      "name": "XPlant Banana",
+      "category": "plants",
+      "description": "Banana",
+      "resolution": [
+        246,
+        246,
+        370
+      ],
+      "spacing": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 7567511,
+      "source": "https://www.biw.kuleuven.be/biosyst/mebios/downloads/3d-x-ray-images-of-plant-organs/fleshy-fruit-1/banana-1",
+      "download": "https://www.biw.kuleuven.be/biosyst/mebios/downloads/3d-x-ray-images-of-plant-organs/fleshy-fruit-1/banana-1/banana-3d-500um.tif",
+      "license": "ODC-BY 1.0 (X-Plant specimen catalogue)"
+    },
+    {
+      "file": "XPlant_Bell_pepper.inforaw",
+      "name": "XPlant Bell pepper",
+      "category": "plants",
+      "description": "Bell pepper",
+      "resolution": [
+        251,
+        251,
+        252
+      ],
+      "spacing": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 5201249,
+      "source": "https://www.biw.kuleuven.be/biosyst/mebios/downloads/3d-x-ray-images-of-plant-organs/fleshy-fruit-1/bell-pepper-1",
+      "download": "https://www.biw.kuleuven.be/biosyst/mebios/downloads/3d-x-ray-images-of-plant-organs/fleshy-fruit-1/bell-pepper-1/bell-pepper-3d-500um.tif",
+      "license": "ODC-BY 1.0 (X-Plant specimen catalogue)"
+    },
+    {
+      "file": "XPlant_Broccoli.inforaw",
+      "name": "XPlant Broccoli",
+      "category": "plants",
+      "description": "Broccoli",
+      "resolution": [
+        175,
+        175,
+        245
+      ],
+      "spacing": [
+        1.05,
+        1.05,
+        1.05
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 920927,
+      "source": "https://www.biw.kuleuven.be/biosyst/mebios/downloads/3d-x-ray-images-of-plant-organs/flowers/brocoli",
+      "download": "https://www.biw.kuleuven.be/biosyst/mebios/downloads/3d-x-ray-images-of-plant-organs/flowers/brocoli/brocoli-3d-1050um.tif",
+      "license": "ODC-BY 1.0 (X-Plant specimen catalogue)"
+    },
+    {
+      "file": "XPlant_Cauliflower.inforaw",
+      "name": "XPlant Cauliflower",
+      "category": "plants",
+      "description": "Cauliflower",
+      "resolution": [
+        354,
+        354,
+        642
+      ],
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacingUnit": "voxel",
+      "type": "uchar",
+      "bytes": 9826936,
+      "source": "https://www.biw.kuleuven.be/biosyst/mebios/downloads/3d-x-ray-images-of-plant-organs/flowers/Cauliflower",
+      "download": "https://www.biw.kuleuven.be/biosyst/mebios/downloads/3d-x-ray-images-of-plant-organs/flowers/Cauliflower/3d-tiff",
+      "license": "ODC-BY 1.0 (X-Plant specimen catalogue)"
+    },
+    {
+      "file": "XPlant_Eggplant.inforaw",
+      "name": "XPlant Eggplant",
+      "category": "plants",
+      "description": "Eggplant",
+      "resolution": [
+        216,
+        108,
+        145
+      ],
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacingUnit": "voxel",
+      "type": "uchar",
+      "bytes": 492381,
+      "source": "https://www.biw.kuleuven.be/biosyst/mebios/downloads/3d-x-ray-images-of-plant-organs/fleshy-fruit-1/Eggplant",
+      "download": "https://www.biw.kuleuven.be/biosyst/mebios/downloads/3d-x-ray-images-of-plant-organs/fleshy-fruit-1/Eggplant/3d-tiff",
+      "license": "ODC-BY 1.0 (X-Plant specimen catalogue)"
+    },
+    {
+      "file": "XPlant_Garlic.inforaw",
+      "name": "XPlant Garlic",
+      "category": "plants",
+      "description": "Garlic",
+      "resolution": [
+        204,
+        206,
+        95
+      ],
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacingUnit": "voxel",
+      "type": "uchar",
+      "bytes": 712187,
+      "source": "https://www.biw.kuleuven.be/biosyst/mebios/downloads/3d-x-ray-images-of-plant-organs/bubs-1/Garlic",
+      "download": "https://www.biw.kuleuven.be/biosyst/mebios/downloads/3d-x-ray-images-of-plant-organs/bubs-1/Garlic/3d-tiff",
+      "license": "ODC-BY 1.0 (X-Plant specimen catalogue)"
+    },
+    {
+      "file": "XPlant_Gerbera.inforaw",
+      "name": "XPlant Gerbera",
+      "category": "plants",
+      "description": "Gerbera",
+      "resolution": [
+        670,
+        734,
+        356
+      ],
+      "spacing": [
+        0.25,
+        0.25,
+        0.2497191011235955
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 118220763,
+      "source": "https://www.biw.kuleuven.be/biosyst/mebios/downloads/3d-x-ray-images-of-plant-organs/flowers/Gerbera/Gerbera",
+      "download": "https://www.biw.kuleuven.be/biosyst/mebios/downloads/3d-x-ray-images-of-plant-organs/flowers/Gerbera/gerbera-low-res.tif",
+      "license": "ODC-BY 1.0 (X-Plant specimen catalogue)"
+    },
+    {
+      "file": "XPlant_Grapes.inforaw",
+      "name": "XPlant Grapes",
+      "category": "plants",
+      "description": "Grapes",
+      "resolution": [
+        139,
+        123,
+        694
+      ],
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 2174409,
+      "source": "https://www.biw.kuleuven.be/biosyst/mebios/downloads/3d-x-ray-images-of-plant-organs/fleshy-fruit-1/Grapes",
+      "download": "https://www.biw.kuleuven.be/biosyst/mebios/downloads/3d-x-ray-images-of-plant-organs/fleshy-fruit-1/Grapes/grape-3d-1000um.tif",
+      "license": "ODC-BY 1.0 (X-Plant specimen catalogue)"
+    },
+    {
+      "file": "XPlant_Kiwifruit.inforaw",
+      "name": "XPlant Kiwifruit",
+      "category": "plants",
+      "description": "Kiwifruit",
+      "resolution": [
+        147,
+        115,
+        205
+      ],
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacingUnit": "voxel",
+      "type": "uchar",
+      "bytes": 519205,
+      "source": "https://www.biw.kuleuven.be/biosyst/mebios/downloads/3d-x-ray-images-of-plant-organs/fleshy-fruit-1/Kiwifruit",
+      "download": "https://www.biw.kuleuven.be/biosyst/mebios/downloads/3d-x-ray-images-of-plant-organs/fleshy-fruit-1/Kiwifruit/3d-tiff",
+      "license": "ODC-BY 1.0 (X-Plant specimen catalogue)"
+    },
+    {
+      "file": "XPlant_Lemon.inforaw",
+      "name": "XPlant Lemon",
+      "category": "plants",
+      "description": "Lemon",
+      "resolution": [
+        204,
+        204,
+        198
+      ],
+      "spacing": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 3384336,
+      "source": "https://www.biw.kuleuven.be/biosyst/mebios/downloads/3d-x-ray-images-of-plant-organs/fleshy-fruit-1/L.Burm.F",
+      "download": "https://www.biw.kuleuven.be/biosyst/mebios/downloads/3d-x-ray-images-of-plant-organs/fleshy-fruit-1/L.Burm.F./lemon-3d-500um.tif",
+      "license": "ODC-BY 1.0 (X-Plant specimen catalogue)"
+    },
+    {
+      "file": "XPlant_Mango_Carabao.inforaw",
+      "name": "XPlant Mango Carabao",
+      "category": "plants",
+      "description": "Mango > Carabao",
+      "resolution": [
+        256,
+        216,
+        328
+      ],
+      "spacing": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 8175539,
+      "source": "https://www.biw.kuleuven.be/biosyst/mebios/downloads/3d-x-ray-images-of-plant-organs/fleshy-fruit-1/Carabao",
+      "download": "https://www.biw.kuleuven.be/biosyst/mebios/downloads/3d-x-ray-images-of-plant-organs/fleshy-fruit-1/Carabao/mango-lowres-resampled-500um.tif",
+      "license": "ODC-BY 1.0 (X-Plant specimen catalogue)"
+    },
+    {
+      "file": "XPlant_Onion.inforaw",
+      "name": "XPlant Onion",
+      "category": "plants",
+      "description": "Onion",
+      "resolution": [
+        120,
+        116,
+        143
+      ],
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacingUnit": "voxel",
+      "type": "uchar",
+      "bytes": 538871,
+      "source": "https://www.biw.kuleuven.be/biosyst/mebios/downloads/3d-x-ray-images-of-plant-organs/bubs-1/Onion",
+      "download": "https://www.biw.kuleuven.be/biosyst/mebios/downloads/3d-x-ray-images-of-plant-organs/bubs-1/Onion/3d-tiff",
+      "license": "ODC-BY 1.0 (X-Plant specimen catalogue)"
+    },
+    {
+      "file": "XPlant_Pear_Conference.inforaw",
+      "name": "XPlant Pear Conference",
+      "category": "plants",
+      "description": "Pear > Conference",
+      "resolution": [
+        283,
+        283,
+        265
+      ],
+      "spacing": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 7599812,
+      "source": "https://www.biw.kuleuven.be/biosyst/mebios/downloads/3d-x-ray-images-of-plant-organs/fleshy-fruit-1/Pear",
+      "download": "https://www.biw.kuleuven.be/biosyst/mebios/downloads/3d-x-ray-images-of-plant-organs/fleshy-fruit-1/Pear/conference-3d-500um.tif",
+      "license": "ODC-BY 1.0 (X-Plant specimen catalogue)"
+    },
+    {
+      "file": "XPlant_Pineapple.inforaw",
+      "name": "XPlant Pineapple",
+      "category": "plants",
+      "description": "Pineapple",
+      "resolution": [
+        112,
+        110,
+        416
+      ],
+      "spacing": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 2239964,
+      "source": "https://www.biw.kuleuven.be/biosyst/mebios/downloads/3d-x-ray-images-of-plant-organs/fleshy-fruit-1/Pineapple",
+      "download": "https://www.biw.kuleuven.be/biosyst/mebios/downloads/3d-x-ray-images-of-plant-organs/fleshy-fruit-1/Pineapple/pineapple-3d-1500um.tif",
+      "license": "ODC-BY 1.0 (X-Plant specimen catalogue)"
+    },
+    {
+      "file": "XPlant_Spinach_Gazelle.inforaw",
+      "name": "XPlant Spinach Gazelle",
+      "category": "plants",
+      "description": "Spinach > Gazelle",
+      "resolution": [
+        176,
+        47,
+        190
+      ],
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacingUnit": "voxel",
+      "type": "uchar",
+      "bytes": 612216,
+      "source": "https://www.biw.kuleuven.be/biosyst/mebios/downloads/3d-x-ray-images-of-plant-organs/leaves/Spinach/spinach-gazelle",
+      "download": "https://www.biw.kuleuven.be/biosyst/mebios/downloads/3d-x-ray-images-of-plant-organs/leaves/Spinach/3d-tiff",
+      "license": "ODC-BY 1.0 (X-Plant specimen catalogue)"
+    },
+    {
+      "file": "XPlant_Strawberry_Elsanta.inforaw",
+      "name": "XPlant Strawberry Elsanta",
+      "category": "plants",
+      "description": "Strawberry > Elsanta",
+      "resolution": [
+        204,
+        204,
+        133
+      ],
+      "spacing": [
+        0.255,
+        0.255,
+        0.255
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 1045831,
+      "source": "https://www.biw.kuleuven.be/biosyst/mebios/downloads/3d-x-ray-images-of-plant-organs/fleshy-fruit-1/strawberry",
+      "download": "https://www.biw.kuleuven.be/biosyst/mebios/downloads/3d-x-ray-images-of-plant-organs/fleshy-fruit-1/strawberry/strawberry-lowres-resampled-255um.tif",
+      "license": "ODC-BY 1.0 (X-Plant specimen catalogue)"
+    },
+    {
+      "file": "XPlant_Sunflower.inforaw",
+      "name": "XPlant Sunflower",
+      "category": "plants",
+      "description": "Sunflower",
+      "resolution": [
+        620,
+        644,
+        404
+      ],
+      "spacing": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3336633663366336
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 131570167,
+      "source": "https://www.biw.kuleuven.be/biosyst/mebios/downloads/3d-x-ray-images-of-plant-organs/flowers/Sunflower/Sunflower",
+      "download": "https://www.biw.kuleuven.be/biosyst/mebios/downloads/3d-x-ray-images-of-plant-organs/flowers/Sunflower/sunflower-low-res.tif",
+      "license": "ODC-BY 1.0 (X-Plant specimen catalogue)"
+    },
+    {
+      "file": "Zenodo_Apple_whole.inforaw",
+      "name": "Zenodo Apple whole",
+      "category": "plants",
+      "description": "whole apple, 3D scalar reconstructed CT.",
+      "resolution": [
+        1547,
+        1500,
+        1471
+      ],
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacingUnit": "voxel",
+      "type": "ushort",
+      "bytes": 311008349,
+      "source": "https://doi.org/10.5281/zenodo.15684909",
+      "download": "https://zenodo.org/api/records/15684909/files/apple%20Y%20Slices-20250430T172416Z-1-001.zip/content",
+      "license": "CC BY 4.0."
+    },
+    {
+      "file": "Carp_whole_CT.inforaw",
+      "name": "Carp whole CT",
+      "category": "animals",
+      "description": "Carp fish; standard volumetric CT benchmark",
+      "resolution": [
+        256,
+        256,
+        512
+      ],
+      "spacing": [
+        0.78125,
+        0.390625,
+        1.0
+      ],
+      "spacingUnit": "voxel",
+      "type": "ushort",
+      "bytes": 30695877,
+      "source": "https://github.com/sci-visus/open-scivis-datasets/blob/main/static/open-scivis-datasets/carp/carp.json",
+      "download": "https://ome-zarr-scivis.s3.us-east-1.amazonaws.com/v0.5/96x2/carp.ome.zarr/scale0/carp/zarr.json",
+      "license": "no standalone dataset license confirmed; retain source attribution."
+    },
+    {
+      "file": "Earthworm_Aporrectodea_caliginosa_MCZ_95557.inforaw",
+      "name": "Earthworm Aporrectodea caliginosa MCZ 95557",
+      "category": "animals",
+      "description": "Aporrectodea caliginosa, museum specimen MCZ IZ 95557.",
+      "resolution": [
+        572,
+        572,
+        2226
+      ],
+      "spacing": [
+        0.01315,
+        0.01315,
+        0.01315
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 221405147,
+      "source": "https://doi.org/10.5524/100092",
+      "download": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100092/A_caliginosa_MCZ_IZ_95557_Reconstruction.tar.gz",
+      "license": "CC0 1.0."
+    },
+    {
+      "file": "Kingsnake_embryo_in_egg_CT.inforaw",
+      "name": "Kingsnake embryo in egg CT",
+      "category": "animals",
+      "description": "Lampropeltis getula, 54-day embryo in egg; whole egg scan",
+      "resolution": [
+        512,
+        512,
+        397
+      ],
+      "spacing": [
+        0.06348,
+        0.06348,
+        0.1376
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 47462911,
+      "source": "https://www.digimorph.org/specimens/Lampropeltis_getula/egg/whole/",
+      "download": "https://ome-zarr-scivis.s3.us-east-1.amazonaws.com/v0.5/96x2/kingsnake.ome.zarr/scale1/kingsnake/zarr.json",
+      "license": "no standalone dataset license confirmed; retain source attribution."
+    },
+    {
+      "file": "Veiled_Chameleon_upper_body_CT.inforaw",
+      "name": "Veiled Chameleon upper body CT",
+      "category": "animals",
+      "description": "Chamaeleo calyptratus, upper-body scan including the head",
+      "resolution": [
+        512,
+        512,
+        540
+      ],
+      "spacing": [
+        0.1845703125,
+        0.1845703125,
+        0.21
+      ],
+      "spacingUnit": "mm",
+      "type": "ushort",
+      "bytes": 184285335,
+      "source": "https://www2.geo.utexas.edu/specimens/Chamaeleo_calyptratus/head/",
+      "download": "https://ome-zarr-scivis.s3.us-east-1.amazonaws.com/v0.5/96x2/chameleon.ome.zarr/scale1/chameleon/zarr.json",
+      "license": "no standalone dataset license confirmed; retain source attribution."
+    },
+    {
+      "file": "Xenopus_laevis_adult_male_whole_stained.inforaw",
+      "name": "Xenopus laevis adult male whole stained",
+      "category": "animals",
+      "description": "Xenopus laevis; adult male, soft-tissue contrast stained.",
+      "resolution": [
+        1051,
+        1516,
+        543
+      ],
+      "spacing": [
+        0.04003524880034787,
+        0.04003524880034787,
+        0.04003524880034787
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 146905699,
+      "source": "https://doi.org/10.5281/zenodo.10951411",
+      "download": "https://zenodo.org/api/records/10951411/files/Male_stained.tar.gz/content",
+      "license": "CC0 (Zenodo dataset)."
+    },
+    {
+      "file": "Xenopus_laevis_NF44_45_whole_native.inforaw",
+      "name": "Xenopus laevis NF44 45 whole native",
+      "category": "animals",
+      "description": "Xenopus laevis; early tadpole NF44-45, unstained.",
+      "resolution": [
+        295,
+        374,
+        274
+      ],
+      "spacing": [
+        0.005061931278117407,
+        0.005061983983760921,
+        0.005061957630939164
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 12485874,
+      "source": "https://doi.org/10.5281/zenodo.10951411",
+      "download": "https://zenodo.org/api/records/10951411/files/NF44-45_native.tar.gz/content",
+      "license": "CC0 (Zenodo dataset)."
+    },
+    {
+      "file": "Xenopus_laevis_NF54_whole_stained.inforaw",
+      "name": "Xenopus laevis NF54 whole stained",
+      "category": "animals",
+      "description": "Xenopus laevis; tadpole NF54, soft-tissue contrast stained.",
+      "resolution": [
+        1853,
+        882,
+        591
+      ],
+      "spacing": [
+        0.015068054588502465,
+        0.015067100970028332,
+        0.015067577779265397
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 157199353,
+      "source": "https://doi.org/10.5281/zenodo.10951411",
+      "download": "https://zenodo.org/api/records/10951411/files/NF54_stained.tar.gz/content",
+      "license": "CC0 (Zenodo dataset)."
+    },
+    {
+      "file": "Xenopus_laevis_NF66_whole_native.inforaw",
+      "name": "Xenopus laevis NF66 whole native",
+      "category": "animals",
+      "description": "Xenopus laevis; newly metamorphosed frog NF66, unstained.",
+      "resolution": [
+        1414,
+        1791,
+        886
+      ],
+      "spacing": [
+        0.015062001051779319,
+        0.015061999961490257,
+        0.015062000506634789
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 214426161,
+      "source": "https://doi.org/10.5281/zenodo.10951411",
+      "download": "https://zenodo.org/api/records/10951411/files/NF66_native.tar.gz/content",
+      "license": "CC0 (Zenodo dataset)."
+    },
+    {
+      "file": "Big_Brown_Bat_skull_CT_UWBM_82522.inforaw",
+      "name": "Big Brown Bat skull CT UWBM 82522",
+      "category": "animals",
+      "description": "Eptesicus fuscus, big brown bat; skull; UWBM 82522.",
+      "resolution": [
+        724,
+        1076,
+        452
+      ],
+      "spacing": [
+        0.0199999,
+        0.0199999,
+        0.0199999
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 60212471,
+      "source": "https://github.com/MorphoDepot/eptesicus-fuscus-skull",
+      "download": "https://js2.jetstream-cloud.org:8001/swift/v1/MorphoDepot-volumes/muratmaga/eptesicus-fuscus-skull/UWBM-82522.nrrd",
+      "license": "CC BY-NC 4.0; https://creativecommons.org/licenses/by-nc/4.0/"
+    },
+    {
+      "file": "DigiMouse_adult_whole_CT.inforaw",
+      "name": "DigiMouse adult whole CT",
+      "category": "animals",
+      "description": "DigiMouse adult mouse; registered whole-body CT intensity volume.",
+      "resolution": [
+        380,
+        992,
+        208
+      ],
+      "spacing": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 20772133,
+      "source": "https://neuroimage.usc.edu/neuro/Digimouse_Download",
+      "download": "https://neuroimage.usc.edu/mouse_atlas/ct_data.zip",
+      "license": "CC BY-SA 4.0; https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "file": "Mouse_E15_whole_embryo_diceCT.inforaw",
+      "name": "Mouse E15 whole embryo diceCT",
+      "category": "animals",
+      "description": "Mus musculus, embryonic day 15; whole contrast-enhanced micro-CT grayscale specimen in the E15 anatomy atlas.",
+      "resolution": [
+        594,
+        1046,
+        738
+      ],
+      "spacing": [
+        0.017999999225139618,
+        0.017999999225139618,
+        0.017999999225139618
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 51849242,
+      "source": "https://github.com/MorphoDepot/mus-musculus-E15",
+      "download": "https://js2.jetstream-cloud.org:8001/swift/v1/MorphoDepot-volumes/muratmaga/mus-musculus-E15/E15-Atlas.nrrd",
+      "license": "CC BY-NC 4.0; https://creativecommons.org/licenses/by-nc/4.0/"
+    },
+    {
+      "file": "Northern_Flying_Squirrel_skull_CT_UWBM_30808.inforaw",
+      "name": "Northern Flying Squirrel skull CT UWBM 30808",
+      "category": "animals",
+      "description": "Glaucomys sabrinus, northern flying squirrel; skull; UWBM 30808.",
+      "resolution": [
+        975,
+        1589,
+        750
+      ],
+      "spacing": [
+        0.026199930000000003,
+        0.026199930000000003,
+        0.02619993
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 107276059,
+      "source": "https://github.com/MorphoDepot/glaucomys-sabrinus-skull",
+      "download": "https://js2.jetstream-cloud.org:8001/swift/v1/MorphoDepot-volumes/muratmaga/glaucomys-sabrinus-skull/UWMB-30808.nrrd",
+      "license": "CC BY-NC 4.0; https://creativecommons.org/licenses/by-nc/4.0/"
+    },
+    {
+      "file": "Pygmy_Rabbit_skull_CT_UWBM_82571.inforaw",
+      "name": "Pygmy Rabbit skull CT UWBM 82571",
+      "category": "animals",
+      "description": "Brachylagus idahoensis, pygmy rabbit; skull; UWBM 82571.",
+      "resolution": [
+        688,
+        1189,
+        605
+      ],
+      "spacing": [
+        0.04750099999999999,
+        0.047501,
+        0.04750099999999999
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 138693005,
+      "source": "https://github.com/MorphoDepot/brachylagus-idahoensis-skull",
+      "download": "https://js2.jetstream-cloud.org:8001/swift/v1/MorphoDepot-volumes/muratmaga/brachylagus-idahoensis-skull/UWBM-82571.nrrd",
+      "license": "CC BY-NC 4.0; https://creativecommons.org/licenses/by-nc/4.0/"
+    },
+    {
+      "file": "QIM_Closed_bivalve_CT.inforaw",
+      "name": "QIM Closed bivalve CT",
+      "category": "animals",
+      "description": "Closed bivalve labelled Mussel by the QIM catalogue; complete published field of view.",
+      "resolution": [
+        250,
+        250,
+        150
+      ],
+      "spacing": [
+        0.0844,
+        0.0844,
+        0.0844
+      ],
+      "spacingUnit": "mm",
+      "type": "float",
+      "bytes": 23998844,
+      "source": "https://data-repository.qim.dk/datasets/mussel/",
+      "download": "https://public.qim.dk/mussel/mussel.zarr/s2/zarr.json",
+      "license": "publicly accessible via QIM; no standalone licence confirmed on the dataset page."
+    },
+    {
+      "file": "QIM_Cowry_shell_CT.inforaw",
+      "name": "QIM Cowry shell CT",
+      "category": "animals",
+      "description": "Cowry seashell, complete published field of view.",
+      "resolution": [
+        175,
+        175,
+        250
+      ],
+      "spacing": [
+        0.1256,
+        0.1256,
+        0.1256
+      ],
+      "spacingUnit": "mm",
+      "type": "float",
+      "bytes": 28120760,
+      "source": "https://data-repository.qim.dk/datasets/cowry-shell/",
+      "download": "https://public.qim.dk/cowry_shell/cowry_shell.zarr/s2/zarr.json",
+      "license": "publicly accessible via QIM; no standalone licence confirmed on the dataset page."
+    },
+    {
+      "file": "QIM_Escargot_CT.inforaw",
+      "name": "QIM Escargot CT",
+      "category": "animals",
+      "description": "Escargot specimen; complete published field of view.",
+      "resolution": [
+        250,
+        250,
+        175
+      ],
+      "spacing": [
+        0.1932,
+        0.1932,
+        0.1932
+      ],
+      "spacingUnit": "mm",
+      "type": "float",
+      "bytes": 29692553,
+      "source": "https://data-repository.qim.dk/datasets/escargot/",
+      "download": "https://public.qim.dk/escargot/escargot.zarr/s2/zarr.json",
+      "license": "publicly accessible via QIM; no standalone licence confirmed on the dataset page."
+    },
+    {
+      "file": "QIM_Marine_gastropod_shell_CT.inforaw",
+      "name": "QIM Marine gastropod shell CT",
+      "category": "animals",
+      "description": "Small marine gastropod shell (QIM specimen 1), complete published field of view.",
+      "resolution": [
+        250,
+        250,
+        150
+      ],
+      "spacing": [
+        0.158,
+        0.158,
+        0.158
+      ],
+      "spacingUnit": "mm",
+      "type": "float",
+      "bytes": 25543395,
+      "source": "https://data-repository.qim.dk/datasets/gastropod/",
+      "download": "https://public.qim.dk/gastropod/gastropod.zarr/s2/zarr.json",
+      "license": "publicly accessible via QIM; no standalone licence confirmed on the dataset page."
+    },
+    {
+      "file": "QIM_Staghorn_coral_fragment_CT.inforaw",
+      "name": "QIM Staghorn coral fragment CT",
+      "category": "animals",
+      "description": "Top fragment of staghorn coral; complete published scan of the fragment.",
+      "resolution": [
+        200,
+        200,
+        237
+      ],
+      "spacing": [
+        0.1256,
+        0.1256,
+        0.1258649789029536
+      ],
+      "spacingUnit": "mm",
+      "type": "float",
+      "bytes": 30707572,
+      "source": "https://data-repository.qim.dk/datasets/coral/",
+      "download": "https://public.qim.dk/coral/coral.zarr/s2/zarr.json",
+      "license": "publicly accessible via QIM; no standalone licence confirmed on the dataset page."
+    },
+    {
+      "file": "Townsends_Mole_head_CT_UWBM_72980.inforaw",
+      "name": "Townsends Mole head CT UWBM 72980",
+      "category": "animals",
+      "description": "Scapanus townsendii, Townsend's mole; head; UWBM 72980.",
+      "resolution": [
+        796,
+        1673,
+        741
+      ],
+      "spacing": [
+        0.026500569999999998,
+        0.026500569999999998,
+        0.026500569999999998
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 116829222,
+      "source": "https://github.com/MorphoDepot/scapanus-townsendii-head",
+      "download": "https://js2.jetstream-cloud.org:8001/swift/v1/MorphoDepot-volumes/muratmaga/scapanus-townsendii-head/UWBM-72980.nrrd",
+      "license": "CC BY-NC 4.0; https://creativecommons.org/licenses/by-nc/4.0/"
+    },
+    {
+      "file": "Cancellus_macrothrix_whole_CT.inforaw",
+      "name": "Cancellus macrothrix whole CT",
+      "category": "crustaceans",
+      "description": "Cancellus macrothrix, whole adult museum specimen SAMC MB-A066204.",
+      "resolution": [
+        1962,
+        2137,
+        1249
+      ],
+      "spacing": [
+        0.0204,
+        0.0204,
+        0.0204
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 1181482944,
+      "source": "https://doi.org/10.5524/100364",
+      "download": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100364/Cancellus_macrothrix/Cancellus_macrothrix_jpeg.tar.gz",
+      "license": "CC0 (GigaDB dataset)."
+    },
+    {
+      "file": "Paragiopagurus_atkinsonae_in_zoanthid_shell.inforaw",
+      "name": "Paragiopagurus atkinsonae in zoanthid shell",
+      "category": "crustaceans",
+      "description": "Paragiopagurus atkinsonae, whole female paratype SAMC MB-A066812 with its zoanthid shell.",
+      "resolution": [
+        2024,
+        1441,
+        988
+      ],
+      "spacing": [
+        0.02,
+        0.02,
+        0.02
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 703157823,
+      "source": "https://doi.org/10.5524/100364",
+      "download": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100364/Paragiopagurus_atkinsonae_f_paratype/Paragiopagarus_atkinsonae_f_paratype_jpeg.tar.gz",
+      "license": "CC0 (GigaDB dataset)."
+    },
+    {
+      "file": "Secretanella_sp_ALMNH_Paleo_6522_fossil_crab.inforaw",
+      "name": "Secretanella sp ALMNH Paleo 6522 fossil crab",
+      "category": "fossils",
+      "description": "fossil true crab Secretanella sp., ALMNH:Paleo:6522",
+      "resolution": [
+        755,
+        490,
+        1868
+      ],
+      "spacing": [
+        0.020523,
+        0.020523,
+        0.020523
+      ],
+      "spacingUnit": "mm",
+      "type": "short",
+      "bytes": 1115175180,
+      "source": "https://doi.org/10.5281/zenodo.7687815",
+      "download": "https://zenodo.org/api/records/7687815/files/001-Secretanella_sp_AAK_072019.zip/content",
+      "license": "CC BY 4.0 (Zenodo)"
+    },
+    {
+      "file": "BugNIST_Beetle_larva_boffel_3_088.inforaw",
+      "name": "BugNIST Beetle larva boffel 3 088",
+      "category": "insects",
+      "description": "Beetle larva; DTU BugNIST class BL, isolated individual scan.",
+      "resolution": [
+        450,
+        450,
+        900
+      ],
+      "spacing": [
+        0.02662,
+        0.02662,
+        0.02662
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 19659540,
+      "source": "https://abdahl.github.io/bugnist/",
+      "download": "https://archive.compute.dtu.dk/files/public/projects/BugNIST3D/zips/bugnist_900.zip",
+      "license": ""
+    },
+    {
+      "file": "BugNIST_Black_cricket_sfaar_13_015.inforaw",
+      "name": "BugNIST Black cricket sfaar 13 015",
+      "category": "insects",
+      "description": "Black cricket; DTU BugNIST class BC, isolated individual scan.",
+      "resolution": [
+        450,
+        450,
+        900
+      ],
+      "spacing": [
+        0.02662,
+        0.02662,
+        0.02662
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 32663602,
+      "source": "https://abdahl.github.io/bugnist/",
+      "download": "https://archive.compute.dtu.dk/files/public/projects/BugNIST3D/zips/bugnist_900.zip",
+      "license": ""
+    },
+    {
+      "file": "BugNIST_Blow_fly_pupa_guld_1_037.inforaw",
+      "name": "BugNIST Blow fly pupa guld 1 037",
+      "category": "insects",
+      "description": "Blow fly pupa; DTU BugNIST class BP, isolated individual scan.",
+      "resolution": [
+        450,
+        450,
+        900
+      ],
+      "spacing": [
+        0.02662,
+        0.02662,
+        0.02662
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 19527065,
+      "source": "https://abdahl.github.io/bugnist/",
+      "download": "https://archive.compute.dtu.dk/files/public/projects/BugNIST3D/zips/bugnist_900.zip",
+      "license": ""
+    },
+    {
+      "file": "BugNIST_Blow_fly_spy_6_030.inforaw",
+      "name": "BugNIST Blow fly spy 6 030",
+      "category": "insects",
+      "description": "Blow fly; DTU BugNIST class BF, isolated individual scan.",
+      "resolution": [
+        450,
+        450,
+        900
+      ],
+      "spacing": [
+        0.02662,
+        0.02662,
+        0.02662
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 33116719,
+      "source": "https://abdahl.github.io/bugnist/",
+      "download": "https://archive.compute.dtu.dk/files/public/projects/BugNIST3D/zips/bugnist_900.zip",
+      "license": ""
+    },
+    {
+      "file": "BugNIST_Brown_cricket_bcrick_5_012.inforaw",
+      "name": "BugNIST Brown cricket bcrick 5 012",
+      "category": "insects",
+      "description": "Brown cricket; DTU BugNIST class AC, isolated individual scan.",
+      "resolution": [
+        450,
+        450,
+        900
+      ],
+      "spacing": [
+        0.02662,
+        0.02662,
+        0.02662
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 30478837,
+      "source": "https://abdahl.github.io/bugnist/",
+      "download": "https://archive.compute.dtu.dk/files/public/projects/BugNIST3D/zips/bugnist_900.zip",
+      "license": ""
+    },
+    {
+      "file": "BugNIST_Curly_wing_fly_krol_5_126.inforaw",
+      "name": "BugNIST Curly wing fly krol 5 126",
+      "category": "insects",
+      "description": "Curly-wing fly; DTU BugNIST class CF, isolated individual scan.",
+      "resolution": [
+        450,
+        450,
+        900
+      ],
+      "spacing": [
+        0.02662,
+        0.02662,
+        0.02662
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 19620133,
+      "source": "https://abdahl.github.io/bugnist/",
+      "download": "https://archive.compute.dtu.dk/files/public/projects/BugNIST3D/zips/bugnist_900.zip",
+      "license": ""
+    },
+    {
+      "file": "BugNIST_Fly_pupa_fluepup_4_043.inforaw",
+      "name": "BugNIST Fly pupa fluepup 4 043",
+      "category": "insects",
+      "description": "Fly pupa; DTU BugNIST class PP, isolated individual scan.",
+      "resolution": [
+        450,
+        450,
+        900
+      ],
+      "spacing": [
+        0.02662,
+        0.02662,
+        0.02662
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 19567226,
+      "source": "https://abdahl.github.io/bugnist/",
+      "download": "https://archive.compute.dtu.dk/files/public/projects/BugNIST3D/zips/bugnist_900.zip",
+      "license": ""
+    },
+    {
+      "file": "BugNIST_Grasshopper_gras_16_020.inforaw",
+      "name": "BugNIST Grasshopper gras 16 020",
+      "category": "insects",
+      "description": "Grasshopper; DTU BugNIST class GH, isolated individual scan.",
+      "resolution": [
+        450,
+        450,
+        900
+      ],
+      "spacing": [
+        0.02662,
+        0.02662,
+        0.02662
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 30601799,
+      "source": "https://abdahl.github.io/bugnist/",
+      "download": "https://archive.compute.dtu.dk/files/public/projects/BugNIST3D/zips/bugnist_900.zip",
+      "license": ""
+    },
+    {
+      "file": "BugNIST_Maggot_maddi_2_028.inforaw",
+      "name": "BugNIST Maggot maddi 2 028",
+      "category": "insects",
+      "description": "Maggot; DTU BugNIST class MA, isolated individual scan.",
+      "resolution": [
+        450,
+        450,
+        900
+      ],
+      "spacing": [
+        0.02662,
+        0.02662,
+        0.02662
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 19516499,
+      "source": "https://abdahl.github.io/bugnist/",
+      "download": "https://archive.compute.dtu.dk/files/public/projects/BugNIST3D/zips/bugnist_900.zip",
+      "license": ""
+    },
+    {
+      "file": "BugNIST_Mealworm_mel_15_012.inforaw",
+      "name": "BugNIST Mealworm mel 15 012",
+      "category": "insects",
+      "description": "Mealworm; DTU BugNIST class ML, isolated individual scan.",
+      "resolution": [
+        450,
+        450,
+        900
+      ],
+      "spacing": [
+        0.02662,
+        0.02662,
+        0.02662
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 32972102,
+      "source": "https://abdahl.github.io/bugnist/",
+      "download": "https://archive.compute.dtu.dk/files/public/projects/BugNIST3D/zips/bugnist_900.zip",
+      "license": ""
+    },
+    {
+      "file": "BugNIST_Soldier_fly_larva_soldat_7_042.inforaw",
+      "name": "BugNIST Soldier fly larva soldat 7 042",
+      "category": "insects",
+      "description": "Soldier fly larva; DTU BugNIST class SL, isolated individual scan.",
+      "resolution": [
+        450,
+        450,
+        900
+      ],
+      "spacing": [
+        0.02662,
+        0.02662,
+        0.02662
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 36388647,
+      "source": "https://abdahl.github.io/bugnist/",
+      "download": "https://archive.compute.dtu.dk/files/public/projects/BugNIST3D/zips/bugnist_900.zip",
+      "license": ""
+    },
+    {
+      "file": "Discothyrea_banna_CASENT0745641.inforaw",
+      "name": "Discothyrea banna CASENT0745641",
+      "category": "insects",
+      "description": "Discothyrea banna CASENT0745641; whole worker ant; scan vial 33-42.",
+      "resolution": [
+        586,
+        672,
+        459
+      ],
+      "spacing": [
+        0.00244,
+        0.00244,
+        0.00244
+      ],
+      "spacingUnit": "mm",
+      "type": "uchar",
+      "bytes": 98832744,
+      "source": "https://doi.org/10.35097/2q0d6bajnptu7twe",
+      "download": "https://biomedisa.info/antscan/download/?id=1785&object=specimen",
+      "license": "CC BY 4.0 (Antscan). Credit: Antscan project contributors; see dataset DOI."
+    },
+    {
+      "file": "Gymnopollisthrips_minor_MCNA10731.inforaw",
+      "name": "Gymnopollisthrips minor MCNA10731",
+      "category": "insects",
+      "description": "Gymnopollisthrips minor, MCNA-10731, intact female in Early Cretaceous Spanish amber.",
+      "resolution": [
+        810,
+        1701,
+        1808
+      ],
+      "spacing": [
+        0.00075,
+        0.00075,
+        0.00075
+      ],
+      "spacingUnit": "mm",
+      "type": "ushort",
+      "bytes": 2909697515,
+      "source": "https://doi.org/10.15151/ESRF-DC-1634312453",
+      "download": "https://paleo.esrf.fr/datasets/1634312361",
+      "license": "CC BY-NC 4.0 (ESRF Paleontology database)."
+    },
+    {
+      "file": "Palaemon_adspersus_whole_CT_preview.inforaw",
+      "name": "Baltic prawn · preview",
+      "category": "crustaceans",
+      "description": "Baltic prawn (Palaemon adspersus), preserved contrast-enhanced specimen; whole published reconstruction.",
+      "resolution": [
+        214,
+        187,
+        173
+      ],
+      "spacing": [
+        0.12,
+        0.12,
+        0.48
+      ],
+      "spacingUnit": "mm",
+      "type": "ushort",
+      "bytes": 9632353,
+      "source": "https://doi.org/10.3390/ani14223277",
+      "download": "https://anon.erda.au.dk/share_redirect/C9ExEJAmQz",
+      "license": ""
+    },
+    {
+      "file": "Palaeopolycheles_nantosueltae_whole_CT_preview.inforaw",
+      "name": "Egg-bearing Jurassic lobster · preview",
+      "category": "fossils",
+      "description": "Palaeopolycheles nantosueltae MNHN.F.A58254; Jurassic polychelidan lobster fossil preserved with eggs, with surrounding nodule.",
+      "resolution": [
+        335,
+        300,
+        238
+      ],
+      "spacing": [
+        0.12562264,
+        0.12562264,
+        0.25124528
+      ],
+      "spacingUnit": "mm",
+      "type": "ushort",
+      "bytes": 33285745,
+      "source": "https://zenodo.org/records/3624687",
+      "download": "https://zenodo.org/api/records/3624687/files/MNHN-F-A58254_coupes.zip/content",
+      "license": "CC BY 4.0 (Zenodo record)."
+    },
+    {
+      "file": "Pandalina_brevirostris_Sylon_1a.inforaw",
+      "name": "Pandalina brevirostris Sylon 1a",
+      "category": "crustaceans",
+      "description": "Pandalina brevirostris with the rhizocephalan Sylon hippolytes, specimen 1a; marine shrimp fixed before scanning.",
+      "resolution": [
+        913,
+        608,
+        428
+      ],
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacingUnit": "voxel",
+      "type": "uchar",
+      "bytes": 75805210,
+      "source": "https://doi.org/10.6084/m9.figshare.4212624",
+      "download": "https://ndownloader.figshare.com/files/6872676",
+      "license": ""
+    },
+    {
+      "file": "Pandalina_brevirostris_Sylon_1c.inforaw",
+      "name": "Pandalina brevirostris Sylon 1c",
+      "category": "crustaceans",
+      "description": "Pandalina brevirostris with the rhizocephalan Sylon hippolytes, specimen 1c; marine shrimp fixed before scanning.",
+      "resolution": [
+        462,
+        1013,
+        238
+      ],
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacingUnit": "voxel",
+      "type": "uchar",
+      "bytes": 41740526,
+      "source": "https://doi.org/10.6084/m9.figshare.4213167",
+      "download": "https://ndownloader.figshare.com/files/6873396",
+      "license": ""
+    },
+    {
+      "file": "Cretaciella_sorianoae_CT.inforaw",
+      "name": "Cretaciella sorianoae",
+      "category": "fossils",
+      "description": "Cretaciella sorianoae MCNA9423, Early Cretaceous Spanish amber.",
+      "resolution": [
+        1430,
+        1430,
+        1914
+      ],
+      "spacing": [
+        0.001356,
+        0.001356,
+        0.001356
+      ],
+      "spacingUnit": "mm",
+      "type": "ushort",
+      "bytes": 4112012109,
+      "source": "https://doi.org/10.15151/ESRF-DC-1634312461",
+      "download": "https://paleo.esrf.fr/datasets/1634312409",
+      "license": ""
+    },
+    {
+      "file": "Electrohemiphlebia_barucheli_partial_fossil_grayscale_CT.inforaw",
+      "name": "Cretaceous damselfly fossil",
+      "category": "fossils",
+      "description": "Electrohemiphlebia barucheli ARC 372.1; Cretaceous damselfly preserved in French amber. the holotype retains the head, thorax, wings and at least parts of the legs. The abdomen is missing in the original fossil (Lak et al., 2009).",
+      "resolution": [
+        1564,
+        1404,
+        1432
+      ],
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacingUnit": "voxel",
+      "type": "ushort",
+      "bytes": 159709327,
+      "source": "https://doi.org/10.15151/ESRF-DC-1634311299",
+      "download": "https://paleo.esrf.fr/datasets/1634311517",
+      "license": ""
+    },
+    {
+      "file": "Harmonia_axyridis_PP5_sample01_whole_prepupa_CT.inforaw",
+      "name": "Harlequin ladybird prepupa",
+      "category": "insects",
+      "description": "Harmonia axyridis developmental study; full modern lady beetle prepupa, PP5 sample01.",
+      "resolution": [
+        716,
+        716,
+        1040
+      ],
+      "spacing": [
+        0.008,
+        0.008,
+        0.008
+      ],
+      "spacingUnit": "mm",
+      "type": "ushort",
+      "bytes": 573723619,
+      "source": "https://doi.org/10.6084/m9.figshare.25801615",
+      "download": "https://ndownloader.figshare.com/files/46268641",
+      "license": ""
+    },
+    {
+      "file": "Nemadus_microtomographicus_CT.inforaw",
+      "name": "Nemadus microtomographicus",
+      "category": "fossils",
+      "description": "Nemadus microtomographicus BB-1445-K, holotype in Eocene Baltic amber.",
+      "resolution": [
+        1517,
+        1517,
+        1717
+      ],
+      "spacing": [
+        0.0014039999999999999,
+        0.0014039999999999999,
+        0.0014039999999999999
+      ],
+      "spacingUnit": "mm",
+      "type": "ushort",
+      "bytes": 4978283000,
+      "source": "https://doi.org/10.15151/ESRF-DC-1634312469",
+      "download": "https://paleo.esrf.fr/datasets/1634312519",
+      "license": ""
+    },
+    {
+      "file": "Nicrophorus_americanus_whole_CT.inforaw",
+      "name": "American burying beetle",
+      "category": "insects",
+      "description": "Nicrophorus americanus, American burying beetle, whole specimen. Matthew Colbert (UTCT), 6 May 2005.",
+      "resolution": [
+        1024,
+        1024,
+        252
+      ],
+      "spacing": [
+        0.04589,
+        0.04589,
+        0.04983
+      ],
+      "spacingUnit": "mm",
+      "type": "ushort",
+      "bytes": 361159349,
+      "source": "https://doi.org/10.18738/T8/FGHQFN",
+      "download": "https://dataverse.tdl.org/dataset.xhtml?persistentId=doi:10.18738/T8/FGHQFN",
+      "license": ""
+    },
+    {
+      "file": "Pandalina_brevirostris_Sylon_1b_whole_CT.inforaw",
+      "name": "Pandalina brevirostris · specimen 1b",
+      "category": "crustaceans",
+      "description": "Pandalina brevirostris with Sylon hippolytes, fixed modern marine shrimp, overview whole-specimen series 1b.",
+      "resolution": [
+        836,
+        397,
+        1014
+      ],
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacingUnit": "voxel",
+      "type": "ushort",
+      "bytes": 557439960,
+      "source": "https://doi.org/10.6084/m9.figshare.4213161",
+      "download": "https://ndownloader.figshare.com/files/6873393?download=1",
+      "license": ""
+    },
+    {
+      "file": "Pandalina_brevirostris_Sylon_2b_whole_CT.inforaw",
+      "name": "Pandalina brevirostris · specimen 2b",
+      "category": "crustaceans",
+      "description": "Pandalina brevirostris with Sylon hippolytes, fixed modern marine shrimp, overview whole-specimen series 2b.",
+      "resolution": [
+        226,
+        390,
+        1094
+      ],
+      "spacing": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacingUnit": "voxel",
+      "type": "uchar",
+      "bytes": 47437643,
+      "source": "https://doi.org/10.6084/m9.figshare.4213173",
+      "download": "https://ndownloader.figshare.com/files/6873399?download=1",
+      "license": ""
+    }
+  ]
+}
