@@ -20,6 +20,10 @@ const roster = Object.entries(members) as [MemberId, typeof members[MemberId]][]
           <h2>{{ member.en }}<template v-if="member.degree">, {{ member.degree }}</template> <span lang="zh-CN">{{ member.zh }}</span></h2>
           <p>{{ member.role }}</p>
           <p lang="zh-CN">{{ member.roleZh }}</p>
+          <p v-if="member.doctorate" class="crystal-doctorate">
+            <span lang="en">{{ member.doctorate.en }}</span>
+            <span lang="zh-CN">{{ member.doctorate.zh }}</span>
+          </p>
           <div class="crystal-cv-links" :aria-label="member.en + ' CV languages'">
             <a :href="withBase(cvPath(id, 'en'))" hreflang="en">English CV</a>
             <a :href="withBase(cvPath(id, 'zh'))" hreflang="zh-CN" lang="zh-CN">中文简历</a>

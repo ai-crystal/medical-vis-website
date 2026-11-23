@@ -113,6 +113,11 @@ html[data-theme="dark"] {
 .crystal-site .crystal-person h2 { font-size: 1.35rem; margin-block: 0 8px; padding-block: 0; }
 .crystal-person h2 span { display: block; font-size: .86em; margin-top: 3px; }
 .crystal-person p { color: var(--cr-muted); font-size: .91rem; line-height: 1.5; }
+.crystal-person .crystal-doctorate {
+  display: flex; flex-wrap: wrap; gap: 2px 9px; width: fit-content;
+  margin-top: 9px; padding: 3px 8px; border-radius: 6px;
+  background: var(--cr-accent-soft); color: var(--cr-accent); font-size: .78rem; font-weight: 650;
+}
 .crystal-person .crystal-cv-links { margin-top: 14px; }
 .crystal-site .crystal-cv-links a {
   display: inline-flex; color: var(--cr-accent); padding: 6px 9px; border: 1px solid var(--cr-line);
