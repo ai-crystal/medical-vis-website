@@ -22,7 +22,7 @@
   --vp-c-text-2: #445d80;
   --vp-c-divider: #cdddf3;
 }
-html.dark {
+html[data-theme="dark"] {
   --cr-ink: #eaf2ff;
   --cr-muted: #aac1e1;
   --cr-line: #2d4773;
