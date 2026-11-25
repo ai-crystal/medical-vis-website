@@ -2,6 +2,8 @@
 import { withBase } from 'vuepress/client'
 import GaussianViewer from './GaussianViewer.vue'
 import RenderComparison from './RenderComparison.vue'
+import RenderGallery from './RenderGallery.vue'
+import SurgicalComparison from './SurgicalComparison.vue'
 import { pages } from '../data/navigation'
 
 const research = [
@@ -24,6 +26,10 @@ const research = [
       </div>
       <GaussianViewer id="gaussian-viewer" compact />
     </section>
+
+    <RenderGallery />
+
+    <SurgicalComparison />
 
     <RenderComparison />
 
