@@ -1,6 +1,7 @@
 import { defineClientConfig } from 'vuepress/client'
 import Swiper from 'vuepress-theme-plume/features/Swiper.vue'
 import CrystalHome from './theme/components/CrystalHome.vue'
+import CrystalAbout from './theme/components/CrystalAbout.vue'
 import CrystalTeam from './theme/components/CrystalTeam.vue'
 import DatasetCatalog from './theme/components/DatasetCatalog.vue'
 import DatasetResources from './theme/components/DatasetResources.vue'
@@ -12,6 +13,7 @@ export default defineClientConfig({
   enhance({ app }) {
     app.component('Swiper', Swiper)
     app.component('CrystalHome', CrystalHome)
+    app.component('CrystalAbout', CrystalAbout)
     app.component('CrystalTeam', CrystalTeam)
     app.component('DatasetCatalog', DatasetCatalog)
     app.component('DatasetResources', DatasetResources)

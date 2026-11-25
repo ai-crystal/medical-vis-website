@@ -1,6 +1,6 @@
 ---
 title: Crystal
-description: Medical 3D visualization, volume rendering and research datasets
+description: Explore medical images with volume rendering, segmentation and 3D reconstruction.
 pageLayout: home
 config:
   - type: custom

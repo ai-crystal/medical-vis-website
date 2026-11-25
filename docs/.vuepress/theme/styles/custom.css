@@ -75,13 +75,7 @@ html[data-theme="dark"] {
 .crystal-button.primary { background: var(--cr-action-fill); color: var(--cr-action-text); }
 .crystal-button.secondary { color: var(--cr-ink); border-color: var(--cr-line); background: var(--cr-card); }
 .crystal-site .crystal-button:hover { filter: brightness(.92); }
-.crystal-library-strip {
-  display: grid; grid-template-columns: 1fr auto auto; gap: clamp(16px, 3vw, 40px); align-items: center;
-  padding: clamp(18px, 3.5vw, 35px); background: var(--cr-surface-fill); border: 1px solid var(--cr-line); border-radius: 14px;
-}
-.crystal-library-strip h2, .crystal-section-head h2 { font-size: clamp(1.55rem, 3vw, 2.5rem); line-height: 1.16; }
-.crystal-library-strip h2 { font-size: clamp(1.35rem, 2.4vw, 1.9rem); }
-.crystal-library-strip p { margin-top: 6px; color: var(--cr-muted); line-height: 1.55; }
+.crystal-section-head h2 { font-size: clamp(1.55rem, 3vw, 2.5rem); line-height: 1.16; }
 .crystal-site .crystal-text-link { color: var(--cr-accent); font-size: .9rem; font-weight: 725; }
 .crystal-site .crystal-text-link:hover, .crystal-site .crystal-footer a:hover { text-decoration: underline; }
 .crystal-site .crystal-stats { display: flex; flex-wrap: wrap; gap: clamp(18px, 4.2vw, 49px); }
@@ -193,13 +187,11 @@ html[data-theme="dark"] {
 .crystal-site .crystal-resource-group a:hover { text-decoration: underline; }
 .crystal-resource-group a span { white-space: nowrap; }
 @media (max-width: 900px) {
-  .crystal-library-strip { grid-template-columns: 1fr 1fr; }
-  .crystal-library-strip .crystal-text-link { grid-column: 1 / -1; }
   .crystal-specimens { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 680px) {
   .crystal-shell { width: calc(100% - 32px); }
-  .crystal-hero, .crystal-library-strip, .crystal-work-grid, .crystal-team-grid, .crystal-resource-groups { grid-template-columns: minmax(0, 1fr); }
+  .crystal-hero, .crystal-work-grid, .crystal-team-grid, .crystal-resource-groups { grid-template-columns: minmax(0, 1fr); }
   .crystal-hero h1 { letter-spacing: -.055em; }
   .crystal-hero { gap: 22px; }
 }

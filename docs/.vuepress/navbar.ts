@@ -11,6 +11,7 @@ export default defineNavbarConfig([
   {
     text: 'Crystal',
     items: [
+      { text: 'About Crystal · 关于 Crystal', link: '/medical-vis/Crystal_Presentations/About_Crystal.md' },
       { text: 'Project overview', link: '/medical-vis/Crystal_Presentations/Crystal_introduction.md' },
       { text: '3D Gaussian splatting demo', link: '/#gaussian-viewer' },
     ]
