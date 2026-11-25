@@ -58,13 +58,7 @@ export default defineNavbarConfig([
       { text: 'BDFM', link: '/medical-vis/Publications/BDFM.md' },
     ]
   },
-    {
-    text: 'Demos',
-    items: [
-      { text: '2D Image to 2.5D', link: '/medical-vis/Technology_Demo/2D-to-3D.md' },
-      //{ text: 'Naked Eye 3D pipeline', link: '/medical-vis/Technology_Demo/NakeEye3D.md' },
-    ]
-  },
+  { text: 'Demos', link: '/medical-vis/Crystal_Presentations/3dgs_demo.md' },
   {
     text: 'Team',
     items: [
