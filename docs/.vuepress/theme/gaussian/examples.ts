@@ -1,6 +1,20 @@
+import type { OrbitPose } from './camera-controls'
+
+export interface Example {
+  id: string
+  label: string
+  initialPose?: OrbitPose
+}
+
+export const defaultExample: Example = {
+  id: 'Maco',
+  label: 'Maco',
+  initialPose: { yaw: -175.6, pitch: 166, distanceScale: 0.7743 },
+}
+
 export const modelBase = '/gaussian-models/'
 
-export const exampleGroups = [
+export const exampleGroups: { label: string, models: Example[] }[] = [
   {
     label: 'Medical and anatomical',
     models: [
@@ -28,11 +42,10 @@ export const exampleGroups = [
   {
     label: 'Rendering examples',
     models: [
-      { id: 'Maco', label: 'Maco' },
+      defaultExample,
       { id: 'teapot', label: 'Teapot' },
     ],
   },
 ]
 
-export type Example = typeof exampleGroups[number]['models'][number]
 export const examples = exampleGroups.flatMap(group => group.models)

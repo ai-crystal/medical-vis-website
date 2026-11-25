@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, ref, useId } from 'vue'
 import { withBase } from 'vuepress/client'
-import { exampleGroups, examples, modelBase, type Example } from '../gaussian/examples'
+import { defaultExample, exampleGroups, examples, modelBase, type Example } from '../gaussian/examples'
+import type { OrbitPose } from '../gaussian/camera-controls'
 import type { GaussianRenderer } from '../gaussian/renderer'
 import '../gaussian/viewer.css'
 
@@ -9,7 +10,7 @@ const props = defineProps<{ compact?: boolean }>()
 const canvasId = useId()
 const stage = ref<HTMLElement>()
 const canvas = ref<HTMLCanvasElement>()
-const selected = ref<Example>(examples[0])
+const selected = ref<Example>(defaultExample)
 const status = ref('Loading model…')
 const backend = ref('')
 const ready = ref(false)
@@ -42,7 +43,7 @@ function getRenderer() {
   return startup
 }
 
-async function showModel(name: string, extension: string, getBuffer: (signal: AbortSignal) => Promise<ArrayBuffer>) {
+async function showModel(name: string, extension: string, getBuffer: (signal: AbortSignal) => Promise<ArrayBuffer>, initialPose?: OrbitPose) {
   pendingLoad?.abort()
   const controller = new AbortController()
   pendingLoad = controller
@@ -53,7 +54,7 @@ async function showModel(name: string, extension: string, getBuffer: (signal: Ab
   try {
     const [device, buffer] = await Promise.all([getRenderer(), getBuffer(signal)])
     signal.throwIfAborted()
-    const count = await device.load(buffer, extension, signal)
+    const count = await device.load(buffer, extension, signal, initialPose)
     signal.throwIfAborted()
     ready.value = true
     status.value = name + ' · ' + count.toLocaleString('en-US') + ' Gaussians'
@@ -76,7 +77,7 @@ function showExample(example: Example) {
     const response = await fetch(withBase(modelBase + example.id + '.splat'), { signal })
     if (!response.ok) throw new Error('Could not download this example.')
     return response.arrayBuffer()
-  })
+  }, example.initialPose)
   void retry()
 }
 

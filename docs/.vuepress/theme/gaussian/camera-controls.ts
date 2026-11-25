@@ -8,6 +8,10 @@ function wrapAngle(degrees: number) {
   return ((degrees + 180) % 360 + 360) % 360 - 180
 }
 
+export type OrbitPose = { yaw: number, pitch: number, distanceScale: number }
+
+const neutralPose: OrbitPose = { yaw: 0, pitch: 0, distanceScale: 1 }
+
 export class OrbitCamera {
   readonly position = new Vec3()
   readonly rotation = new Quat()
@@ -22,8 +26,10 @@ export class OrbitCamera {
   private panX = 0
   private panY = 0
   private fitDistance = 3
+  private initialPose = neutralPose
 
-  frame(center: Vec3, radius: number, aspect: number, fieldOfView: number) {
+  frame(center: Vec3, radius: number, aspect: number, fieldOfView: number, initialPose = neutralPose) {
+    this.initialPose = initialPose
     this.pivot.copy(center)
     this.radius = radius
     const vertical = Math.tan(fieldOfView * Math.PI / 360)
@@ -32,8 +38,10 @@ export class OrbitCamera {
   }
 
   reset() {
-    this.yaw = this.pitch = this.panX = this.panY = 0
-    this.distance = this.fitDistance
+    this.yaw = this.initialPose.yaw
+    this.pitch = this.initialPose.pitch
+    this.panX = this.panY = 0
+    this.distance = this.fitDistance * this.initialPose.distanceScale
     this.update()
   }
 

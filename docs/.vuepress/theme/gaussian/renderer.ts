@@ -4,7 +4,7 @@ import {
   GSPLAT_RENDERER_AUTO, GSPLAT_RENDERER_RASTER_GPU_SORT, Vec3,
 } from 'playcanvas'
 import type { GSplatResourceBase } from 'playcanvas'
-import { OrbitCamera } from './camera-controls'
+import { OrbitCamera, type OrbitPose } from './camera-controls'
 
 const maxFileBytes = 128 * 1024 * 1024
 const maxSplatCount = 2_000_000
@@ -150,7 +150,7 @@ export async function createGaussianRenderer(
     })
   }
 
-  async function load(buffer: ArrayBuffer, extension: string, loadSignal: AbortSignal) {
+  async function load(buffer: ArrayBuffer, extension: string, loadSignal: AbortSignal, initialPose?: OrbitPose) {
     loadSignal.throwIfAborted()
     if (!buffer.byteLength || buffer.byteLength > maxFileBytes) {
       throw new Error('Choose a Gaussian model smaller than 128 MiB.')
@@ -175,7 +175,7 @@ export async function createGaussianRenderer(
     installed?.release()
     installed = { resource, release }
     const radius = Number.isFinite(bounds.radius) && bounds.radius > 0 ? bounds.radius : 1
-    controls.frame(bounds.center, radius, aspect, fieldOfView)
+    controls.frame(bounds.center, radius, aspect, fieldOfView, initialPose)
     updateCamera()
     return resource.numSplats
   }
