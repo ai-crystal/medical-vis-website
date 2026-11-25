@@ -217,7 +217,7 @@ onBeforeUnmount(() => {
         <span>3D Gaussian splatting</span>
         <select aria-label="Example model" :value="selected.id" @change="exampleChanged">
           <optgroup v-for="group in exampleGroups" :key="group.label" :label="group.label">
-            <option v-for="example in group.models" :key="example.id" :value="example.id">{{ example.label }}</option>
+            <option v-for="example in group.models" :key="example.id" :value="example.id" :selected="example.id === selected.id">{{ example.label }}</option>
           </optgroup>
         </select>
       </label>
