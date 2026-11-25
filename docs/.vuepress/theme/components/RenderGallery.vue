@@ -83,6 +83,13 @@ const collections = [
   },
 ] as const
 
+const materialStudies = [
+  { image: 'marbled-surface.png', label: 'Marbled surface', alt: 'Pale rounded form with dark veins and a soft highlight.' },
+  { image: 'golden-cylinder.png', label: 'Golden cylinder', alt: 'Warm golden cylinder with fine vertical ridges and a glossy rim.' },
+  { image: 'amber-like-inclusion.png', label: 'Amber-like inclusion', alt: 'Insect silhouette visible through a glossy amber-colored form.' },
+  { image: 'glossy-green-rabbit.png', label: 'Glossy green rabbit', alt: 'Green rabbit with bright highlights following its curved surface.' },
+]
+
 const active = reactive({ specimens: 0, materials: 0 })
 </script>
 
@@ -121,6 +128,19 @@ const active = reactive({ specimens: 0, materials: 0 })
         </div>
       </article>
     </div>
+
+    <section id="material-studies" class="material-studies" aria-labelledby="material-studies-title">
+      <h3 id="material-studies-title">Material studies</h3>
+      <div class="material-study-grid">
+        <figure v-for="study in materialStudies" :key="study.image">
+          <img
+            :src="withBase('/images/Material_Studies/' + study.image)"
+            :alt="study.alt" width="1024" height="1024" loading="lazy" decoding="async"
+          />
+          <figcaption>{{ study.label }}</figcaption>
+        </figure>
+      </div>
+    </section>
   </section>
 </template>
 
@@ -168,7 +188,14 @@ const active = reactive({ specimens: 0, materials: 0 })
 .gallery-mat { display: grid; place-items: center; min-width: 0; background: #142941; }
 .gallery-crop { position: relative; width: min(100%, calc(var(--crop-ratio) * var(--gallery-height))); aspect-ratio: var(--crop-ratio); overflow: hidden; }
 .gallery-crop img { position: absolute; display: block; max-width: none; max-height: none; }
+.material-studies { margin-top: clamp(24px, 4vw, 36px); scroll-margin-top: 84px; }
+.material-studies h3 { margin-bottom: 14px; font-size: clamp(1.3rem, 2.8vw, 1.7rem); }
+.material-study-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(9px, 2vw, 16px); }
+.material-study-grid figure { overflow: hidden; border: 1px solid var(--cr-line); border-radius: 12px; background: var(--cr-surface-fill); }
+.material-study-grid img { display: block; width: 100%; height: auto; aspect-ratio: 1; }
+.material-study-grid figcaption { padding: 9px 10px; color: var(--cr-ink); font-size: .86rem; font-weight: 650; }
 @media (max-width: 760px) {
+  .material-study-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .gallery-grid { grid-template-columns: minmax(0, 1fr); }
   .gallery-frames { --gallery-height: clamp(172px, 54vw, 320px); }
 }
