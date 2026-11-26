@@ -8,7 +8,7 @@ aside: true
 
 Use this manual to open and inspect a volume, prepare a reproducible scene, work with segmentation labels, or build and extend Crystal.
 
-**中文速查**　第一次使用请从 [Engine-KM 示例](./Software_Operation.md#example-1-render-engine-km) 开始。导入 CT、调整强度范围和体素间距见 [体数据与场景](./Volumes_and_Scenes.md)，为分割标签着色或按框选删除体素见 [转换函数与分割](./Mapping_and_Segmentation.md)。查看和训练模型见 [3DGS 工作流](./Gaussian_Workflow.md)。
+**中文速查**　第一次使用请从 [Engine-KM 示例](./Software_Operation.md#example-1-render-engine-km) 开始。导入 CT、调整强度范围和体素间距见 [体数据与场景](./Volumes_and_Scenes.md)，为分割标签着色或按框选删除体素见 [转换函数与分割](./Mapping_and_Segmentation.md)。从强度曲线入手，逐步制作蜡烛、玉石、虫珀和彩饰圣诞树，可读[转换函数操作手册](./Transfer_Function_Handbook_ZH.md)。查看和训练模型见 [3DGS 工作流](./Gaussian_Workflow.md)。
 
 ## Start with a task
 
@@ -16,6 +16,7 @@ Use this manual to open and inspect a volume, prepare a reproducible scene, work
 | --- | --- | --- |
 | Try Crystal with the bundled data | [Software Operation](./Software_Operation.md#example-1-render-engine-km) | A visible Engine-KM render and a live sample count |
 | Load my own CT and preserve spacing | [Volumes and Scenes](./Volumes_and_Scenes.md) | A saved scene and a verified, reopenable volume |
+| Tune the appearance of wax, jade, insect amber or a decorated tree | [Transfer Function Handbook](./Transfer_Function_Handbook.md) | A scene you can compare with the illustrated exercise at 2048 SPP |
 | Reveal tissue or color segmentation labels | [Transfer Functions and Segmentation](./Mapping_and_Segmentation.md) | A continuous intensity map or an exact-label mask overlay |
 | Remove everything under a screen rectangle | [Rectangle volume deletion](./Mapping_and_Segmentation.md#example-3-delete-a-full-depth-region) | An inspected preview and a saved deletion sidecar |
 | Inspect or refine a 3D Gaussian model | [3D Gaussian Splatting](./Gaussian_Workflow.md) | A locally viewed model or a separately saved training result |

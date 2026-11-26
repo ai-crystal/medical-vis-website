@@ -37,6 +37,7 @@ export default defineNavbarConfig([
       { text: 'Overview', link: '/medical-vis/Development_Manual/Documentation.md' },
       { text: 'Software Operation', link: '/medical-vis/Development_Manual/Software_Operation.md' },
       { text: 'Volumes and Scenes', link: '/medical-vis/Development_Manual/Volumes_and_Scenes.md' },
+      { text: 'Transfer Function Handbook', link: '/medical-vis/Development_Manual/Transfer_Function_Handbook.md' },
       { text: 'Transfer Functions and Segmentation', link: '/medical-vis/Development_Manual/Mapping_and_Segmentation.md' },
       { text: '3D Gaussian Splatting', link: '/medical-vis/Development_Manual/Gaussian_Workflow.md' },
       { text: 'Build Crystal Project', link: '/medical-vis/Development_Manual/Build_Crystal_Project.md' },

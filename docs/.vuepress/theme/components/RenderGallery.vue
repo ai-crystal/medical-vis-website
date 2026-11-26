@@ -130,7 +130,10 @@ const active = reactive({ specimens: 0, materials: 0 })
     </div>
 
     <section id="material-studies" class="material-studies" aria-labelledby="material-studies-title">
-      <h3 id="material-studies-title">Material studies</h3>
+      <header class="gallery-head material-studies-head">
+        <h3 id="material-studies-title">Material studies</h3>
+        <a class="crystal-text-link" :href="withBase(pages.transferFunctionHandbook)">Transfer function handbook <span aria-hidden="true">→</span></a>
+      </header>
       <div class="material-study-grid">
         <figure v-for="study in materialStudies" :key="study.image">
           <img
@@ -189,7 +192,8 @@ const active = reactive({ specimens: 0, materials: 0 })
 .gallery-crop { position: relative; width: min(100%, calc(var(--crop-ratio) * var(--gallery-height))); aspect-ratio: var(--crop-ratio); overflow: hidden; }
 .gallery-crop img { position: absolute; display: block; max-width: none; max-height: none; }
 .material-studies { margin-top: clamp(24px, 4vw, 36px); scroll-margin-top: 84px; }
-.material-studies h3 { margin-bottom: 14px; font-size: clamp(1.3rem, 2.8vw, 1.7rem); }
+.material-studies-head { margin-bottom: 14px; }
+.material-studies h3 { font-size: clamp(1.3rem, 2.8vw, 1.7rem); }
 .material-study-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(9px, 2vw, 16px); }
 .material-study-grid figure { overflow: hidden; border: 1px solid var(--cr-line); border-radius: 12px; background: var(--cr-surface-fill); }
 .material-study-grid img { display: block; width: 100%; height: auto; aspect-ratio: 1; }

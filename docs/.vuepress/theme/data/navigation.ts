@@ -3,6 +3,7 @@ const docs = '/medical-vis'
 export const pages = {
   about: `${docs}/Crystal_Presentations/About_Crystal.html`,
   aboutZh: `${docs}/Crystal_Presentations/About_Crystal_ZH.html`,
+  transferFunctionHandbook: `${docs}/Development_Manual/Transfer_Function_Handbook.html`,
   documentation: `${docs}/Development_Manual/Documentation.html`,
   project: `${docs}/Crystal_Presentations/Crystal_introduction.html`,
   datasets: `${docs}/Development_Manual/Datasets.html`,

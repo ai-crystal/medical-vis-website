@@ -10,6 +10,8 @@ aside: true
 
 In a volume scene, **Data Mapper** controls how continuous values or segmentation labels contribute optical properties. **Volume Settings** contains the tools that change label values or exclude voxels.
 
+For step-by-step edits with before-and-after renders, open the [Transfer Function Handbook](./Transfer_Function_Handbook.md) or its [简体中文版](./Transfer_Function_Handbook_ZH.md). The exercises cover intensity curves, discrete labels, scalar–gradient mapping and optical materials for wax, jade, insect amber and a decorated Christmas tree.
+
 ## Choose a transfer function
 
 | Mapping | Input | How it produces a material |
@@ -19,16 +21,16 @@ In a volume scene, **Data Mapper** controls how continuous values or segmentatio
 
 ![Diagram showing continuous intensity through a CLTF curve and integer labels through a DPTF lookup, combined into one material for rendering.](/images/Development_Manual/current/mapping-channels.svg)
 
-*Figure 1. In the legacy channels panel, each enabled channel can carry its own mapping. The channel combination determines how the mapped materials contribute.*
+*Figure 1. In the Transfer functions tab, each enabled channel can carry its own mapping. The channel combination determines how the mapped materials contribute.*
 
 For an editable categorical mask, use uint8 or uint16 labels, **Nearest** interpolation and the `StorageRange` value domain. Keep label reassignment disabled so an ID stays stable across reloads. An all-zero mask is valid.
 
-The adjacent **Material document** tab edits the newer document-based mapping with input bindings, materials, mapping stages and renderer validation. The Engine-KM walkthrough below uses **Legacy channels**, the tab shown in the rendered example. Use the [runtime diagram](./Code_Structure.md#runtime-lifecycle) to trace how mapping changes reach a frame.
+Use **Advanced materials** to edit material definitions and input bindings, then validate the draft for the active renderer. The older Engine-KM screenshot shows the tab names **Legacy channels** and **Material document**. In the current GUI these are **Transfer functions** and **Advanced materials**, respectively. Use the [runtime diagram](./Code_Structure.md#runtime-lifecycle) to trace how mapping changes reach a frame.
 
 ## Example 1. Refine the intensity curve
 
 1. Open [Engine-KM](./Software_Operation.md#example-1-render-engine-km) or work on a copy of your own scene.
-2. Go to **Data Mapper → Legacy channels → Intensity**. Enable the channel and select **Continuous linear (CLTF)**.
+2. Go to **Data Mapper → Transfer functions → Intensity**. Enable the channel and select **CLTF (linear)**.
 3. Left-click a blank point on the plot to insert a node. Drag a node to adjust its position or opacity. Right-click an internal node to remove it. The endpoints remain in place.
 4. Compare the render once sample accumulation settles. If the histogram is squeezed into a narrow band, inspect **Automatic intensity range** and the scene’s manual range before moving every control point.
 5. Save the scene after choosing a curve that makes the expected structure visible.
