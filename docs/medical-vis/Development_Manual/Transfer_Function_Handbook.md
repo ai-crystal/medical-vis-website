@@ -34,6 +34,8 @@ Crystal running the Manix exercise at 2048 SPP. The left dock controls the mappi
 
 ## Choose a mapping for the feature you want <span id="choose-a-mapping" class="handbook-anchor" data-handbook-peer="choose-a-mapping"></span>
 
+In this table, **renderer / mode** names two separate controls. [Compare the available renderer modes](#renderer-modes).
+
 | Goal | Inputs and controls | First adjustment |
 | --- | --- | --- |
 | Reveal tissue in a CT | Intensity → CLTF; the exercise uses RayCasting / Normal | Set the source window, then position the rising opacity band |
@@ -53,6 +55,46 @@ A mask-plus-intensity mapping and a scalar–gradient grid both use two inputs. 
 </ol>
 
 Ordinary channel edits update rendering as you work. Changes under **Advanced materials** are a draft until you select **Validate and apply**. Save the scene XML or JSON to preserve nodes, rules and material parameters.
+
+### Renderer types and modes <span id="renderer-modes" class="handbook-anchor" data-handbook-peer="renderer-modes"></span>
+
+Read **RayCasting / Normal** as two menu selections. In **Visualizer Settings**, choose **RayCasting** under **Visualizer Type**, then **Normal** under **Mode Setting → Mode**. Changing the renderer changes the list of modes. The transfer function supplies properties such as color and opacity. The renderer and its mode determine how to turn those properties into an image.
+
+**RayCasting (RC) — how the samples contribute to a pixel**
+
+| Mode | What it does | When to choose it |
+| --- | --- | --- |
+| `Normal` | For an ordinary CLTF, combines samples from front to back using their mapped colors and opacity. | Start here to place the rising opacity band in a CT. Advanced local-medium and material-boundary recipes also explicitly require **RayCasting / Normal**. |
+| `EmissionAbsorption` | Uses the same compositing path as Normal for ordinary transfer-function channels. | Choose it to study emission and absorption. On the same CLTF scene, switching from Normal alone should leave the appearance unchanged. |
+| `SingleScattering` | On CUDA, samples one scattering event along a viewing ray. Gradient shading and volume ambient occlusion (AO) can affect that point. | Open **Manix-AO** to examine local shading and occlusion. Keep the camera, lights and transfer function fixed when comparing modes. |
+
+<img src="/images/Development_Manual/transfer-functions/manix-rc-modes-2048spp.png" alt="The same Manix scan with standard ray casting on the left and single scattering on the right." width="644" height="320" loading="lazy" decoding="async" />
+
+**Same scan and transfer function.** Left: RayCasting / Normal. Right: RayCasting / SingleScattering. In this Manix-AO setup, the cut surface looks pale green under compositing and warmer under single scattering, with darker recesses below the jaw. Both CUDA renders reached 2048 SPP at 320 × 320. AO and scatter-point capture were off in both. Only the mode changed. The colors come from this scene’s optical properties and lighting.
+
+**NullScattering (NS) — how the volume path tracer finds scattering events**
+
+| Mode | How it samples the volume |
+| --- | --- |
+| `Normal` | Uses the Kroes sampler for both scattering locations and visibility toward lights. |
+| `RayMarching` | Tests for scattering at successive sample positions using local opacity. The sampling step influences how finely it follows the density field. |
+| `KroesRayMarching` | Accumulates extinction along the ray until it reaches a randomly sampled optical depth. Select this to request the default sampler explicitly. |
+| `NullScattering` | Proposes collisions using an upper bound on extinction. The local extinction determines which candidates are real interactions. This selects the null-collision sampler within the renderer of the same name. |
+
+**Try the NS modes on one volume.** Make a copy of **Manix-KM**. With the scene closed, set `<needScatterPoints value="off"/>` under `Film` in the copied XML, then reopen it. When 3DGS scatter-point capture is on, Crystal switches to the null-collision sampler even if the saved mode says Kroes. Keep **Max Scattering**, the lighting and the transfer function fixed. First compare Normal with Kroes as a baseline, then try RayMarching or NullScattering and compare at the same accumulated SPP.
+
+**IsoSurface — which boundary the ray hits**
+
+| Mode | What defines the surface |
+| --- | --- |
+| `Normal` or `IsoValue` | Both find the first crossing from outside to an intensity **above the IsoValue threshold**. Use the source intensity scale when setting the threshold. |
+| `Mask` | An available Mask1 defines the inside as **Mask1 > 0**. All positive labels form one foreground for this test. Without Mask1 the renderer falls back to the intensity threshold. |
+
+To see the difference, use a scene with a registered Mask1, select **IsoSurface**, and move the intensity threshold in **IsoValue** mode. Switch to **Mask** and move the same threshold again. The intensity surface moves when a different level is crossed. The mask surface follows the segmented region.
+
+**Renderers with a single mode.** **NonPhotorealisticRenderer** (NPR), **MeshPathTracing**, **VolumeMeshPathTracing** and **SurfaceVolumePathTracing** (SVPT) offer **Normal** only. For wax, jade and amber, leave SVPT on Normal and edit the optical properties under **Data Mapper → Advanced materials**. Volume photon mapping and full-scene path tracing are unavailable in this build.
+
+For the comparisons above, use **CUDA**. The classic CPU paths for NS and IsoSurface show emission–absorption previews, and CPU RayCasting does not reproduce CUDA single scattering.
 
 ## Four principles behind the controls <span id="principles" class="handbook-anchor" data-handbook-peer="principles"></span>
 
