@@ -112,7 +112,7 @@ Think of a ray crossing many thin layers. In front-to-back compositing, each add
 
 ### Decide whether the second channel is an ID or a quantity <span id="labels-and-concentration" class="handbook-anchor" data-handbook-peer="labels-and-concentration"></span>
 
-A **label** identifies an object. Halfway between labels 500 and 700, linear interpolation would produce 600, which can be the ID of a third object. DPTF reads the nearest integer and looks up that entry directly. The silhouette of a coarse label volume can still show voxel steps. For a smooth, colored surface, let the continuous intensity field control visibility and use registered labels to color the intended structures. Inspect ornament rims at native image size.
+A **label** identifies an object. Halfway between labels 500 and 700, linear interpolation would produce 600, which can be the ID of a third object. DPTF looks up one existing ID per sample. This exercise uses nearest-neighbor sampling. A compatible integer segmentation can also use weighted label voting. The silhouette of a coarse label volume can still show voxel steps. For a smooth, colored surface, let the continuous intensity field control visibility and use registered labels to color the intended structures. Inspect ornament rims at native image size.
 
 A **concentration** describes how much material is present. Amber's Mask1 increases absorption inside the blow fly as the field value rises. Interpolating concentrations is physically meaningful. A **gradient magnitude** describes how quickly intensity changes in space. An intensity–gradient grid can distinguish a boundary from a uniform interior that shares its intensity. Noise also produces strong gradients, so compare the selected band with the visible anatomy.
 
@@ -123,6 +123,48 @@ A **concentration** describes how much material is present. Amber's Mask1 increa
 The **index of refraction** controls bending and Fresnel reflection at an interface. **Roughness** changes the angular spread of reflection and transmission. Judge jade color in the thick torso and polish near a highlight. SVPT uses a base-material opacity of 1; light can still cross the surface and travel through the medium. Check voxel spacing and physical size before reusing coefficients on another object.
 
 **SPP, output dimensions and voxel dimensions** affect different features. With independent random samples, quadrupling the sample count roughly halves the standard deviation of noise. A 1024×1024 film resolves more screen pixels. Neither change reconstructs needles lost during downsampling or repairs a color assigned to the wrong branch. To judge color leakage, fix the camera and inspect an ornament rim beside a branch at 100% pixel size.
+
+## Reduce steps and ripples in a low-resolution scan <span id="volume-reconstruction" class="handbook-anchor" data-handbook-peer="volume-reconstruction"></span>
+
+Open **Examples → NS → Manix-NS** and look at the shading above the eyes and the outline of the clavicle. A coarse voxel grid can leave ridges on these surfaces long after the render has finished accumulating. The three boxes locate the same crops in each image. Pick one row and follow it across the columns at actual size.
+
+<img src="/images/Development_Manual/transfer-functions/manix-ns-overview-en.png" alt="Three Manix renders with boxes marking the forehead, midface and clavicle. The enlarged rows compare original trilinear, updated cubic and a higher-resolution CT reference." width="1044" height="702" loading="lazy" decoding="async" />
+
+Left and center use the **230 × 230 × 207** demo CT. The right column uses a **512 × 512 × 460** scan of the same subject. All three use CUDA NullScattering, the same view, lighting, intensity window and transfer curve, a **1024 × 1024** film and **2048 accumulated SPP**. The higher-resolution CT gives a visual reference for this view. The figures measure differences between renderings and do not establish clinical accuracy. [Open the original overview to zoom](/images/Development_Manual/transfer-functions/manix-ns-overview-en.png)
+
+### Read the five-column experiment <span id="manix-reconstruction-comparison" class="handbook-anchor" data-handbook-peer="manix-reconstruction-comparison"></span>
+
+<img src="/images/Development_Manual/transfer-functions/manix-ns-reconstruction.png" alt="Five Manix views and three rows of matched crops comparing original trilinear, spacing-corrected normals, monotone cubic, a widened opacity transition and the native CT reference." width="1325" height="678" loading="lazy" decoding="async" />
+
+Below the full views, the **forehead** row shows shading across a broad, curved surface. In the **midface** row, follow the lower eye socket and the thin rim beside the nose. At the **base of the neck**, inspect the bright clavicle against darker tissue. On a phone, open the original figure and pinch to inspect one row at a time. [Open the original five-column comparison](/images/Development_Manual/transfer-functions/manix-ns-reconstruction.png)
+
+| Column, left to right | What changed | Forehead | Midface | Neck / clavicle |
+| --- | --- | ---: | ---: | ---: |
+| 1 · Original trilinear | Earlier build, with its original shading normals | 3.38 | 4.69 | 3.81 |
+| 2 · Spacing-correct normal | Same trilinear scalar field. The normal accounts for each axis's physical voxel spacing. | 2.98 | 4.74 | 3.45 |
+| 3 · Monotone cubic | Same corrected normals and transfer curve. Continuous intensity is reconstructed with limited cubic slopes. | 2.57 | 3.68 | 2.88 |
+| 4 · Cubic + TF ramp | Same cubic reconstruction. The two opacity nodes at the threshold are spread apart. | 2.61 | 5.99 | 5.58 |
+| 5 · Native CT reference | Finer source grid with the original transfer curve | — | — | — |
+
+The values are mean absolute differences per display-encoded 8-bit RGB component against column 5, averaged over each marked crop. Smaller values mean a closer match for this view. Correcting normals alone helped the forehead and clavicle while the midface error changed little. Column 3 gave the closest match in all three crops. The wider ramp in column 4 changed which tissue appears in the cheek and neck.
+
+### Reproduce the changes in Crystal <span id="manix-reconstruction-controls" class="handbook-anchor" data-handbook-peer="manix-reconstruction-controls"></span>
+
+1. Open **Manix-NS**. In **Visualizer Settings**, verify the **NullScattering** renderer and **NullScattering** mode on the GPU. Preserve the manual intensity window **[−2000, 4000]**, view and lights. In **Film Settings**, set **1024 × 1024**, press **Reset Resolution**, enable the sample limit and enter **2048**.
+2. Under **Volume Settings → Intensity → Interpolation**, choose **TriLinear**. Wait for 2048 accumulated SPP and click **Quick Save PNG** for column 2. Spacing correction is automatic. Column 1 is a capture from the earlier build.
+3. Change only **Interpolation** to **Monotone cubic**, accumulate to 2048 SPP and save again. The file-axis voxel spacings are **2.1701, 2.1701, 3.1111**. Dividing the intensity differences along each axis by the physical distance changes the normal direction on oblique surfaces. Cubic reconstruction also changes how intensity varies *between* voxel centers. It reads up to 64 neighbors and limits slopes to stay within the eight-corner range of the local cell. This can smooth shading without inventing a new scalar peak. Structures lost during downsampling cannot be restored by interpolation.
+4. To reproduce column 4, save a scene copy. Open **Data Mapper → Transfer functions → Intensity → Node Properties**. The original CLTF has two nodes at **0.51258749**, with opacities **0** and **0.63636363**. Move the transparent node to **0.50508749** and the more opaque node to **0.52008749**. Keep their other properties fixed. Inspect the cheek and clavicle at 2048 SPP, then reopen the column 3 scene to restore the original threshold. A separate trial smoothing the source with a Gaussian of **σ = 0.45 voxels** produced crop errors of **2.88, 5.76, 3.62**.
+
+### Choose a sampling rule for another scene <span id="reconstruction-by-channel" class="handbook-anchor" data-handbook-peer="reconstruction-by-channel"></span>
+
+| What you see | What to adjust | How to judge the result |
+| --- | --- | --- |
+| Ridges on oblique surfaces in continuous CT | Compare **Intensity → TriLinear** with **Monotone cubic** at equal SPP. CUDA trilinear uses hardware filtering. Cubic needs extra neighboring samples. | Check both outline and shading along the same edge. Increase SPP to distinguish persistent bands from changing sampling noise. |
+| A third color appears between segmented objects | For a registered integer **Mask1/Mask2** using **StorageRange**, try **Weighted label vote**. The eight corners contribute spatial weights to their original IDs, including background. The winning ID supplies the sample’s material. | Inspect the boundary beside a third class. One sample returns one existing ID. Transparent objects at different depths can still color the same pixel. Use **Nearest** for one-voxel vessels or isolated labels when preserving their voxel boundaries and connectivity matters. |
+| Repeating bands in a composited volume | In ordinary **RayCasting / Normal** emission–absorption, enable ray-marching jitter. Compare with half the sampling step at equal SPP. | The full entry-to-exit interval contributes. With cubic intensity or label voting, coarse steps are shortened toward half a voxel along the fastest-crossed grid axis, with up to fourfold subdivision. Narrow opacity bands may still need a smaller requested step. CUDA NS in the Manix experiment samples free-flight collision candidates and uses a different integrator. |
+| Pigment, refractive surfaces or exact material boundaries | In SVPT insect amber and marble, keep **Mask1 → TriLinear** for continuous pigment concentration. Exact material interfaces use a trilinear cell solver and nearest labels. The SVPT isosurface solver retains its surface reconstruction. | Check transmitted color through the body and the silhouette separately. The GUI offers the modes compatible with the channel and mapping. |
+
+Use **Save Scene** to keep interpolation with its data channel. Scene XML and JSON use `TriLinear`, `MonotoneCubic`, `Nearest` and `LabelVote`. In Python, use `renderer.set_volume_interpolation("Intensity", "MonotoneCubic")` or, for a compatible segmentation, `renderer.set_volume_interpolation("Mask1", "LabelVote")`.
 
 ## Read a scalar curve in the image <span id="continuous-transfer-function" class="handbook-anchor" data-handbook-peer="continuous-transfer-function"></span>
 
